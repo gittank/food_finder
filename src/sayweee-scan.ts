@@ -1,6 +1,7 @@
 import * as fs from 'fs';
 import * as path from 'path';
 import axios from 'axios';
+import puppeteer from 'puppeteer';
 import { extractTextFromImageUrl, extractIngredientsFromText } from './services/ocr/extractor';
 
 const DATA_DIR = path.join(__dirname, '..', 'data');
@@ -309,8 +310,16 @@ async function searchSayweee(query: string): Promise<string[]> {
   }
 }
 
-// Available stores
-const STORES = ['chinese', 'japanese', 'korean', 'vietnamese', 'indian', 'thai', 'filipino'];
+// Available stores with their IDs
+const STORES: Record<string, number> = {
+  chinese: 1,
+  japanese: 2,
+  korean: 3,
+  vietnamese: 5,
+  indian: 4,
+  thai: 7,
+  filipino: 6,
+};
 
 // Subcategories for each main category
 const CATEGORY_SUBCATEGORIES: Record<string, string[]> = {
@@ -329,6 +338,105 @@ const CATEGORY_SUBCATEGORIES: Record<string, string[]> = {
           'dried06', 'dried07', 'dried08', 'dried09'],
 };
 
+// Use Puppeteer to load all products from a category by clicking through pagination
+async function fetchCategoryWithBrowser(category: string, store?: string): Promise<string[]> {
+  const urls: string[] = [];
+  const seenIds = new Set<string>();
+
+  console.log('Launching browser to load all products...');
+  const browser = await puppeteer.launch({ headless: true });
+  const page = await browser.newPage();
+
+  try {
+    // Navigate to category page
+    const url = `${BASE_URL}/en/category/${category}`;
+    await page.goto(url, { waitUntil: 'networkidle2', timeout: 60000 });
+
+    // Click store filter if specified
+    if (store) {
+      const storeName = store.charAt(0).toUpperCase() + store.slice(1).toLowerCase();
+      console.log(`Selecting ${storeName} store filter...`);
+      try {
+        const storeSelector = `[data-testid="wid-store-list-item-${storeName}-unselected"]`;
+        await page.waitForSelector(storeSelector, { timeout: 5000 });
+        await page.click(storeSelector);
+        await page.waitForNetworkIdle({ timeout: 10000 });
+        console.log(`Store filter applied.`);
+      } catch (e) {
+        console.log(`Could not apply store filter, continuing...`);
+      }
+    }
+
+    let pageNum = 1;
+    const maxPages = 50;
+
+    while (pageNum <= maxPages) {
+      process.stdout.write(`\r  Page ${pageNum}: Loading...`);
+
+      // Extract products from current page
+      const productLinks = await page.evaluate(`
+        Array.from(document.querySelectorAll('a[href*="/product/"]')).map(a => a.getAttribute('href'))
+      `) as string[];
+
+      let addedThisPage = 0;
+      for (const link of productLinks) {
+        if (!link) continue;
+        const match = link.match(/\/product\/([^/]+)\/(\d+)/);
+        if (match) {
+          const [, slug, id] = match;
+          if (!seenIds.has(id)) {
+            seenIds.add(id);
+            const fullUrl = link.startsWith('http') ? link.split('?')[0] : `${BASE_URL}${link.split('?')[0]}`;
+            urls.push(fullUrl);
+            addedThisPage++;
+          }
+        }
+      }
+
+      process.stdout.write(`\r  Page ${pageNum}: ${addedThisPage} new products (total: ${urls.length})          \n`);
+
+      // Stop if we've had multiple pages with no new products
+      if (addedThisPage === 0) {
+        const consecutiveEmpty = pageNum > 2 ? 1 : 0;
+        if (consecutiveEmpty >= 3) {
+          break;
+        }
+      }
+
+      // Try to find and click next page button
+      try {
+        // Scroll to bottom to make pagination visible
+        await page.evaluate('window.scrollTo(0, document.body.scrollHeight)');
+        await new Promise(resolve => setTimeout(resolve, 500));
+
+        // Click "Go to next page" button
+        const nextButton = await page.$('a[aria-label="Go to next page"]');
+        if (nextButton) {
+          await nextButton.click();
+          // Wait for network to settle and give time for DOM update
+          await page.waitForNetworkIdle({ timeout: 10000 });
+          await new Promise(resolve => setTimeout(resolve, 1000));
+          pageNum++;
+        } else {
+          // No next button found, we're on the last page
+          break;
+        }
+      } catch (e) {
+        // Navigation failed, stop pagination
+        break;
+      }
+    }
+
+  } catch (error) {
+    console.error('Browser error:', error);
+  } finally {
+    await browser.close();
+  }
+
+  return urls;
+}
+
+// Legacy function using HTTP requests (faster but limited to ~100 products per subcategory)
 async function fetchCategoryProducts(category: string, store?: string): Promise<string[]> {
   const subcategories = CATEGORY_SUBCATEGORIES[category] || [category];
   const seenIds = new Set<string>();
@@ -379,8 +487,8 @@ async function fetchStoreProductIds(store: string): Promise<Set<string>> {
   const ids = new Set<string>();
   const storeName = store.toLowerCase();
 
-  if (!STORES.includes(storeName)) {
-    console.log(`Warning: Unknown store "${store}". Available: ${STORES.join(', ')}`);
+  if (!STORES[storeName]) {
+    console.log(`Warning: Unknown store "${store}". Available: ${Object.keys(STORES).join(', ')}`);
     return ids;
   }
 
@@ -412,8 +520,8 @@ async function fetchStoreProducts(store: string): Promise<string[]> {
   const urls: string[] = [];
   const seenIds = new Set<string>();
 
-  if (!STORES.includes(storeName)) {
-    console.log(`Unknown store "${store}". Available stores: ${STORES.join(', ')}`);
+  if (!STORES[storeName]) {
+    console.log(`Unknown store "${store}". Available stores: ${Object.keys(STORES).join(', ')}`);
     return urls;
   }
 
@@ -454,6 +562,7 @@ async function main() {
   const limitIndex = args.indexOf('--limit');
   const categoryIndex = args.indexOf('--category');
   const storeIndex = args.indexOf('--store');
+  const useBrowser = args.includes('--browser');
 
   // Get limit value if specified
   const suitableLimit = limitIndex !== -1 && args[limitIndex + 1]
@@ -479,6 +588,10 @@ async function main() {
   if (strIdx !== -1) {
     queryArgs = [...queryArgs.slice(0, strIdx), ...queryArgs.slice(strIdx + 2)];
   }
+  const browserIdx = queryArgs.indexOf('--browser');
+  if (browserIdx !== -1) {
+    queryArgs.splice(browserIdx, 1);
+  }
   const query = queryArgs.join(' ') || 'sauce';
 
   console.log('\n========================================');
@@ -491,7 +604,15 @@ async function main() {
   if (category) {
     // Category mode - optionally filtered by store
     console.log(`Scanning category: "${category}"${store ? ` (${store} store only)` : ''}\n`);
-    productUrls = await fetchCategoryProducts(category, store || undefined);
+
+    if (useBrowser) {
+      // Use Puppeteer (experimental - site's JS pagination doesn't work well with automation)
+      console.log('[Browser mode - experimental, may have limited results]\n');
+      productUrls = await fetchCategoryWithBrowser(category, store || undefined);
+    } else {
+      // Use HTTP requests across all subcategories (recommended - gets ~900 products)
+      productUrls = await fetchCategoryProducts(category, store || undefined);
+    }
     scanMode = store ? `category-${category}-${store}` : `category-${category}`;
   } else if (store) {
     // Store-only mode (no category)

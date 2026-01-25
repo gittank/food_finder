@@ -50,6 +50,9 @@ npm run sayweee:scan -- --category seasoning --limit 10
 | `--category <name>` | Scan a category (seasoning, snack, instant, beverages, bakery, dairy, canned, dried) |
 | `--store <name>` | Filter by store (chinese, japanese, korean, vietnamese, indian, thai, filipino) |
 | `--limit <n>` | Stop after finding n suitable items |
+| `--browser` | Use Puppeteer browser mode (experimental) |
+
+**Note:** The `--store` filter works with the store's curated landing page (~70-85 products). For comprehensive scanning, use `--category` without `--store` to get all products (~900 for seasoning).
 
 ### Start web UI
 ```bash

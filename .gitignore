@@ -1,0 +1,11 @@
+node_modules/
+dist/
+.env
+*.log
+.DS_Store
+
+# Scan results (regeneratable)
+data/*.json
+
+# Tesseract trained data (downloadable)
+*.traineddata
