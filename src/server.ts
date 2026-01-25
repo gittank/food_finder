@@ -36,12 +36,13 @@ app.get('/api/products', (req, res) => {
       .reverse();
 
     if (files.length === 0) {
-      return res.json({ suitable: [], unsuitable: [], summary: {} });
+      return res.json({ suitable: [], unsuitable: [], noIngredients: [], summary: {} });
     }
 
     // Combine all data files
     let allSuitable: any[] = [];
     let allUnsuitable: any[] = [];
+    let allNoIngredients: any[] = [];
 
     for (const file of files) {
       const data = JSON.parse(fs.readFileSync(path.join(DATA_DIR, file), 'utf-8'));
@@ -56,6 +57,10 @@ app.get('/api/products', (req, res) => {
         const normalized = data.unsuitable.map((p: any) => normalizeProduct(p, source));
         allUnsuitable = allUnsuitable.concat(normalized);
       }
+      if (data.noIngredients) {
+        const normalized = data.noIngredients.map((p: any) => normalizeProduct(p, source));
+        allNoIngredients = allNoIngredients.concat(normalized);
+      }
     }
 
     // Remove duplicates by product ID + source
@@ -67,16 +72,30 @@ app.get('/api/products', (req, res) => {
       return true;
     });
 
+    const seenKeysUnsuitable = new Set();
+    allUnsuitable = allUnsuitable.filter(p => {
+      const key = `${p.source}-${p.id}`;
+      if (seenKeysUnsuitable.has(key)) return false;
+      seenKeysUnsuitable.add(key);
+      return true;
+    });
+
+    const seenKeysNoIng = new Set();
+    allNoIngredients = allNoIngredients.filter(p => {
+      const key = `${p.source}-${p.id}`;
+      if (seenKeysNoIng.has(key)) return false;
+      seenKeysNoIng.add(key);
+      return true;
+    });
+
     res.json({
       suitable: allSuitable,
       unsuitable: allUnsuitable,
+      noIngredients: allNoIngredients,
       summary: {
         suitable: allSuitable.length,
         unsuitable: allUnsuitable.length,
-        bySource: {
-          hmart: allSuitable.filter(p => p.source === 'H Mart').length,
-          sayweee: allSuitable.filter(p => p.source === 'Sayweee').length,
-        }
+        noIngredients: allNoIngredients.length,
       }
     });
   } catch (error) {
