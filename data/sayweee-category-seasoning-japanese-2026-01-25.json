@@ -1,7 +1,72 @@
 {
   "query": "category:seasoning",
-  "scannedAt": "2026-01-25T07:00:25.547Z",
+  "scannedAt": "2026-01-25T08:18:25.603Z",
   "suitable": [
+    {
+      "title": "Kadoya Roasted Sesame Oil 11 fl.oz",
+      "images": [
+        "https://img06.weeecdn.com/item/image/113/612/684AF44294C1B4DA.jpg",
+        "https://img06.weeecdn.com/item/image/499/640/705AF0E9A6BAB05F.jpg",
+        "https://img06.weeecdn.com/item/image/619/807/515B947167673D2C.jpg",
+        "https://img06.weeecdn.com/item/image/119/365/EC9E3557513B9F9.jpg",
+        "https://img06.weeecdn.com/item/image/473/546/5F71762D0FE35675.jpg",
+        "https://img06.weeecdn.com/item/image/767/806/39307EDF28390DFA.jpg",
+        "https://img06.weeecdn.com/item/image/003/943/50FE3CB248BD8B.jpg",
+        "https://img06.weeecdn.com/item/image/016/763/8AA97240913CCC3.jpg"
+      ],
+      "ingredients": "SOY SAUCE (WATER, SOYBEANS, WHEAT, SALT), HIGH ~ FRUCTOSE CORN SYRUP, SUGAR, CORN / I SYRUP, WATER, SALT, MODIFIED CORN / I STARCH, MONOSODIUM GLUTAMATE, I VINEGAR, CARAMEL COLOR, I I CITRIC ACID, DISODIUM INOSINATE, I DISODIUM GUANYLATE, XANTHAN I GUM, POTASSIUM SORBATE AND I SODIUM BENZOATE AS PRESERVATIVES.",
+      "price": "$20",
+      "productId": "96942",
+      "ocrConfidence": 84,
+      "ocrImageUrl": "https://img06.weeecdn.com/item/image/119/365/EC9E3557513B9F9.jpg",
+      "ingredientSource": "ocr",
+      "productUrl": "https://www.sayweee.com/en/product/Kadoya-Roasted-Sesame-Oil/96942",
+      "scannedAt": "2026-01-25T08:18:49.550Z",
+      "analysis": {
+        "isVegetarian": true,
+        "hasRestrictedIngredients": false,
+        "restrictedFound": [],
+        "nonVegFound": []
+      }
+    },
+    {
+      "title": "Lee Kum Kee Premium Dark Soy Sauce 500 ml",
+      "images": [
+        "https://img06.weeecdn.com/item/image/249/351/37BFEAF1D476B2A6.jpg",
+        "https://img06.weeecdn.com/item/image/189/790/7A21DEE66CA2E2B7.jpg",
+        "https://img06.weeecdn.com/item/image/367/987/45197ECB9DA15C57.jpg",
+        "https://img06.weeecdn.com/item/image/467/963/2D519F2FCD4E4AAD.jpg",
+        "https://img06.weeecdn.com/item/image/925/298/1C3E3D89083D75AB.jpg",
+        "https://img06.weeecdn.com/item/image/582/538/5E6049EB41E43FDC.jpg",
+        "https://img06.weeecdn.com/item/image/939/408/664B5FD362FCC6A0.jpg",
+        "https://img06.weeecdn.com/item/image/865/619/47FE8C521C1A2670.jpg",
+        "https://img06.weeecdn.com/item/image/587/067/9BCBAD500B47E08.jpg",
+        "https://img06.weeecdn.com/item/image/998/935/566DDFB764DD0A27.jpg",
+        "https://img06.weeecdn.com/item/image/413/694/161556373A5DD9A4.jpg",
+        "https://img06.weeecdn.com/item/image/691/246/1E2F82F68AE5D485.jpg",
+        "https://img06.weeecdn.com/item/image/482/365/262EAB7038D0CD15.jpg",
+        "https://img06.weeecdn.com/item/image/090/040/252264872581801A.jpg",
+        "https://img06.weeecdn.com/item/image/583/348/5CD16AD5CD06C47C.jpg",
+        "https://img06.weeecdn.com/item/image/881/248/18E3DA550C8E7CB7.jpg",
+        "https://img06.weeecdn.com/item/image/014/176/4D30E3BB2BB5A5CA.jpg",
+        "https://img06.weeecdn.com/item/image/405/069/59474480C27FAA2D.jpg",
+        "https://img06.weeecdn.com/item/image/150/686/C62E3B3672BEB23.jpg"
+      ],
+      "ingredients": "Water, Sugar, NON-GMO Soybeans, Wheat, Salt, Alcohol, Yeast Extract.",
+      "price": "$20",
+      "productId": "97788",
+      "ocrConfidence": 94,
+      "ocrImageUrl": "https://img06.weeecdn.com/item/image/865/619/47FE8C521C1A2670.jpg",
+      "ingredientSource": "ocr",
+      "productUrl": "https://www.sayweee.com/en/product/Lee-Kum-Kee-Premium-Dark-Soy-Sauce/97788",
+      "scannedAt": "2026-01-25T08:18:58.666Z",
+      "analysis": {
+        "isVegetarian": true,
+        "hasRestrictedIngredients": false,
+        "restrictedFound": [],
+        "nonVegFound": []
+      }
+    },
     {
       "title": "JDZW Sukiyaki Soup Base 100 g",
       "images": [
@@ -32,7 +97,7 @@
       "ocrImageUrl": "https://img06.weeecdn.com/item/image/824/601/1355BC08B6B7111B.png",
       "ingredientSource": "ocr",
       "productUrl": "https://www.sayweee.com/en/product/JDZW-Sukiyaki-Soup-Base/105675",
-      "scannedAt": "2026-01-25T07:00:50.839Z",
+      "scannedAt": "2026-01-25T08:19:10.014Z",
       "analysis": {
         "isVegetarian": true,
         "hasRestrictedIngredients": false,
@@ -59,7 +124,7 @@
       "ocrImageUrl": "https://img06.weeecdn.com/item/image/865/619/47FE8C521C1A2670.jpg",
       "ingredientSource": "ocr",
       "productUrl": "https://www.sayweee.com/en/product/Maggi-Soy-Sauce--Dark/89008",
-      "scannedAt": "2026-01-25T07:00:56.221Z",
+      "scannedAt": "2026-01-25T08:19:15.275Z",
       "analysis": {
         "isVegetarian": true,
         "hasRestrictedIngredients": false,
@@ -85,7 +150,7 @@
       "ocrImageUrl": "https://img06.weeecdn.com/item/image/588/976/11528D4EAE82C73C.jpg",
       "ingredientSource": "ocr",
       "productUrl": "https://www.sayweee.com/en/product/Ajinomoto-Hondashi-Bonito-Soup-Stock/95681",
-      "scannedAt": "2026-01-25T07:00:31.475Z",
+      "scannedAt": "2026-01-25T08:18:31.386Z",
       "analysis": {
         "isVegetarian": false,
         "hasRestrictedIngredients": false,
@@ -97,6 +162,46 @@
       }
     },
     {
+      "title": "Laoganma Spicy Crispy Chili Oil 210 g",
+      "images": [
+        "https://img06.weeecdn.com/item/image/232/392/3FCD84E453CF653B.jpg",
+        "https://img06.weeecdn.com/item/image/660/274/50B989CD733AD95D.jpg",
+        "https://img06.weeecdn.com/item/image/170/472/1C872A4E8B4D34FE.jpg",
+        "https://img06.weeecdn.com/item/image/923/092/5DFA4E86478DB34D.jpg",
+        "https://img06.weeecdn.com/item/image/426/498/1D85D4E3C92E7B0C.jpg",
+        "https://img06.weeecdn.com/item/image/103/651/1AEE563EA1E1B791.jpg",
+        "https://img06.weeecdn.com/item/image/719/307/709C46246FC9595C.jpg",
+        "https://img06.weeecdn.com/item/image/051/375/7A9DB854DD2E4267.jpg",
+        "https://img06.weeecdn.com/item/image/197/386/2326023B727F3B63.jpg",
+        "https://img06.weeecdn.com/item/image/395/483/7F66F0DC9EA8A864.jpg",
+        "https://img06.weeecdn.com/item/image/750/645/469C569A7DC58894.jpg",
+        "https://img06.weeecdn.com/item/image/280/576/3338018396961605.jpg",
+        "https://img06.weeecdn.com/item/image/543/149/429E3E1E4CF69BC6.jpg",
+        "https://img06.weeecdn.com/item/image/891/630/569332C23146DE62.jpg",
+        "https://img06.weeecdn.com/item/image/817/191/54B21E4C220CA544.jpg",
+        "https://img06.weeecdn.com/item/image/982/690/2B78D417431877E2.jpg",
+        "https://img06.weeecdn.com/item/image/491/901/3C8A709E52DCFEFC.jpg",
+        "https://img06.weeecdn.com/item/image/278/018/5B7CA4E18862CC65.jpg",
+        "https://img06.weeecdn.com/item/image/165/106/15C3BD6275037AF7.jpg"
+      ],
+      "ingredients": "Water, Salt, Sealion, Ginger Garlic She, Pam Youd Glutamate, Sat, Sugar, Pepper Powder , Sulfite Sulfur Doi",
+      "price": "$20",
+      "productId": "36443",
+      "ocrConfidence": 62,
+      "ocrImageUrl": "https://img06.weeecdn.com/item/image/395/483/7F66F0DC9EA8A864.jpg",
+      "ingredientSource": "ocr",
+      "productUrl": "https://www.sayweee.com/en/product/Laoganma-Spicy-Crispy-Chili-Oil/36443",
+      "scannedAt": "2026-01-25T08:18:41.354Z",
+      "analysis": {
+        "isVegetarian": true,
+        "hasRestrictedIngredients": true,
+        "restrictedFound": [
+          "garlic"
+        ],
+        "nonVegFound": []
+      }
+    },
+    {
       "title": "Kewpie Mayonnaise Tube 450 g",
       "images": [],
       "ingredients": "to create its unique flavor. Egg yolks (4 yolks per 500g bottle!), vinegar, and salt provide sweet, savory, tangy, and smooth taste without added preservatives. Truly a must-have staple for your kitchen! With no added sugar and packaged in an easy-to-use 500g squeeze tube, Kewpie Mayonnaise is the perfect standalone mayo or mix-in for your favorite sauces and dishes. \\u003cimg src=\\\"https://img06.weeecdn.com/common/image/top_ranking_20\"])",
@@ -104,7 +209,7 @@
       "productId": "52753",
       "ingredientSource": "html",
       "productUrl": "https://www.sayweee.com/en/product/Kewpie-Mayonnaise-Tube/52753",
-      "scannedAt": "2026-01-25T07:00:32.913Z",
+      "scannedAt": "2026-01-25T08:18:41.802Z",
       "analysis": {
         "isVegetarian": true,
         "hasRestrictedIngredients": true,
@@ -129,7 +234,7 @@
       "ocrImageUrl": "https://img06.weeecdn.com/item/image/896/632/5C194834FDC080A9.jpg",
       "ingredientSource": "ocr",
       "productUrl": "https://www.sayweee.com/en/product/S-B-Umami-Topping-Crunchy-Garlic-with-Chili-Oil--Mild/83230",
-      "scannedAt": "2026-01-25T07:00:36.448Z",
+      "scannedAt": "2026-01-25T08:18:52.428Z",
       "analysis": {
         "isVegetarian": true,
         "hasRestrictedIngredients": true,
@@ -147,31 +252,7 @@
       "price": "$20",
       "productId": "13983",
       "productUrl": "https://www.sayweee.com/en/product/Mizkan-Sushi-Vinegar/13983",
-      "scannedAt": "2026-01-25T07:00:31.978Z"
-    },
-    {
-      "title": "Laoganma Spicy Crispy Chili Oil 210 g",
-      "images": [],
-      "price": "$20",
-      "productId": "36443",
-      "productUrl": "https://www.sayweee.com/en/product/Laoganma-Spicy-Crispy-Chili-Oil/36443",
-      "scannedAt": "2026-01-25T07:00:32.416Z"
-    },
-    {
-      "title": "Kadoya Roasted Sesame Oil 11 fl.oz",
-      "images": [],
-      "price": "$20",
-      "productId": "96942",
-      "productUrl": "https://www.sayweee.com/en/product/Kadoya-Roasted-Sesame-Oil/96942",
-      "scannedAt": "2026-01-25T07:00:33.542Z"
-    },
-    {
-      "title": "Lee Kum Kee Premium Dark Soy Sauce 500 ml",
-      "images": [],
-      "price": "$20",
-      "productId": "97788",
-      "productUrl": "https://www.sayweee.com/en/product/Lee-Kum-Kee-Premium-Dark-Soy-Sauce/97788",
-      "scannedAt": "2026-01-25T07:00:36.836Z"
+      "scannedAt": "2026-01-25T08:18:32.059Z"
     }
   ]
 }

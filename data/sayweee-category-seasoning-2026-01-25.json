@@ -1,6 +1,6 @@
 {
   "query": "category:seasoning",
-  "scannedAt": "2026-01-25T06:33:08.190Z",
+  "scannedAt": "2026-01-25T08:40:01.531Z",
   "suitable": [
     {
       "title": "Sichuan Style Hot &amp; Spicy Soup Base (Malatang) - Lee Kum Kee 7 oz",
@@ -18,7 +18,7 @@
       "ocrImageUrl": "https://img06.weeecdn.com/item/image/905/221/2AFD704748400D6A.jpg",
       "ingredientSource": "ocr",
       "productUrl": "https://www.sayweee.com/en/product/Lee-Kum-Kee-Sichuan-Style-Hot-and-Spicy-Soup-Base/40267",
-      "scannedAt": "2026-01-25T06:33:16.722Z",
+      "scannedAt": "2026-01-25T08:40:08.185Z",
       "analysis": {
         "isVegetarian": true,
         "hasRestrictedIngredients": false,
@@ -27,25 +27,32 @@
       }
     },
     {
-      "title": "LKK LESS SODIUM SOY SAUCE 64 fl.oz",
+      "title": "Lee Kum Kee Green Sichuan Peppercorn Oil 6.3 oz",
       "images": [
-        "https://img06.weeecdn.com/item/image/552/587/2D602F831E2C8EB8.jpg",
-        "https://img06.weeecdn.com/item/image/843/837/4CAC5DF162FE6BDD.jpg",
-        "https://img06.weeecdn.com/item/image/522/520/61C47D1041EC329A.jpg",
-        "https://img06.weeecdn.com/item/image/360/164/6889C08D2103A743.jpg",
-        "https://img06.weeecdn.com/item/image/476/769/676826F15E3FBE9D.jpg",
-        "https://img06.weeecdn.com/item/image/805/144/3D7DB6D7003BDDBD.jpg",
-        "https://img06.weeecdn.com/item/image/609/781/22D501C835B03782.jpg",
-        "https://img06.weeecdn.com/item/image/165/606/403FEB240C41366C.jpg"
+        "https://img06.weeecdn.com/item/image/352/359/230A099252EEEBE2.jpg",
+        "https://img06.weeecdn.com/item/image/153/551/A6CB355F11FC1CE.jpg",
+        "https://img06.weeecdn.com/item/image/239/503/37C6D74FCB9DFD17.jpg",
+        "https://img06.weeecdn.com/item/image/949/330/3E43A5193FD92DF5.jpg",
+        "https://img06.weeecdn.com/item/image/026/521/60950E269E1C9804.jpg",
+        "https://img06.weeecdn.com/item/image/734/838/457DF0C4B03DFA0C.jpg",
+        "https://img06.weeecdn.com/item/image/673/775/735CC2AAE3BD6565.jpg",
+        "https://img06.weeecdn.com/item/image/149/505/39EB340BEB4F23EC.jpg",
+        "https://img06.weeecdn.com/item/image/130/113/5BE0C213F1C2F17E.jpg",
+        "https://img06.weeecdn.com/item/image/787/832/5BBDA7B6E1CE79EE.jpg",
+        "https://img06.weeecdn.com/item/image/339/652/6CFE620390C28C81.jpg",
+        "https://img06.weeecdn.com/item/image/453/108/2166152E1F6F2A0.jpg",
+        "https://img06.weeecdn.com/item/image/035/798/5068DBBEA045DA62.jpg",
+        "https://img06.weeecdn.com/item/image/019/538/5E0519E229B271DF.jpg",
+        "https://img06.weeecdn.com/item/image/528/695/7F51B09E7A3D87D3.jpg"
       ],
-      "ingredients": "WATER, SOYBEANS, WHEAT, SALT, LACTIC ACID,",
+      "ingredients": "SOYBEAN OIL, WATER, DEHYDRATED GARL, DRIED CHL PEPPERS, SALTED CHILI PEPPERS (CHILI PEPPERS, SALT), SO SAUCE (WATER, SALT, SOYBEANS, WHEAT FLOUR), SALT SESAME OIL, SUGAR, DISODIUM 5*-INOSINATE AND DISODIUM 5 GUANYLATE AS FLAVOR ENHANCERS",
       "price": "$20",
-      "productId": "111519",
-      "ocrConfidence": 94,
-      "ocrImageUrl": "https://img06.weeecdn.com/item/image/360/164/6889C08D2103A743.jpg",
+      "productId": "109286",
+      "ocrConfidence": 71,
+      "ocrImageUrl": "https://img06.weeecdn.com/item/image/673/775/735CC2AAE3BD6565.jpg",
       "ingredientSource": "ocr",
-      "productUrl": "https://www.sayweee.com/en/product/LKK-LESS-SODIUM-SOY-SAUCE/111519",
-      "scannedAt": "2026-01-25T06:33:40.331Z",
+      "productUrl": "https://www.sayweee.com/en/product/Lee-Kum-Kee-Green-Sichuan-Peppercorn-Oil/109286",
+      "scannedAt": "2026-01-25T08:40:28.945Z",
       "analysis": {
         "isVegetarian": true,
         "hasRestrictedIngredients": false,
@@ -54,41 +61,80 @@
       }
     },
     {
-      "title": "Marukan Seasoned Vinegar (Sushi Vinegar) 710 ml",
+      "title": "South Word Brand Yellow Rock Sugar 14 oz",
       "images": [
-        "https://img06.weeecdn.com/item/image/657/150/4A02F4D89A529A46.jpg",
-        "https://img06.weeecdn.com/item/image/996/934/7349CBE5499871A3.jpg",
-        "https://img06.weeecdn.com/item/image/727/979/141536FA0EE36A22.jpg",
-        "https://img06.weeecdn.com/item/image/321/023/68F759E0F24DB109.jpg",
-        "https://img06.weeecdn.com/item/image/675/646/5F9413DF5287EBD1.jpg",
-        "https://img06.weeecdn.com/item/image/556/348/721B4DA5ADF83D5D.jpg",
-        "https://img06.weeecdn.com/item/image/529/059/7B5D69F37A7A411E.jpg",
-        "https://img06.weeecdn.com/item/image/583/214/146520A833ED3C52.jpg",
-        "https://img06.weeecdn.com/item/image/991/837/5A997C29B2819D49.jpg",
-        "https://img06.weeecdn.com/item/image/434/460/38FA862734A386FA.jpg",
-        "https://img06.weeecdn.com/item/image/991/735/70555A7822834A72.jpg",
-        "https://img06.weeecdn.com/item/image/737/483/7CC7F62018C2297E.jpg",
+        "https://img06.weeecdn.com/item/image/809/582/46E5042804F12D75.jpg",
+        "https://img06.weeecdn.com/item/image/577/692/33EC211A5901D4F4.jpg",
+        "https://img06.weeecdn.com/item/image/223/078/7F9661FB40F3EE88.jpg",
+        "https://img06.weeecdn.com/item/image/859/033/575D503CBAB48829.jpg",
+        "https://img06.weeecdn.com/item/image/841/835/40091478AA8BA5F4.jpg",
+        "https://img06.weeecdn.com/item/image/815/923/126B767F4519C73C.jpg",
+        "https://img06.weeecdn.com/item/image/426/354/2D82291D5A445ED.jpg",
+        "https://img06.weeecdn.com/item/image/618/626/6DFD75E8489B4B0C.jpg",
+        "https://img06.weeecdn.com/item/image/739/955/51B8E1DEE38F46F7.jpg",
+        "https://img06.weeecdn.com/item/image/604/441/78027AA635A7C2F6.jpg",
+        "https://img06.weeecdn.com/item/image/504/569/2DEE0A1C416F0550.jpg",
+        "https://img06.weeecdn.com/item/image/788/117/E4EA7CFFBE93653.jpg",
+        "https://img06.weeecdn.com/item/image/050/443/7EF75BA4B14004AA.jpg",
+        "https://img06.weeecdn.com/item/image/759/790/3134366A9737980D.jpg",
+        "https://img06.weeecdn.com/item/image/986/346/4045E83E0613C451.jpg",
+        "https://img06.weeecdn.com/item/image/297/748/5895244E14AD8B79.jpg",
+        "https://img06.weeecdn.com/item/image/692/568/6DA577DEF16B4D0D.jpg",
+        "https://img06.weeecdn.com/item/image/663/884/1CBD0C25798124F6.jpg",
+        "https://img06.weeecdn.com/item/image/008/875/77AABD68F1C5A9D0.jpg",
+        "https://img06.weeecdn.com/item/image/014/176/4D30E3BB2BB5A5CA.jpg",
+        "https://img06.weeecdn.com/item/image/405/069/59474480C27FAA2D.jpg",
+        "https://img06.weeecdn.com/item/image/150/686/C62E3B3672BEB23.jpg"
+      ],
+      "ingredients": "Sodium fy Less tan/ IE 240mg #2) 2400mg 4% To Coosa I EAA Mg(R) T0(8) a Em te Distributed By: Calories par gram: /4 22 +H ensway Trading CO Fol 0° Coan 1 4 Pra ERA Que: rd, CA 94544, US Hayward, wm: A Queensway RAE",
+      "price": "$20",
+      "productId": "11061",
+      "ocrConfidence": 41,
+      "ocrImageUrl": "https://img06.weeecdn.com/item/image/604/441/78027AA635A7C2F6.jpg",
+      "ingredientSource": "ocr",
+      "productUrl": "https://www.sayweee.com/en/product/South-Word-Brand-Yellow-Rock-Sugar/11061",
+      "scannedAt": "2026-01-25T08:40:59.513Z",
+      "analysis": {
+        "isVegetarian": true,
+        "hasRestrictedIngredients": false,
+        "restrictedFound": [],
+        "nonVegFound": []
+      }
+    },
+    {
+      "title": "Liang Shao Hsing Rice Cooking Wine 750 ml",
+      "images": [
+        "https://img06.weeecdn.com/item/image/684/043/38F0B4A76F6446E7.jpg"
+      ],
+      "ingredients": "Water, rice, wheat, salt and caramel. \\u003cspan id=\\\"d\"])",
+      "price": "$20",
+      "productId": "85849",
+      "ingredientSource": "html",
+      "productUrl": "https://www.sayweee.com/en/product/Liang-Shao-Hsing-Rice-Cooking-Wine/85849",
+      "scannedAt": "2026-01-25T08:41:02.931Z",
+      "analysis": {
+        "isVegetarian": true,
+        "hasRestrictedIngredients": false,
+        "restrictedFound": [],
+        "nonVegFound": []
+      }
+    },
+    {
+      "title": "Ajishima Furikake Seaweed Nori Rice Seasoning 1.7 oz",
+      "images": [
         "https://img06.weeecdn.com/item/image/140/461/411DF0A49C2CD508.jpg",
         "https://img06.weeecdn.com/item/image/836/518/1B1EB0C8DF842C3C.jpg",
         "https://img06.weeecdn.com/item/image/976/250/433CE2166A363C3.jpg",
-        "https://img06.weeecdn.com/item/image/984/347/21BCFCF9C8B3A384.jpg",
-        "https://img06.weeecdn.com/item/image/284/673/4F7F2B10D4BD9A1A.jpg",
-        "https://img06.weeecdn.com/item/image/363/410/71D7D189A8DBEC2E.jpg",
-        "https://img06.weeecdn.com/item/image/423/289/3486D113EDD5F4AD.jpg",
-        "https://img06.weeecdn.com/item/image/502/736/4CE63A2C757F2E72.jpg",
-        "https://img06.weeecdn.com/item/image/135/067/145BEC1E38CB3F5A.jpg",
-        "https://img06.weeecdn.com/item/image/443/877/D5B55FE2181D327.jpg",
-        "https://img06.weeecdn.com/item/image/766/076/2A8CAC3C6151546A.jpg",
-        "https://img06.weeecdn.com/item/image/896/632/5C194834FDC080A9.jpg"
+        "https://img06.weeecdn.com/item/image/984/347/21BCFCF9C8B3A384.jpg"
       ],
-      "ingredients": "RICE VINEGAR, WATER, SUGAR. SALT DILUTED WITH WATER T0 4.1% ACIDITY (41 GRAIN)",
+      "ingredients": "SESAME SEED, SUGAR, SEAWEED, SALT, MALTODEXTRIN, DISODIUM SUCCINATE, DISODIUM INOSINATE. WARNING: Contains a sachet of oxygen I absorber or desiccant. Do not eat. od",
       "price": "$20",
-      "productId": "102956",
-      "ocrConfidence": 76,
-      "ocrImageUrl": "https://img06.weeecdn.com/item/image/675/646/5F9413DF5287EBD1.jpg",
+      "productId": "95680",
+      "ocrConfidence": 83,
+      "ocrImageUrl": "https://img06.weeecdn.com/item/image/984/347/21BCFCF9C8B3A384.jpg",
       "ingredientSource": "ocr",
-      "productUrl": "https://www.sayweee.com/en/product/Marukan-Seasoned-Vinegar--Sushi-Vinegar/102956",
-      "scannedAt": "2026-01-25T06:33:59.708Z",
+      "productUrl": "https://www.sayweee.com/en/product/Ajishima-Furikake-Seaweed-Nori-Rice-Seasoning/95680",
+      "scannedAt": "2026-01-25T08:41:17.010Z",
       "analysis": {
         "isVegetarian": true,
         "hasRestrictedIngredients": false,
@@ -98,6 +144,38 @@
     }
   ],
   "unsuitable": [
+    {
+      "title": "Sour Beef Stew Seasoning 160 g",
+      "images": [
+        "https://img06.weeecdn.com/item/image/689/891/5FCED3F70B5FD793.jpg",
+        "https://img06.weeecdn.com/item/image/831/955/2B012EAB60C300C4.jpg",
+        "https://img06.weeecdn.com/item/image/269/914/761D4EDCD57D4A4B.jpg",
+        "https://img06.weeecdn.com/item/image/602/593/16C474D8CE596F52.jpg",
+        "https://img06.weeecdn.com/item/image/931/413/10612BF3D3B18CA2.jpg",
+        "https://img06.weeecdn.com/item/image/033/995/4C0A9F68A5373B37.jpg",
+        "https://img06.weeecdn.com/item/image/036/363/69D45683DAA45F6B.jpg",
+        "https://img06.weeecdn.com/item/image/552/339/7F9432CEE08A5897.jpg",
+        "https://img06.weeecdn.com/item/image/426/498/1D85D4E3C92E7B0C.jpg",
+        "https://img06.weeecdn.com/item/image/103/651/1AEE563EA1E1B791.jpg",
+        "https://img06.weeecdn.com/item/image/719/307/709C46246FC9595C.jpg"
+      ],
+      "ingredients": "Edible Vegetable Oil, Green Pepper Oil, Sichuan Province, Spices, Edible Spices Seasoning Bag Ingredients:Salt, Sugar,Chicken Essence Seasoning, MSG, Pepper, Yeast Extract Sesame Bun Ingredients:Sesame, Edible Vegetable Oil Allergen Prompt: This Product Contains Sesame And Peanut Ingredients",
+      "price": "$20",
+      "productId": "8480",
+      "ocrConfidence": 72,
+      "ocrImageUrl": "https://img06.weeecdn.com/item/image/602/593/16C474D8CE596F52.jpg",
+      "ingredientSource": "ocr",
+      "productUrl": "https://www.sayweee.com/en/product/Sour-Beef-Stew-Seasoning/8480",
+      "scannedAt": "2026-01-25T08:40:17.978Z",
+      "analysis": {
+        "isVegetarian": false,
+        "hasRestrictedIngredients": false,
+        "restrictedFound": [],
+        "nonVegFound": [
+          "chicken"
+        ]
+      }
+    },
     {
       "title": "Ajinomoto Hondashi Bonito Soup Stock 2.11 oz",
       "images": [
@@ -126,7 +204,7 @@
       "ocrImageUrl": "https://img06.weeecdn.com/item/image/588/976/11528D4EAE82C73C.jpg",
       "ingredientSource": "ocr",
       "productUrl": "https://www.sayweee.com/en/product/Ajinomoto-Hondashi-Bonito-Soup-Stock/105129",
-      "scannedAt": "2026-01-25T06:33:30.272Z",
+      "scannedAt": "2026-01-25T08:40:40.947Z",
       "analysis": {
         "isVegetarian": false,
         "hasRestrictedIngredients": false,
@@ -153,7 +231,7 @@
       "ocrImageUrl": "https://img06.weeecdn.com/item/image/588/976/11528D4EAE82C73C.jpg",
       "ingredientSource": "ocr",
       "productUrl": "https://www.sayweee.com/en/product/Ajinomoto-Hondashi-Bonito-Soup-Stock/95681",
-      "scannedAt": "2026-01-25T06:33:46.421Z",
+      "scannedAt": "2026-01-25T08:40:47.936Z",
       "analysis": {
         "isVegetarian": false,
         "hasRestrictedIngredients": false,
@@ -163,36 +241,50 @@
           "broth"
         ]
       }
+    },
+    {
+      "title": "Haidilao Hot Pot Tomato Soup Base 200 g",
+      "images": [],
+      "ingredients": "tomato paste, soybean oil, tomato, tomato ketchip (tomato paste, high fructose corn syrup, malt syrup, vinegar salt, artificial flavor, chili powder, onion powder), sugar, onion, salt, pickled ginger [ginger, water, salt, citric acid, acetic acid, erythotic acid (preservative), sodium metabisulfite [preservative]), seasonings, monosodium glutamate, salt, maltodextrin, sugar, corn starch, disodium inosinate, disodium guanylate, artificial flavor, soy protein isolate, tumeric), monosodium glutamate, citric acid, disodium inosinate, disodium guanylate, potassium sorbate (preservative). 4d:T618,{\\n            \\\"@context\\\": \\\"http://schema.org\\\",\\n            \\\"@type\\\": \\\"Product\\\",\\n        \"])",
+      "price": "$20",
+      "productId": "3569",
+      "ingredientSource": "html",
+      "productUrl": "https://www.sayweee.com/en/product/Haidilao-Hot-Pot-Tomato-Soup-Base/3569",
+      "scannedAt": "2026-01-25T08:41:11.338Z",
+      "analysis": {
+        "isVegetarian": true,
+        "hasRestrictedIngredients": true,
+        "restrictedFound": [
+          "onions"
+        ],
+        "nonVegFound": []
+      }
     }
   ],
   "noIngredients": [
     {
-      "title": "【25% off】Ding&#x27;s Kitchen: Set (VF) 1 each",
-      "images": [
-        "https://img06.weeecdn.com/item/image/109/143/581966C066E651C1.jpg"
-      ],
-      "price": "$20",
-      "productId": "693",
-      "productUrl": "https://www.sayweee.com/en/product/image/693",
-      "scannedAt": "2026-01-25T06:33:17.377Z"
-    },
-    {
-      "title": "Sour Beef Stew Seasoning 160 g",
+      "title": "LKK LESS SODIUM SOY SAUCE 64 fl.oz",
       "images": [],
       "price": "$20",
-      "productId": "8480",
-      "productUrl": "https://www.sayweee.com/en/product/Sour-Beef-Stew-Seasoning/8480",
-      "scannedAt": "2026-01-25T06:33:17.761Z"
+      "productId": "111519",
+      "productUrl": "https://www.sayweee.com/en/product/LKK-LESS-SODIUM-SOY-SAUCE/111519",
+      "scannedAt": "2026-01-25T08:40:41.389Z"
     },
     {
-      "title": "熏猪脚 smoked seasoned pork feet 1lb/包",
-      "images": [
-        "https://img06.weeecdn.com/item/image/825/043/169D7FF66ED6D243.jpeg"
-      ],
+      "title": "Lee Kum Kee 100% Pure Sesame Oil Product of Japan 7.2 fl.oz",
+      "images": [],
       "price": "$20",
-      "productId": "105",
-      "productUrl": "https://www.sayweee.com/en/product/image/105",
-      "scannedAt": "2026-01-25T06:33:19.234Z"
+      "productId": "111913",
+      "productUrl": "https://www.sayweee.com/en/product/Lee-Kum-Kee-100-Pure-Sesame-Oil-Product-of-Japan/111913",
+      "scannedAt": "2026-01-25T08:41:00.174Z"
+    },
+    {
+      "title": "Little Sheep Artificial Lamb Flavor Soup Base 130 g",
+      "images": [],
+      "price": "$20",
+      "productId": "112356",
+      "productUrl": "https://www.sayweee.com/en/product/Little-Sheep-Artificial-Lamb-Flavor-Soup-Base/112356",
+      "scannedAt": "2026-01-25T08:41:00.542Z"
     },
     {
       "title": "Lee Kum Kee Honey Sriracha Sauce 20 oz",
@@ -200,55 +292,70 @@
       "price": "$20",
       "productId": "108116",
       "productUrl": "https://www.sayweee.com/en/product/Lee-Kum-Kee-Honey-Sriracha-Sauce/108116",
-      "scannedAt": "2026-01-25T06:33:19.877Z"
+      "scannedAt": "2026-01-25T08:41:00.996Z"
     },
     {
-      "title": "Snacks and flowers 1 each",
-      "images": [
-        "https://img06.weeecdn.com/item/image/857/050/303F0C34FF976BF.jpg"
-      ],
-      "price": "$20",
-      "productId": "617",
-      "productUrl": "https://www.sayweee.com/en/product/image/617",
-      "scannedAt": "2026-01-25T06:33:21.512Z"
-    },
-    {
-      "title": "Roasted Eel 14oz",
-      "images": [
-        "https://img06.weeecdn.com/item/image/252/583/2342546FAA427CF2.jpeg"
-      ],
-      "price": "$20",
-      "productId": "188",
-      "productUrl": "https://www.sayweee.com/en/product/image/188",
-      "scannedAt": "2026-01-25T06:33:33.409Z"
-    },
-    {
-      "title": "【20% off】La Farfalla Bakery :Restaurant Set (T） 1 each",
-      "images": [
-        "https://img06.weeecdn.com/item/image/974/960/69D8963BBCE85407.jpg"
-      ],
-      "price": "$20",
-      "productId": "851",
-      "productUrl": "https://www.sayweee.com/en/product/image/851",
-      "scannedAt": "2026-01-25T06:33:47.969Z"
-    },
-    {
-      "title": "South Word Brand Yellow Rock Sugar 14 oz",
+      "title": "Laoganma Spicy Crispy Chili Oil 210 g",
       "images": [],
       "price": "$20",
-      "productId": "11061",
-      "productUrl": "https://www.sayweee.com/en/product/South-Word-Brand-Yellow-Rock-Sugar/11061",
-      "scannedAt": "2026-01-25T06:33:48.555Z"
+      "productId": "36443",
+      "productUrl": "https://www.sayweee.com/en/product/Laoganma-Spicy-Crispy-Chili-Oil/36443",
+      "scannedAt": "2026-01-25T08:41:01.341Z"
     },
     {
-      "title": "2016第九周 02/25取卡-03/02还卡  Monterey Bay水族馆票",
+      "title": "Lee Kum Kee Premium Soy Sauce 500 ml",
       "images": [
-        "https://img06.weeecdn.com/item/image/759/391/73AA97F1DAF843BF.jpeg"
+        "https://img06.weeecdn.com/item/image/032/574/382B96CE331035A.jpg"
       ],
       "price": "$20",
-      "productId": "418",
-      "productUrl": "https://www.sayweee.com/en/product/image/418",
-      "scannedAt": "2026-01-25T06:33:49.773Z"
+      "productId": "97787",
+      "productUrl": "https://www.sayweee.com/en/product/Lee-Kum-Kee-Premium-Soy-Sauce/97787",
+      "scannedAt": "2026-01-25T08:41:04.130Z"
+    },
+    {
+      "title": "Oldman Que Huong Brand Pho Spice Seasoning 1.5 oz",
+      "images": [
+        "https://img06.weeecdn.com/item/image/282/058/1A65D54CB1CA0C0B.jpg",
+        "https://img06.weeecdn.com/item/image/597/854/1278A3CFFCCA8585.jpg",
+        "https://img06.weeecdn.com/item/image/883/631/372ACE7B5B9178A6.jpg",
+        "https://img06.weeecdn.com/item/image/389/145/2543D79256DA46BE.jpg"
+      ],
+      "price": "$20",
+      "productId": "45772",
+      "productUrl": "https://www.sayweee.com/en/product/Oldman-Que-Huong-Brand-Pho-Spice-Seasoning/45772",
+      "scannedAt": "2026-01-25T08:41:10.207Z"
+    },
+    {
+      "title": "Knorr Tamarind Soup Mix 1.4 oz",
+      "images": [],
+      "price": "$20",
+      "productId": "63395",
+      "productUrl": "https://www.sayweee.com/en/product/Knorr-Tamarind-Soup-Mix/63395",
+      "scannedAt": "2026-01-25T08:41:10.611Z"
+    },
+    {
+      "title": "White Pepper Powder 32 g",
+      "images": [],
+      "price": "$20",
+      "productId": "53078",
+      "productUrl": "https://www.sayweee.com/en/product/White-Pepper-Powder/53078",
+      "scannedAt": "2026-01-25T08:41:10.960Z"
+    },
+    {
+      "title": "Haorenjia Seasoning for Mapo Tofu 80 g",
+      "images": [],
+      "price": "$20",
+      "productId": "27692",
+      "productUrl": "https://www.sayweee.com/en/product/Haorenjia-Seasoning-for-Mapo-Tofu/27692",
+      "scannedAt": "2026-01-25T08:41:11.682Z"
+    },
+    {
+      "title": "Lee Kum Kee Pure Sesame Oil 55.7 fl.oz",
+      "images": [],
+      "price": "$20",
+      "productId": "2049",
+      "productUrl": "https://www.sayweee.com/en/product/Lee-Kum-Kee-Pure-Sesame-Oil/2049",
+      "scannedAt": "2026-01-25T08:41:12.061Z"
     }
   ]
 }
