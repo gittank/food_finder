@@ -1,0 +1,111 @@
+{
+  "query": "sauce",
+  "scannedAt": "2026-01-25T06:59:38.367Z",
+  "suitable": [
+    {
+      "title": "Kewpie Mayonnaise Tube 450 g",
+      "images": [
+        "https://img06.weeecdn.com/item/image/396/234/EB71C69367A75AB.jpg",
+        "https://img06.weeecdn.com/item/image/906/214/9CAF5E59D14DA0A.jpg",
+        "https://img06.weeecdn.com/item/image/110/558/5D9C2D18686E1BFD.jpg",
+        "https://img06.weeecdn.com/item/image/377/008/68ED258A6E374DC.jpg",
+        "https://img06.weeecdn.com/item/image/633/440/3FDB8F69DCE2F64C.jpg",
+        "https://img06.weeecdn.com/item/image/656/580/476E119C8888DD0.jpg",
+        "https://img06.weeecdn.com/item/image/653/635/4B6E02854502CA46.jpg",
+        "https://img06.weeecdn.com/item/image/140/461/411DF0A49C2CD508.jpg",
+        "https://img06.weeecdn.com/item/image/836/518/1B1EB0C8DF842C3C.jpg",
+        "https://img06.weeecdn.com/item/image/976/250/433CE2166A363C3.jpg",
+        "https://img06.weeecdn.com/item/image/984/347/21BCFCF9C8B3A384.jpg",
+        "https://img06.weeecdn.com/item/image/135/067/145BEC1E38CB3F5A.jpg",
+        "https://img06.weeecdn.com/item/image/443/877/D5B55FE2181D327.jpg",
+        "https://img06.weeecdn.com/item/image/766/076/2A8CAC3C6151546A.jpg",
+        "https://img06.weeecdn.com/item/image/896/632/5C194834FDC080A9.jpg"
+      ],
+      "ingredients": "WATER, SUGAR, SOY SAUCE (WATER, SOYBEANS, SALT, CORN STARCH), SALT MODIFIED CORN STARCH, YEAST EXTRACT (YEAST EXTRACT, SALT, WATER), CARAMEL COLOR, DRIED MUSHROOMS",
+      "price": "$20",
+      "productId": "52753",
+      "ocrConfidence": 93,
+      "ocrImageUrl": "https://img06.weeecdn.com/item/image/656/580/476E119C8888DD0.jpg",
+      "ingredientSource": "ocr",
+      "productUrl": "https://www.sayweee.com/en/product/Kewpie-Mayonnaise-Tube/52753",
+      "scannedAt": "2026-01-25T06:59:49.995Z",
+      "analysis": {
+        "isVegetarian": true,
+        "hasRestrictedIngredients": false,
+        "restrictedFound": [],
+        "nonVegFound": []
+      }
+    },
+    {
+      "title": "ISHIYA  White Chocolate Cookies 12pcs 1 box",
+      "images": [
+        "https://img06.weeecdn.com/item/image/208/354/4CBDEB1B84FB0EA9.jpeg",
+        "https://img06.weeecdn.com/item/image/112/631/5159C22DDB9C4AE2.jpeg",
+        "https://img06.weeecdn.com/item/image/998/125/CB9DECAD6BEDBAD.jpeg",
+        "https://img06.weeecdn.com/item/image/862/777/7B2562C8FA1C0617.jpeg",
+        "https://img06.weeecdn.com/item/image/271/972/131670DD9DE4B090.jpeg",
+        "https://img06.weeecdn.com/item/image/509/068/CD8B71EA0C27004.jpeg",
+        "https://img06.weeecdn.com/item/image/879/319/425BD0376E98C7F3.jpeg"
+      ],
+      "ingredients": "- Sugar , liquid 12servings per container Ieqqg white, flour, Serving Size 1 Piece whole milk powder, . processed oils Calories 57 and fas , cocoa butter, %Daily valug cream flavoring Total Fat 34g 6% I Contains: Saturated Fat Og 0% ea, da oo, Total Carbs 5.79 i Manufacturer: rotein 10g 2% [SHIYA CO., LTD . Address: The % Daily Value (DV) tells I 5_11_ : You how much a nutrient in 3 iL 36 Miyanasaws a serving of food -Jo, Nishi-ku, contributes to a daily diet. [Sapporo, Hokkaido 2,200 calories a day is used I Country of Origin : for general nutrition advice.I JAPAN Daily Value (DV) not Best If Used By: established. (YYYY-MM-DD) CALIFORNIA PROPOSITION A65 WARNINGA WARNING: This product contains chemicals known to the State of California to cause cancer and birth defects or other reproductive harm. or more information: www.P65Warnings.ca.gov",
+      "price": "$20",
+      "productId": "2206941",
+      "ocrConfidence": 82,
+      "ocrImageUrl": "https://img06.weeecdn.com/item/image/879/319/425BD0376E98C7F3.jpeg",
+      "ingredientSource": "ocr",
+      "productUrl": "https://www.sayweee.com/en/product/ISHIYA-White-Chocolate-Cookies-12pcs/2206941",
+      "scannedAt": "2026-01-25T07:00:04.997Z",
+      "analysis": {
+        "isVegetarian": true,
+        "hasRestrictedIngredients": false,
+        "restrictedFound": [],
+        "nonVegFound": []
+      }
+    }
+  ],
+  "unsuitable": [
+    {
+      "title": "S&amp;B Umami Topping Crunchy Garlic with Chili Oil, Mild 3.88 oz",
+      "images": [
+        "https://img06.weeecdn.com/item/image/135/067/145BEC1E38CB3F5A.jpg",
+        "https://img06.weeecdn.com/item/image/443/877/D5B55FE2181D327.jpg",
+        "https://img06.weeecdn.com/item/image/766/076/2A8CAC3C6151546A.jpg",
+        "https://img06.weeecdn.com/item/image/896/632/5C194834FDC080A9.jpg"
+      ],
+      "ingredients": "Corn oil, Chili pepper, Fried gar sesame oll, Monosodium glutamate, Onion powder il Sugar, Soy sauce powder (Soy sauce [Soybeans : £2tSalt], Dextrin, Salt), Chil paste (Chili pepper >All Rice), Fried onion, Almond, Ground sesame seeds",
+      "price": "$20",
+      "productId": "83230",
+      "ocrConfidence": 74,
+      "ocrImageUrl": "https://img06.weeecdn.com/item/image/896/632/5C194834FDC080A9.jpg",
+      "ingredientSource": "ocr",
+      "productUrl": "https://www.sayweee.com/en/product/S-B-Umami-Topping-Crunchy-Garlic-with-Chili-Oil--Mild/83230",
+      "scannedAt": "2026-01-25T06:59:55.394Z",
+      "analysis": {
+        "isVegetarian": true,
+        "hasRestrictedIngredients": true,
+        "restrictedFound": [
+          "onions"
+        ],
+        "nonVegFound": []
+      }
+    }
+  ],
+  "noIngredients": [
+    {
+      "title": "Shinmei Imported Japanese Koshihikari Rice 11 lb",
+      "images": [],
+      "price": "$20",
+      "productId": "64249",
+      "productUrl": "https://www.sayweee.com/en/product/Shinmei-Imported-Japanese-Koshihikari-Rice/64249",
+      "scannedAt": "2026-01-25T06:59:50.471Z"
+    },
+    {
+      "title": "Sekka Premium Japanese Medium Grain Rice 15 lb",
+      "images": [],
+      "price": "$20",
+      "productId": "81224",
+      "productUrl": "https://www.sayweee.com/en/product/Sekka-Premium-Japanese-Medium-Grain-Rice/81224",
+      "scannedAt": "2026-01-25T06:59:55.913Z"
+    }
+  ]
+}

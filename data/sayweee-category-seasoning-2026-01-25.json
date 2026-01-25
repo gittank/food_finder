@@ -1,0 +1,254 @@
+{
+  "query": "category:seasoning",
+  "scannedAt": "2026-01-25T06:33:08.190Z",
+  "suitable": [
+    {
+      "title": "Sichuan Style Hot &amp; Spicy Soup Base (Malatang) - Lee Kum Kee 7 oz",
+      "images": [
+        "https://img06.weeecdn.com/item/image/679/140/782BA972D5D2BC72.jpg",
+        "https://img06.weeecdn.com/item/image/679/140/782BA972D5D2BC72.jpg",
+        "https://img06.weeecdn.com/item/image/467/614/382843D0FA04E662.jpg",
+        "https://img06.weeecdn.com/item/image/759/804/54428150220E203C.jpg",
+        "https://img06.weeecdn.com/item/image/905/221/2AFD704748400D6A.jpg"
+      ],
+      "ingredients": "SALTED CHILI PEPPERS (CHILI PEPPERS, SALT), SOY SAUCE (WATER, SALT, SOYBEANS, WHEAT FLOUR), SOYBEAN OIL, DRIED CHILI PEPPERS, SALT, MONOSODIUM GLUTAMATE AND DISODIUM 5-INOSINATE AND DISODIUM 5'-GUANYLATE AS FLAVOR ENHANCERS, SICHUAN PEPPERS, FERMENTED SOYBEAN PASTE (WATER, SALT, SOYBEANS, WHEAT FLOUR), SUGAR, SPICE",
+      "price": "$20",
+      "productId": "40267",
+      "ocrConfidence": 93,
+      "ocrImageUrl": "https://img06.weeecdn.com/item/image/905/221/2AFD704748400D6A.jpg",
+      "ingredientSource": "ocr",
+      "productUrl": "https://www.sayweee.com/en/product/Lee-Kum-Kee-Sichuan-Style-Hot-and-Spicy-Soup-Base/40267",
+      "scannedAt": "2026-01-25T06:33:16.722Z",
+      "analysis": {
+        "isVegetarian": true,
+        "hasRestrictedIngredients": false,
+        "restrictedFound": [],
+        "nonVegFound": []
+      }
+    },
+    {
+      "title": "LKK LESS SODIUM SOY SAUCE 64 fl.oz",
+      "images": [
+        "https://img06.weeecdn.com/item/image/552/587/2D602F831E2C8EB8.jpg",
+        "https://img06.weeecdn.com/item/image/843/837/4CAC5DF162FE6BDD.jpg",
+        "https://img06.weeecdn.com/item/image/522/520/61C47D1041EC329A.jpg",
+        "https://img06.weeecdn.com/item/image/360/164/6889C08D2103A743.jpg",
+        "https://img06.weeecdn.com/item/image/476/769/676826F15E3FBE9D.jpg",
+        "https://img06.weeecdn.com/item/image/805/144/3D7DB6D7003BDDBD.jpg",
+        "https://img06.weeecdn.com/item/image/609/781/22D501C835B03782.jpg",
+        "https://img06.weeecdn.com/item/image/165/606/403FEB240C41366C.jpg"
+      ],
+      "ingredients": "WATER, SOYBEANS, WHEAT, SALT, LACTIC ACID,",
+      "price": "$20",
+      "productId": "111519",
+      "ocrConfidence": 94,
+      "ocrImageUrl": "https://img06.weeecdn.com/item/image/360/164/6889C08D2103A743.jpg",
+      "ingredientSource": "ocr",
+      "productUrl": "https://www.sayweee.com/en/product/LKK-LESS-SODIUM-SOY-SAUCE/111519",
+      "scannedAt": "2026-01-25T06:33:40.331Z",
+      "analysis": {
+        "isVegetarian": true,
+        "hasRestrictedIngredients": false,
+        "restrictedFound": [],
+        "nonVegFound": []
+      }
+    },
+    {
+      "title": "Marukan Seasoned Vinegar (Sushi Vinegar) 710 ml",
+      "images": [
+        "https://img06.weeecdn.com/item/image/657/150/4A02F4D89A529A46.jpg",
+        "https://img06.weeecdn.com/item/image/996/934/7349CBE5499871A3.jpg",
+        "https://img06.weeecdn.com/item/image/727/979/141536FA0EE36A22.jpg",
+        "https://img06.weeecdn.com/item/image/321/023/68F759E0F24DB109.jpg",
+        "https://img06.weeecdn.com/item/image/675/646/5F9413DF5287EBD1.jpg",
+        "https://img06.weeecdn.com/item/image/556/348/721B4DA5ADF83D5D.jpg",
+        "https://img06.weeecdn.com/item/image/529/059/7B5D69F37A7A411E.jpg",
+        "https://img06.weeecdn.com/item/image/583/214/146520A833ED3C52.jpg",
+        "https://img06.weeecdn.com/item/image/991/837/5A997C29B2819D49.jpg",
+        "https://img06.weeecdn.com/item/image/434/460/38FA862734A386FA.jpg",
+        "https://img06.weeecdn.com/item/image/991/735/70555A7822834A72.jpg",
+        "https://img06.weeecdn.com/item/image/737/483/7CC7F62018C2297E.jpg",
+        "https://img06.weeecdn.com/item/image/140/461/411DF0A49C2CD508.jpg",
+        "https://img06.weeecdn.com/item/image/836/518/1B1EB0C8DF842C3C.jpg",
+        "https://img06.weeecdn.com/item/image/976/250/433CE2166A363C3.jpg",
+        "https://img06.weeecdn.com/item/image/984/347/21BCFCF9C8B3A384.jpg",
+        "https://img06.weeecdn.com/item/image/284/673/4F7F2B10D4BD9A1A.jpg",
+        "https://img06.weeecdn.com/item/image/363/410/71D7D189A8DBEC2E.jpg",
+        "https://img06.weeecdn.com/item/image/423/289/3486D113EDD5F4AD.jpg",
+        "https://img06.weeecdn.com/item/image/502/736/4CE63A2C757F2E72.jpg",
+        "https://img06.weeecdn.com/item/image/135/067/145BEC1E38CB3F5A.jpg",
+        "https://img06.weeecdn.com/item/image/443/877/D5B55FE2181D327.jpg",
+        "https://img06.weeecdn.com/item/image/766/076/2A8CAC3C6151546A.jpg",
+        "https://img06.weeecdn.com/item/image/896/632/5C194834FDC080A9.jpg"
+      ],
+      "ingredients": "RICE VINEGAR, WATER, SUGAR. SALT DILUTED WITH WATER T0 4.1% ACIDITY (41 GRAIN)",
+      "price": "$20",
+      "productId": "102956",
+      "ocrConfidence": 76,
+      "ocrImageUrl": "https://img06.weeecdn.com/item/image/675/646/5F9413DF5287EBD1.jpg",
+      "ingredientSource": "ocr",
+      "productUrl": "https://www.sayweee.com/en/product/Marukan-Seasoned-Vinegar--Sushi-Vinegar/102956",
+      "scannedAt": "2026-01-25T06:33:59.708Z",
+      "analysis": {
+        "isVegetarian": true,
+        "hasRestrictedIngredients": false,
+        "restrictedFound": [],
+        "nonVegFound": []
+      }
+    }
+  ],
+  "unsuitable": [
+    {
+      "title": "Ajinomoto Hondashi Bonito Soup Stock 2.11 oz",
+      "images": [
+        "https://img06.weeecdn.com/item/image/471/380/7BA8BA674E0CAC79.jpg",
+        "https://img06.weeecdn.com/item/image/810/297/2187D9DD6AF1A382.jpg",
+        "https://img06.weeecdn.com/item/image/328/317/D57723CB5DB91DD.jpg",
+        "https://img06.weeecdn.com/item/image/828/984/2C69A96D78E81D41.jpg",
+        "https://img06.weeecdn.com/item/image/588/976/11528D4EAE82C73C.jpg",
+        "https://img06.weeecdn.com/item/image/284/673/4F7F2B10D4BD9A1A.jpg",
+        "https://img06.weeecdn.com/item/image/363/410/71D7D189A8DBEC2E.jpg",
+        "https://img06.weeecdn.com/item/image/423/289/3486D113EDD5F4AD.jpg",
+        "https://img06.weeecdn.com/item/image/502/736/4CE63A2C757F2E72.jpg",
+        "https://img06.weeecdn.com/item/image/140/461/411DF0A49C2CD508.jpg",
+        "https://img06.weeecdn.com/item/image/836/518/1B1EB0C8DF842C3C.jpg",
+        "https://img06.weeecdn.com/item/image/976/250/433CE2166A363C3.jpg",
+        "https://img06.weeecdn.com/item/image/984/347/21BCFCF9C8B3A384.jpg",
+        "https://img06.weeecdn.com/item/image/135/067/145BEC1E38CB3F5A.jpg",
+        "https://img06.weeecdn.com/item/image/443/877/D5B55FE2181D327.jpg",
+        "https://img06.weeecdn.com/item/image/766/076/2A8CAC3C6151546A.jpg",
+        "https://img06.weeecdn.com/item/image/896/632/5C194834FDC080A9.jpg"
+      ],
+      "ingredients": "SALT, MONOSODIUM GLUTAMATE, LACTOSE (MILK), SUGAR, DRIED BONITO TUNA, DISODIUM INOSINATE, CONTAINS 2% OR LESS OF: YEAST EXTRACT, BONITO TUNA BROTH, DISODIUM SUCCINATE, BONITO TUNA EXTRACT, XYLOSE, MALTOSE, DEXTROSE.",
+      "price": "$20",
+      "productId": "105129",
+      "ocrConfidence": 95,
+      "ocrImageUrl": "https://img06.weeecdn.com/item/image/588/976/11528D4EAE82C73C.jpg",
+      "ingredientSource": "ocr",
+      "productUrl": "https://www.sayweee.com/en/product/Ajinomoto-Hondashi-Bonito-Soup-Stock/105129",
+      "scannedAt": "2026-01-25T06:33:30.272Z",
+      "analysis": {
+        "isVegetarian": false,
+        "hasRestrictedIngredients": false,
+        "restrictedFound": [],
+        "nonVegFound": [
+          "tuna",
+          "broth"
+        ]
+      }
+    },
+    {
+      "title": "Ajinomoto Hondashi Bonito Soup Stock 120 g",
+      "images": [
+        "https://img06.weeecdn.com/item/image/471/380/7BA8BA674E0CAC79.jpg",
+        "https://img06.weeecdn.com/item/image/810/297/2187D9DD6AF1A382.jpg",
+        "https://img06.weeecdn.com/item/image/328/317/D57723CB5DB91DD.jpg",
+        "https://img06.weeecdn.com/item/image/828/984/2C69A96D78E81D41.jpg",
+        "https://img06.weeecdn.com/item/image/588/976/11528D4EAE82C73C.jpg"
+      ],
+      "ingredients": "SALT, MONOSODIUM GLUTAMATE, LACTOSE (MILK), SUGAR, DRIED BONITO TUNA, DISODIUM INOSINATE, CONTAINS 2% OR LESS OF: YEAST EXTRACT, BONITO TUNA BROTH, DISODIUM SUCCINATE, BONITO TUNA EXTRACT, XYLOSE, MALTOSE, DEXTROSE.",
+      "price": "$20",
+      "productId": "95681",
+      "ocrConfidence": 95,
+      "ocrImageUrl": "https://img06.weeecdn.com/item/image/588/976/11528D4EAE82C73C.jpg",
+      "ingredientSource": "ocr",
+      "productUrl": "https://www.sayweee.com/en/product/Ajinomoto-Hondashi-Bonito-Soup-Stock/95681",
+      "scannedAt": "2026-01-25T06:33:46.421Z",
+      "analysis": {
+        "isVegetarian": false,
+        "hasRestrictedIngredients": false,
+        "restrictedFound": [],
+        "nonVegFound": [
+          "tuna",
+          "broth"
+        ]
+      }
+    }
+  ],
+  "noIngredients": [
+    {
+      "title": "【25% off】Ding&#x27;s Kitchen: Set (VF) 1 each",
+      "images": [
+        "https://img06.weeecdn.com/item/image/109/143/581966C066E651C1.jpg"
+      ],
+      "price": "$20",
+      "productId": "693",
+      "productUrl": "https://www.sayweee.com/en/product/image/693",
+      "scannedAt": "2026-01-25T06:33:17.377Z"
+    },
+    {
+      "title": "Sour Beef Stew Seasoning 160 g",
+      "images": [],
+      "price": "$20",
+      "productId": "8480",
+      "productUrl": "https://www.sayweee.com/en/product/Sour-Beef-Stew-Seasoning/8480",
+      "scannedAt": "2026-01-25T06:33:17.761Z"
+    },
+    {
+      "title": "熏猪脚 smoked seasoned pork feet 1lb/包",
+      "images": [
+        "https://img06.weeecdn.com/item/image/825/043/169D7FF66ED6D243.jpeg"
+      ],
+      "price": "$20",
+      "productId": "105",
+      "productUrl": "https://www.sayweee.com/en/product/image/105",
+      "scannedAt": "2026-01-25T06:33:19.234Z"
+    },
+    {
+      "title": "Lee Kum Kee Honey Sriracha Sauce 20 oz",
+      "images": [],
+      "price": "$20",
+      "productId": "108116",
+      "productUrl": "https://www.sayweee.com/en/product/Lee-Kum-Kee-Honey-Sriracha-Sauce/108116",
+      "scannedAt": "2026-01-25T06:33:19.877Z"
+    },
+    {
+      "title": "Snacks and flowers 1 each",
+      "images": [
+        "https://img06.weeecdn.com/item/image/857/050/303F0C34FF976BF.jpg"
+      ],
+      "price": "$20",
+      "productId": "617",
+      "productUrl": "https://www.sayweee.com/en/product/image/617",
+      "scannedAt": "2026-01-25T06:33:21.512Z"
+    },
+    {
+      "title": "Roasted Eel 14oz",
+      "images": [
+        "https://img06.weeecdn.com/item/image/252/583/2342546FAA427CF2.jpeg"
+      ],
+      "price": "$20",
+      "productId": "188",
+      "productUrl": "https://www.sayweee.com/en/product/image/188",
+      "scannedAt": "2026-01-25T06:33:33.409Z"
+    },
+    {
+      "title": "【20% off】La Farfalla Bakery :Restaurant Set (T） 1 each",
+      "images": [
+        "https://img06.weeecdn.com/item/image/974/960/69D8963BBCE85407.jpg"
+      ],
+      "price": "$20",
+      "productId": "851",
+      "productUrl": "https://www.sayweee.com/en/product/image/851",
+      "scannedAt": "2026-01-25T06:33:47.969Z"
+    },
+    {
+      "title": "South Word Brand Yellow Rock Sugar 14 oz",
+      "images": [],
+      "price": "$20",
+      "productId": "11061",
+      "productUrl": "https://www.sayweee.com/en/product/South-Word-Brand-Yellow-Rock-Sugar/11061",
+      "scannedAt": "2026-01-25T06:33:48.555Z"
+    },
+    {
+      "title": "2016第九周 02/25取卡-03/02还卡  Monterey Bay水族馆票",
+      "images": [
+        "https://img06.weeecdn.com/item/image/759/391/73AA97F1DAF843BF.jpeg"
+      ],
+      "price": "$20",
+      "productId": "418",
+      "productUrl": "https://www.sayweee.com/en/product/image/418",
+      "scannedAt": "2026-01-25T06:33:49.773Z"
+    }
+  ]
+}
