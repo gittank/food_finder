@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Food Finder - Sayweee Products</title>
+  <title>Food Finder</title>
   <style>
     * {
       box-sizing: border-box;
@@ -35,31 +35,6 @@
       font-size: 1rem;
     }
 
-    .stats {
-      display: flex;
-      justify-content: center;
-      gap: 1rem;
-      margin-top: 1rem;
-      flex-wrap: wrap;
-    }
-
-    .stat {
-      background: rgba(255,255,255,0.2);
-      padding: 0.5rem 1rem;
-      border-radius: 20px;
-      cursor: pointer;
-      transition: background 0.2s;
-    }
-
-    .stat:hover {
-      background: rgba(255,255,255,0.3);
-    }
-
-    .stat.active {
-      background: white;
-      color: #1565c0;
-    }
-
     .container {
       max-width: 1400px;
       margin: 0 auto;
@@ -75,6 +50,7 @@
       display: flex;
       gap: 1rem;
       flex-wrap: wrap;
+      align-items: center;
     }
 
     .filters input {
@@ -90,6 +66,7 @@
       display: flex;
       gap: 0.5rem;
       margin-bottom: 1.5rem;
+      flex-wrap: wrap;
     }
 
     .tab {
@@ -137,11 +114,27 @@
       box-shadow: 0 2px 4px rgba(0,0,0,0.1);
       cursor: pointer;
       transition: transform 0.2s, box-shadow 0.2s;
+      position: relative;
     }
 
     .product-card:hover {
       transform: translateY(-4px);
       box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+
+    .product-card.selected {
+      outline: 3px solid #1565c0;
+    }
+
+    .product-checkbox {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      width: 24px;
+      height: 24px;
+      cursor: pointer;
+      z-index: 10;
+      accent-color: #1565c0;
     }
 
     .product-image {
@@ -150,6 +143,7 @@
       object-fit: contain;
       background: #fafafa;
       padding: 1rem;
+      padding-left: 2.5rem;
     }
 
     .product-info {
@@ -181,6 +175,11 @@
       margin-top: 0.5rem;
     }
 
+    .badge-featured {
+      background: #fff8e1;
+      color: #f57f17;
+    }
+
     .badge-suitable {
       background: #e8f5e9;
       color: #2e7d32;
@@ -200,6 +199,105 @@
       background: #e3f2fd;
       color: #1565c0;
       font-size: 0.7rem;
+    }
+
+    .badge-source {
+      background: #f3e5f5;
+      color: #6a1b9a;
+      font-size: 0.7rem;
+    }
+
+    /* Action bar */
+    .action-bar {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: white;
+      padding: 1rem 2rem;
+      box-shadow: 0 -4px 12px rgba(0,0,0,0.15);
+      display: none;
+      align-items: center;
+      justify-content: space-between;
+      z-index: 100;
+    }
+
+    .action-bar.active {
+      display: flex;
+    }
+
+    .action-bar-left {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .selected-count {
+      font-weight: 600;
+      color: #1565c0;
+    }
+
+    .action-buttons {
+      display: flex;
+      gap: 0.5rem;
+    }
+
+    .btn {
+      display: inline-block;
+      background: #1565c0;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      border-radius: 4px;
+      text-decoration: none;
+      font-weight: 500;
+      border: none;
+      cursor: pointer;
+      font-size: 0.9rem;
+    }
+
+    .btn:hover {
+      background: #0d47a1;
+    }
+
+    .btn-secondary {
+      background: #f5f5f5;
+      color: #333;
+    }
+
+    .btn-secondary:hover {
+      background: #e0e0e0;
+    }
+
+    .btn-success {
+      background: #2e7d32;
+    }
+
+    .btn-success:hover {
+      background: #1b5e20;
+    }
+
+    .btn-danger {
+      background: #c62828;
+    }
+
+    .btn-danger:hover {
+      background: #b71c1c;
+    }
+
+    .btn-warning {
+      background: #e65100;
+    }
+
+    .btn-warning:hover {
+      background: #bf360c;
+    }
+
+    .btn-featured {
+      background: #f57f17;
+    }
+
+    .btn-featured:hover {
+      background: #e65100;
     }
 
     /* Modal */
@@ -317,31 +415,7 @@
       border-top: 1px solid #eee;
       display: flex;
       gap: 1rem;
-    }
-
-    .btn {
-      display: inline-block;
-      background: #1565c0;
-      color: white;
-      padding: 0.75rem 1.5rem;
-      border-radius: 4px;
-      text-decoration: none;
-      font-weight: 500;
-      border: none;
-      cursor: pointer;
-    }
-
-    .btn:hover {
-      background: #0d47a1;
-    }
-
-    .btn-secondary {
-      background: #f5f5f5;
-      color: #333;
-    }
-
-    .btn-secondary:hover {
-      background: #e0e0e0;
+      flex-wrap: wrap;
     }
 
     .no-results {
@@ -361,16 +435,50 @@
       flex: 1;
       min-width: 150px;
     }
+
+    /* Toast notification */
+    .toast {
+      position: fixed;
+      bottom: 100px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: #333;
+      color: white;
+      padding: 1rem 2rem;
+      border-radius: 8px;
+      z-index: 2000;
+      display: none;
+    }
+
+    .toast.active {
+      display: block;
+    }
+
+    .toast.success {
+      background: #2e7d32;
+    }
+
+    .toast.error {
+      background: #c62828;
+    }
+
+    /* Add padding at bottom for action bar */
+    body.has-selection {
+      padding-bottom: 80px;
+    }
   </style>
 </head>
 <body>
   <header>
-    <h1>Sayweee Food Finder</h1>
+    <h1>Food Finder</h1>
     <p>Vegetarian products without eggs, onions, garlic, scallions, or leeks</p>
   </header>
 
   <div class="container">
     <div class="tabs">
+      <button class="tab" data-tab="featured">
+        Featured <span class="count" id="featured-count">0</span>
+      </button>
       <button class="tab active" data-tab="suitable">
         Suitable <span class="count" id="suitable-count">0</span>
       </button>
@@ -384,12 +492,34 @@
 
     <div class="filters">
       <input type="text" id="search" placeholder="Search products...">
+      <select id="source-filter" style="padding: 0.75rem; border: 1px solid #ddd; border-radius: 4px; font-size: 1rem;">
+        <option value="">All Sources</option>
+      </select>
+      <button class="btn btn-secondary" onclick="selectAll()">Select All</button>
+      <button class="btn btn-secondary" onclick="selectNone()">Clear Selection</button>
     </div>
 
     <div class="products" id="products-grid">
       <!-- Products will be inserted here -->
     </div>
   </div>
+
+  <!-- Action bar for selected items -->
+  <div class="action-bar" id="action-bar">
+    <div class="action-bar-left">
+      <span class="selected-count"><span id="selected-count">0</span> selected</span>
+      <button class="btn btn-secondary" onclick="selectNone()">Clear</button>
+    </div>
+    <div class="action-buttons">
+      <button class="btn btn-featured" onclick="moveToCategory('featured')">Mark Featured</button>
+      <button class="btn btn-success" onclick="moveToCategory('suitable')">Mark Suitable</button>
+      <button class="btn btn-danger" onclick="moveToCategory('unsuitable')">Mark Unsuitable</button>
+      <button class="btn btn-warning" onclick="moveToCategory('noIngredients')">Mark Needs Review</button>
+    </div>
+  </div>
+
+  <!-- Toast notification -->
+  <div class="toast" id="toast"></div>
 
   <!-- Modal -->
   <div class="modal-overlay" id="modal">
@@ -425,17 +555,32 @@
           <h3>Restricted Ingredients Found</h3>
           <div class="restricted-list" id="modal-restricted">-</div>
         </div>
+
+        <div class="modal-section">
+          <h3>Edit Image URL</h3>
+          <div style="display: flex; gap: 0.5rem;">
+            <input type="text" id="modal-image-url" placeholder="Enter image URL..." style="flex: 1; padding: 0.5rem; border: 1px solid #ddd; border-radius: 4px;">
+            <button class="btn btn-secondary" onclick="updateProductImage()">Update</button>
+          </div>
+        </div>
       </div>
       <div class="modal-footer">
-        <a id="modal-link" href="#" target="_blank" class="btn">View on Sayweee</a>
+        <a id="modal-link" href="#" target="_blank" class="btn">View Product</a>
+        <button class="btn btn-featured" onclick="moveModalProductTo('featured')">Mark Featured</button>
+        <button class="btn btn-success" onclick="moveModalProductTo('suitable')">Mark Suitable</button>
+        <button class="btn btn-danger" onclick="moveModalProductTo('unsuitable')">Mark Unsuitable</button>
+        <button class="btn btn-warning" onclick="moveModalProductTo('noIngredients')">Needs Review</button>
       </div>
     </div>
   </div>
 
   <script>
-    let allData = { suitable: [], unsuitable: [], noIngredients: [] };
+    let allData = { featured: [], suitable: [], unsuitable: [], noIngredients: [] };
     let currentTab = 'suitable';
     let currentProducts = [];
+    let selectedProducts = new Set(); // Set of "source-id" keys
+    let pendingChanges = []; // Array of { product, fromCategory, toCategory }
+    let currentModalProduct = null;
 
     // Load data from API
     async function loadData() {
@@ -443,16 +588,37 @@
         const response = await fetch('/api/products');
         allData = await response.json();
 
-        document.getElementById('suitable-count').textContent = allData.suitable?.length || 0;
-        document.getElementById('unsuitable-count').textContent = allData.unsuitable?.length || 0;
-        document.getElementById('noingredients-count').textContent = allData.noIngredients?.length || 0;
+        // Populate source filter
+        const sources = new Set();
+        for (const cat of ['featured', 'suitable', 'unsuitable', 'noIngredients']) {
+          (allData[cat] || []).forEach(p => { if (p.source) sources.add(p.source); });
+        }
+        const select = document.getElementById('source-filter');
+        const currentValue = select.value;
+        select.innerHTML = '<option value="">All Sources</option>';
+        Array.from(sources).sort().forEach(s => {
+          select.innerHTML += `<option value="${s}">${s}</option>`;
+        });
+        select.value = currentValue;
 
-        showTab('suitable');
+        updateCounts();
+        showTab(currentTab);
       } catch (error) {
         console.error('Error loading data:', error);
         document.getElementById('products-grid').innerHTML =
           '<div class="no-results">Error loading products. Make sure the server is running.</div>';
       }
+    }
+
+    function updateCounts() {
+      document.getElementById('featured-count').textContent = allData.featured?.length || 0;
+      document.getElementById('suitable-count').textContent = allData.suitable?.length || 0;
+      document.getElementById('unsuitable-count').textContent = allData.unsuitable?.length || 0;
+      document.getElementById('noingredients-count').textContent = allData.noIngredients?.length || 0;
+    }
+
+    function getProductKey(product) {
+      return `${product.source}-${product.id}`;
     }
 
     function showTab(tab) {
@@ -465,6 +631,12 @@
 
       // Get products for current tab
       currentProducts = allData[tab] || [];
+
+      // Apply source filter
+      const sourceFilter = document.getElementById('source-filter').value;
+      if (sourceFilter) {
+        currentProducts = currentProducts.filter(p => p.source === sourceFilter);
+      }
 
       // Apply search filter if any
       const query = document.getElementById('search').value.toLowerCase();
@@ -487,10 +659,16 @@
       }
 
       grid.innerHTML = items.map((product, index) => {
+        const key = getProductKey(product);
+        const isSelected = selectedProducts.has(key);
+
         let badgeClass = 'badge-suitable';
         let badgeText = 'Vegetarian Friendly';
 
-        if (currentTab === 'unsuitable') {
+        if (currentTab === 'featured') {
+          badgeClass = 'badge-featured';
+          badgeText = 'Featured';
+        } else if (currentTab === 'unsuitable') {
           badgeClass = 'badge-unsuitable';
           const restricted = product.analysis?.restrictedFound || [];
           const nonVeg = product.analysis?.nonVegFound || [];
@@ -505,30 +683,179 @@
           : '';
 
         return `
-        <div class="product-card" onclick="openModal(${index})">
+        <div class="product-card ${isSelected ? 'selected' : ''}" data-key="${key}">
+          <input
+            type="checkbox"
+            class="product-checkbox"
+            ${isSelected ? 'checked' : ''}
+            onclick="toggleSelection(event, '${key}')"
+          >
           <img
             class="product-image"
             src="${product.imageUrl || 'https://via.placeholder.com/300x200?text=No+Image'}"
             alt="${product.title}"
             onerror="this.src='https://via.placeholder.com/300x200?text=No+Image'"
+            onclick="openModal(${index})"
           >
-          <div class="product-info">
+          <div class="product-info" onclick="openModal(${index})">
             <div class="product-title">${product.title || 'Unknown Product'}</div>
             <div class="product-price">${product.price || '-'}</div>
             <span class="badge ${badgeClass}">${badgeText}</span>
+            <span class="badge badge-source">${product.source || 'Unknown'}</span>
             ${ocrBadge}
           </div>
         </div>
       `}).join('');
     }
 
+    function toggleSelection(event, key) {
+      event.stopPropagation();
+      if (selectedProducts.has(key)) {
+        selectedProducts.delete(key);
+      } else {
+        selectedProducts.add(key);
+      }
+      updateSelectionUI();
+      renderProducts(currentProducts);
+    }
+
+    function selectAll() {
+      currentProducts.forEach(p => selectedProducts.add(getProductKey(p)));
+      updateSelectionUI();
+      renderProducts(currentProducts);
+    }
+
+    function selectNone() {
+      selectedProducts.clear();
+      updateSelectionUI();
+      renderProducts(currentProducts);
+    }
+
+    function updateSelectionUI() {
+      const count = selectedProducts.size;
+      document.getElementById('selected-count').textContent = count;
+      document.getElementById('action-bar').classList.toggle('active', count > 0);
+      document.body.classList.toggle('has-selection', count > 0);
+    }
+
+    async function moveToCategory(toCategory) {
+      if (selectedProducts.size === 0) return;
+
+      const changes = [];
+
+      // Find all selected products and their current categories
+      for (const key of selectedProducts) {
+        let found = false;
+        for (const fromCategory of ['featured', 'suitable', 'unsuitable', 'noIngredients']) {
+          const product = allData[fromCategory]?.find(p => getProductKey(p) === key);
+          if (product && fromCategory !== toCategory) {
+            changes.push({
+              productId: product.id,
+              source: product.source,
+              fromCategory,
+              toCategory
+            });
+            found = true;
+            break;
+          }
+        }
+      }
+
+      if (changes.length === 0) {
+        showToast('No changes to save', 'error');
+        return;
+      }
+
+      try {
+        const response = await fetch('/api/products/move', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ changes })
+        });
+
+        const result = await response.json();
+
+        if (response.ok) {
+          showToast(`Moved ${changes.length} product(s) to ${toCategory}`, 'success');
+          selectedProducts.clear();
+          updateSelectionUI();
+          // Reload data to reflect changes
+          await loadData();
+        } else {
+          showToast(result.error || 'Failed to save changes', 'error');
+        }
+      } catch (error) {
+        console.error('Error saving changes:', error);
+        showToast('Error saving changes', 'error');
+      }
+    }
+
+    async function moveModalProductTo(toCategory) {
+      if (!currentModalProduct) return;
+
+      const key = getProductKey(currentModalProduct);
+      let fromCategory = null;
+
+      // Find current category
+      for (const cat of ['featured', 'suitable', 'unsuitable', 'noIngredients']) {
+        if (allData[cat]?.find(p => getProductKey(p) === key)) {
+          fromCategory = cat;
+          break;
+        }
+      }
+
+      if (!fromCategory || fromCategory === toCategory) {
+        showToast('Product is already in this category', 'error');
+        return;
+      }
+
+      try {
+        const response = await fetch('/api/products/move', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            changes: [{
+              productId: currentModalProduct.id,
+              source: currentModalProduct.source,
+              fromCategory,
+              toCategory
+            }]
+          })
+        });
+
+        const result = await response.json();
+
+        if (response.ok) {
+          showToast(`Moved to ${toCategory}`, 'success');
+          closeModal();
+          await loadData();
+        } else {
+          showToast(result.error || 'Failed to move product', 'error');
+        }
+      } catch (error) {
+        console.error('Error moving product:', error);
+        showToast('Error moving product', 'error');
+      }
+    }
+
+    function showToast(message, type = '') {
+      const toast = document.getElementById('toast');
+      toast.textContent = message;
+      toast.className = 'toast active ' + type;
+      setTimeout(() => toast.classList.remove('active'), 3000);
+    }
+
     function openModal(index) {
       const product = currentProducts[index];
+      currentModalProduct = product;
+
       document.getElementById('modal-title').textContent = product.title || 'Unknown Product';
       document.getElementById('modal-price').textContent = product.price || '-';
-      document.getElementById('modal-source').textContent = product.ingredientSource === 'ocr'
-        ? `OCR (${Math.round(product.ocrConfidence || 0)}% confidence)`
-        : (product.ingredientSource || 'Unknown');
+      const sourceLabel = product.source || 'Unknown';
+      const ingredientMethod = product.ingredientSource === 'ocr'
+        ? ` (OCR ${Math.round(product.ocrConfidence || 0)}%)`
+        : '';
+      document.getElementById('modal-source').textContent = sourceLabel + ingredientMethod;
 
       // Main image
       const mainImg = document.getElementById('modal-main-image');
@@ -578,6 +905,7 @@
       // Link
       const link = document.getElementById('modal-link');
       link.href = product.productUrl || '#';
+      link.textContent = product.source ? `View on ${product.source}` : 'View Product';
 
       document.getElementById('modal').classList.add('active');
     }
@@ -590,6 +918,43 @@
 
     function closeModal() {
       document.getElementById('modal').classList.remove('active');
+      currentModalProduct = null;
+    }
+
+    async function updateProductImage() {
+      if (!currentModalProduct) return;
+
+      const imageUrl = document.getElementById('modal-image-url').value.trim();
+      if (!imageUrl) {
+        showToast('Please enter an image URL', 'error');
+        return;
+      }
+
+      try {
+        const response = await fetch('/api/products/update-image', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            productId: currentModalProduct.id,
+            source: currentModalProduct.source,
+            imageUrl
+          })
+        });
+
+        const result = await response.json();
+
+        if (response.ok) {
+          showToast('Image updated', 'success');
+          document.getElementById('modal-main-image').src = imageUrl;
+          document.getElementById('modal-image-url').value = '';
+          await loadData();
+        } else {
+          showToast(result.error || 'Failed to update image', 'error');
+        }
+      } catch (error) {
+        console.error('Error updating image:', error);
+        showToast('Error updating image', 'error');
+      }
     }
 
     // Tab click handlers
@@ -608,7 +973,12 @@
     });
 
     // Search filter
-    document.getElementById('search').addEventListener('input', (e) => {
+    document.getElementById('search').addEventListener('input', () => {
+      showTab(currentTab);
+    });
+
+    // Source filter
+    document.getElementById('source-filter').addEventListener('change', () => {
       showTab(currentTab);
     });
 

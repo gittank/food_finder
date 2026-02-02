@@ -12,7 +12,11 @@
     "serve": "ts-node src/server.ts",
     "ocr": "ts-node src/ocr-scan.ts",
     "sayweee": "ts-node src/sayweee-lookup.ts",
-    "sayweee:scan": "ts-node src/sayweee-scan.ts"
+    "sayweee:scan": "ts-node src/sayweee-scan.ts",
+    "lkk:scan": "ts-node src/lkk-scan.ts",
+    "fix:images": "ts-node src/fix-images.ts",
+    "ocr:fix": "ts-node src/ocr-fix.ts",
+    "bulk:scan": "ts-node src/sayweee-bulk-scan.ts"
   },
   "keywords": [
     "amazon",

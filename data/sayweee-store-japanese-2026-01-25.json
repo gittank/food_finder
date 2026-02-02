@@ -1,7 +1,33 @@
 {
   "query": "sauce",
   "scannedAt": "2026-01-25T06:59:38.367Z",
-  "suitable": [
+  "suitable": [],
+  "unsuitable": [
+    {
+      "title": "S&amp;B Umami Topping Crunchy Garlic with Chili Oil, Mild 3.88 oz",
+      "images": [
+        "https://img06.weeecdn.com/item/image/135/067/145BEC1E38CB3F5A.jpg",
+        "https://img06.weeecdn.com/item/image/443/877/D5B55FE2181D327.jpg",
+        "https://img06.weeecdn.com/item/image/766/076/2A8CAC3C6151546A.jpg",
+        "https://img06.weeecdn.com/item/image/896/632/5C194834FDC080A9.jpg"
+      ],
+      "ingredients": "Corn oil, Chili pepper, Fried gar sesame oll, Monosodium glutamate, Onion powder il Sugar, Soy sauce powder (Soy sauce [Soybeans : £2tSalt], Dextrin, Salt), Chil paste (Chili pepper >All Rice), Fried onion, Almond, Ground sesame seeds",
+      "price": "$20",
+      "productId": "83230",
+      "ocrConfidence": 74,
+      "ocrImageUrl": "https://img06.weeecdn.com/item/image/896/632/5C194834FDC080A9.jpg",
+      "ingredientSource": "ocr",
+      "productUrl": "https://www.sayweee.com/en/product/S-B-Umami-Topping-Crunchy-Garlic-with-Chili-Oil--Mild/83230",
+      "scannedAt": "2026-01-25T06:59:55.394Z",
+      "analysis": {
+        "isVegetarian": true,
+        "hasRestrictedIngredients": true,
+        "restrictedFound": [
+          "onions"
+        ],
+        "nonVegFound": []
+      }
+    },
     {
       "title": "Kewpie Mayonnaise Tube 450 g",
       "images": [
@@ -61,51 +87,32 @@
         "restrictedFound": [],
         "nonVegFound": []
       }
-    }
-  ],
-  "unsuitable": [
-    {
-      "title": "S&amp;B Umami Topping Crunchy Garlic with Chili Oil, Mild 3.88 oz",
-      "images": [
-        "https://img06.weeecdn.com/item/image/135/067/145BEC1E38CB3F5A.jpg",
-        "https://img06.weeecdn.com/item/image/443/877/D5B55FE2181D327.jpg",
-        "https://img06.weeecdn.com/item/image/766/076/2A8CAC3C6151546A.jpg",
-        "https://img06.weeecdn.com/item/image/896/632/5C194834FDC080A9.jpg"
-      ],
-      "ingredients": "Corn oil, Chili pepper, Fried gar sesame oll, Monosodium glutamate, Onion powder il Sugar, Soy sauce powder (Soy sauce [Soybeans : £2tSalt], Dextrin, Salt), Chil paste (Chili pepper >All Rice), Fried onion, Almond, Ground sesame seeds",
-      "price": "$20",
-      "productId": "83230",
-      "ocrConfidence": 74,
-      "ocrImageUrl": "https://img06.weeecdn.com/item/image/896/632/5C194834FDC080A9.jpg",
-      "ingredientSource": "ocr",
-      "productUrl": "https://www.sayweee.com/en/product/S-B-Umami-Topping-Crunchy-Garlic-with-Chili-Oil--Mild/83230",
-      "scannedAt": "2026-01-25T06:59:55.394Z",
-      "analysis": {
-        "isVegetarian": true,
-        "hasRestrictedIngredients": true,
-        "restrictedFound": [
-          "onions"
-        ],
-        "nonVegFound": []
-      }
-    }
-  ],
-  "noIngredients": [
-    {
-      "title": "Shinmei Imported Japanese Koshihikari Rice 11 lb",
-      "images": [],
-      "price": "$20",
-      "productId": "64249",
-      "productUrl": "https://www.sayweee.com/en/product/Shinmei-Imported-Japanese-Koshihikari-Rice/64249",
-      "scannedAt": "2026-01-25T06:59:50.471Z"
     },
     {
       "title": "Sekka Premium Japanese Medium Grain Rice 15 lb",
-      "images": [],
+      "images": [
+        "https://img06.weeecdn.com/product/image/188/684/6948BFF6FFF56CA0.png",
+        "https://img06.weeecdn.com/product/image/606/916/63FFDC42DCE0305B.png",
+        "https://img06.weeecdn.com/product/image/793/286/4C09A61ED3C4E77A.png",
+        "https://img06.weeecdn.com/product/image/175/215/6821DB59F4B521CE.png"
+      ],
       "price": "$20",
       "productId": "81224",
       "productUrl": "https://www.sayweee.com/en/product/Sekka-Premium-Japanese-Medium-Grain-Rice/81224",
       "scannedAt": "2026-01-25T06:59:55.913Z"
+    },
+    {
+      "title": "Shinmei Imported Japanese Koshihikari Rice 11 lb",
+      "images": [
+        "https://img06.weeecdn.com/product/image/985/764/4F199D3D415034A8.png",
+        "https://img06.weeecdn.com/product/image/032/340/7DAEBE89CAE76DC4.png",
+        "https://img06.weeecdn.com/product/image/635/193/4936E7B933EA8C0.png"
+      ],
+      "price": "$20",
+      "productId": "64249",
+      "productUrl": "https://www.sayweee.com/en/product/Shinmei-Imported-Japanese-Koshihikari-Rice/64249",
+      "scannedAt": "2026-01-25T06:59:50.471Z"
     }
-  ]
+  ],
+  "noIngredients": []
 }

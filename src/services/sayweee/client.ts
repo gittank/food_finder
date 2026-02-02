@@ -109,7 +109,8 @@ function parseProductFromHtml(html: string, productId: string): SayweeeProduct |
     let images: string[] = [];
 
     // First, try to find the product's image gallery array (JSON format)
-    const imageArrayMatch = html.match(/\["(https:\/\/img\d+\.weee(?:cdn)?\.(?:net|com)\/item\/image\/[^"]+)"(?:,"(https:\/\/img\d+\.weee(?:cdn)?\.(?:net|com)\/item\/image\/[^"]+)")*\]/);
+    // Match both item/image and product/image paths
+    const imageArrayMatch = html.match(/\["(https:\/\/img\d+\.weee(?:cdn)?\.(?:net|com)\/(?:item|product)\/image\/[^"]+)"(?:,"(https:\/\/img\d+\.weee(?:cdn)?\.(?:net|com)\/(?:item|product)\/image\/[^"]+)")*\]/);
     if (imageArrayMatch) {
       // Parse the JSON array of product images
       try {
@@ -125,7 +126,8 @@ function parseProductFromHtml(html: string, productId: string): SayweeeProduct |
 
     // Fallback: extract from page if no gallery array found
     if (images.length === 0) {
-      const imagePattern = /https?:\/\/img\d+\.weee(?:cdn)?\.(?:net|com)\/item\/image\/[^"'\s)\\]+/g;
+      // Match both item/image and product/image paths
+      const imagePattern = /https?:\/\/img\d+\.weee(?:cdn)?\.(?:net|com)\/(?:item|product)\/image\/[^"'\s)\\]+/g;
       const imageMatches = html.match(imagePattern) || [];
 
       // Deduplicate and clean image URLs

@@ -68,44 +68,6 @@
       }
     },
     {
-      "title": "JDZW Sukiyaki Soup Base 100 g",
-      "images": [
-        "https://img06.weeecdn.com/item/image/465/809/5D13D850AED536BB.png",
-        "https://img06.weeecdn.com/item/image/312/042/1A6626DA5C47BAAD.png",
-        "https://img06.weeecdn.com/item/image/878/917/2762B2368EC22446.png",
-        "https://img06.weeecdn.com/item/image/898/811/5871E83126FBE8C7.png",
-        "https://img06.weeecdn.com/item/image/824/601/1355BC08B6B7111B.png",
-        "https://img06.weeecdn.com/item/image/561/594/149733854A1A3AEB.jpg",
-        "https://img06.weeecdn.com/item/image/383/743/3BDC9756148C4407.jpg",
-        "https://img06.weeecdn.com/item/image/217/618/141C8BBAD808E61E.jpg",
-        "https://img06.weeecdn.com/item/image/862/253/5EF985D07F19A31C.jpg",
-        "https://img06.weeecdn.com/item/image/475/081/528A4C357E9871D5.jpg",
-        "https://img06.weeecdn.com/item/image/188/499/51133A326A8DDD82.jpg",
-        "https://img06.weeecdn.com/item/image/105/248/30A17D45C6B5528E.jpg",
-        "https://img06.weeecdn.com/item/image/166/246/436CBB65D7B9340C.jpg",
-        "https://img06.weeecdn.com/item/image/437/091/490D186B3DE56CED.jpg",
-        "https://img06.weeecdn.com/item/image/189/781/7D30DCFB6630DF0D.jpg",
-        "https://img06.weeecdn.com/item/image/543/848/783AAE474ACA4E7A.jpg",
-        "https://img06.weeecdn.com/item/image/555/648/E4F5FACD2717F2A.jpg",
-        "https://img06.weeecdn.com/item/image/895/197/4AACE2E78AA87BB8.jpg",
-        "https://img06.weeecdn.com/item/image/596/526/217FBA52742225F7.jpg"
-      ],
-      "ingredients": "SALT, POWDERED SOY SAUCE (SOY SAUCE [SOYBEANS, WHEAT, SALT], DEXTRIN), MONOSODIUM GLUTAMATE, GLUCOSE, POWDERED YEAST EXTRACT, POWDERED KELP EXTRACT, CARAMEL, CORN OIL, GUAR GUM, DISODIUM INOSINATE, DISODIUM GUANYLATE",
-      "price": "$20",
-      "productId": "105675",
-      "ocrConfidence": 93,
-      "ocrImageUrl": "https://img06.weeecdn.com/item/image/824/601/1355BC08B6B7111B.png",
-      "ingredientSource": "ocr",
-      "productUrl": "https://www.sayweee.com/en/product/JDZW-Sukiyaki-Soup-Base/105675",
-      "scannedAt": "2026-01-25T08:19:10.014Z",
-      "analysis": {
-        "isVegetarian": true,
-        "hasRestrictedIngredients": false,
-        "restrictedFound": [],
-        "nonVegFound": []
-      }
-    },
-    {
       "title": "Maggi Soy Sauce, Dark 700 ml",
       "images": [
         "https://img06.weeecdn.com/item/image/925/298/1C3E3D89083D75AB.jpg",
@@ -125,6 +87,29 @@
       "ingredientSource": "ocr",
       "productUrl": "https://www.sayweee.com/en/product/Maggi-Soy-Sauce--Dark/89008",
       "scannedAt": "2026-01-25T08:19:15.275Z",
+      "analysis": {
+        "isVegetarian": true,
+        "hasRestrictedIngredients": false,
+        "restrictedFound": [],
+        "nonVegFound": []
+      }
+    },
+    {
+      "title": "Mizkan Sushi Vinegar 24 fl.oz",
+      "images": [
+        "https://img06.weeecdn.com/product/image/267/486/47BD24153AAC0F7B.png",
+        "https://img06.weeecdn.com/product/image/242/653/65BAE9C3AED2556F.png",
+        "https://img06.weeecdn.com/product/image/305/342/6505F7991A7EF592.png",
+        "https://img06.weeecdn.com/product/image/191/608/75EA6C0239E07290.png"
+      ],
+      "price": "$20",
+      "productId": "13983",
+      "productUrl": "https://www.sayweee.com/en/product/Mizkan-Sushi-Vinegar/13983",
+      "scannedAt": "2026-01-25T08:18:32.059Z",
+      "ingredients": "INVERT SUGAR, WATER, DISTILLED VINEGAR, SALT, RICE VINEGAR, BROWN SUGAR, MONOSODIUM GLUTAMATE.",
+      "ingredientSource": "ocr",
+      "ocrConfidence": 93,
+      "ocrImageUrl": "https://img06.weeecdn.com/product/image/191/608/75EA6C0239E07290.png",
       "analysis": {
         "isVegetarian": true,
         "hasRestrictedIngredients": false,
@@ -162,48 +147,16 @@
       }
     },
     {
-      "title": "Laoganma Spicy Crispy Chili Oil 210 g",
-      "images": [
-        "https://img06.weeecdn.com/item/image/232/392/3FCD84E453CF653B.jpg",
-        "https://img06.weeecdn.com/item/image/660/274/50B989CD733AD95D.jpg",
-        "https://img06.weeecdn.com/item/image/170/472/1C872A4E8B4D34FE.jpg",
-        "https://img06.weeecdn.com/item/image/923/092/5DFA4E86478DB34D.jpg",
-        "https://img06.weeecdn.com/item/image/426/498/1D85D4E3C92E7B0C.jpg",
-        "https://img06.weeecdn.com/item/image/103/651/1AEE563EA1E1B791.jpg",
-        "https://img06.weeecdn.com/item/image/719/307/709C46246FC9595C.jpg",
-        "https://img06.weeecdn.com/item/image/051/375/7A9DB854DD2E4267.jpg",
-        "https://img06.weeecdn.com/item/image/197/386/2326023B727F3B63.jpg",
-        "https://img06.weeecdn.com/item/image/395/483/7F66F0DC9EA8A864.jpg",
-        "https://img06.weeecdn.com/item/image/750/645/469C569A7DC58894.jpg",
-        "https://img06.weeecdn.com/item/image/280/576/3338018396961605.jpg",
-        "https://img06.weeecdn.com/item/image/543/149/429E3E1E4CF69BC6.jpg",
-        "https://img06.weeecdn.com/item/image/891/630/569332C23146DE62.jpg",
-        "https://img06.weeecdn.com/item/image/817/191/54B21E4C220CA544.jpg",
-        "https://img06.weeecdn.com/item/image/982/690/2B78D417431877E2.jpg",
-        "https://img06.weeecdn.com/item/image/491/901/3C8A709E52DCFEFC.jpg",
-        "https://img06.weeecdn.com/item/image/278/018/5B7CA4E18862CC65.jpg",
-        "https://img06.weeecdn.com/item/image/165/106/15C3BD6275037AF7.jpg"
-      ],
-      "ingredients": "Water, Salt, Sealion, Ginger Garlic She, Pam Youd Glutamate, Sat, Sugar, Pepper Powder , Sulfite Sulfur Doi",
-      "price": "$20",
-      "productId": "36443",
-      "ocrConfidence": 62,
-      "ocrImageUrl": "https://img06.weeecdn.com/item/image/395/483/7F66F0DC9EA8A864.jpg",
-      "ingredientSource": "ocr",
-      "productUrl": "https://www.sayweee.com/en/product/Laoganma-Spicy-Crispy-Chili-Oil/36443",
-      "scannedAt": "2026-01-25T08:18:41.354Z",
-      "analysis": {
-        "isVegetarian": true,
-        "hasRestrictedIngredients": true,
-        "restrictedFound": [
-          "garlic"
-        ],
-        "nonVegFound": []
-      }
-    },
-    {
       "title": "Kewpie Mayonnaise Tube 450 g",
-      "images": [],
+      "images": [
+        "https://img06.weeecdn.com/product/image/488/980/5C9C495179D49163.png",
+        "https://img06.weeecdn.com/product/image/536/011/2C69ECB2A1437E97.png",
+        "https://img06.weeecdn.com/product/image/295/161/7FCE6AAB8DD5FAA3.png",
+        "https://img06.weeecdn.com/product/image/983/813/1545D35D3EEBB027.png",
+        "https://img06.weeecdn.com/product/image/723/320/344A0FB1242A8832.png",
+        "https://img06.weeecdn.com/product/image/020/059/1E87E434D15D9EF0.png",
+        "https://img06.weeecdn.com/product/image/181/074/23266EEAF6D6D858.png"
+      ],
       "ingredients": "to create its unique flavor. Egg yolks (4 yolks per 500g bottle!), vinegar, and salt provide sweet, savory, tangy, and smooth taste without added preservatives. Truly a must-have staple for your kitchen! With no added sugar and packaged in an easy-to-use 500g squeeze tube, Kewpie Mayonnaise is the perfect standalone mayo or mix-in for your favorite sauces and dishes. \\u003cimg src=\\\"https://img06.weeecdn.com/common/image/top_ranking_20\"])",
       "price": "$20",
       "productId": "52753",
@@ -243,16 +196,69 @@
         ],
         "nonVegFound": []
       }
+    },
+    {
+      "title": "JDZW Sukiyaki Soup Base 100 g",
+      "images": [
+        "https://img06.weeecdn.com/item/image/465/809/5D13D850AED536BB.png",
+        "https://img06.weeecdn.com/item/image/312/042/1A6626DA5C47BAAD.png",
+        "https://img06.weeecdn.com/item/image/878/917/2762B2368EC22446.png",
+        "https://img06.weeecdn.com/item/image/898/811/5871E83126FBE8C7.png",
+        "https://img06.weeecdn.com/item/image/824/601/1355BC08B6B7111B.png",
+        "https://img06.weeecdn.com/item/image/561/594/149733854A1A3AEB.jpg",
+        "https://img06.weeecdn.com/item/image/383/743/3BDC9756148C4407.jpg",
+        "https://img06.weeecdn.com/item/image/217/618/141C8BBAD808E61E.jpg",
+        "https://img06.weeecdn.com/item/image/862/253/5EF985D07F19A31C.jpg",
+        "https://img06.weeecdn.com/item/image/475/081/528A4C357E9871D5.jpg",
+        "https://img06.weeecdn.com/item/image/188/499/51133A326A8DDD82.jpg",
+        "https://img06.weeecdn.com/item/image/105/248/30A17D45C6B5528E.jpg",
+        "https://img06.weeecdn.com/item/image/166/246/436CBB65D7B9340C.jpg",
+        "https://img06.weeecdn.com/item/image/437/091/490D186B3DE56CED.jpg",
+        "https://img06.weeecdn.com/item/image/189/781/7D30DCFB6630DF0D.jpg",
+        "https://img06.weeecdn.com/item/image/543/848/783AAE474ACA4E7A.jpg",
+        "https://img06.weeecdn.com/item/image/555/648/E4F5FACD2717F2A.jpg",
+        "https://img06.weeecdn.com/item/image/895/197/4AACE2E78AA87BB8.jpg",
+        "https://img06.weeecdn.com/item/image/596/526/217FBA52742225F7.jpg"
+      ],
+      "ingredients": "SALT, POWDERED SOY SAUCE (SOY SAUCE [SOYBEANS, WHEAT, SALT], DEXTRIN), MONOSODIUM GLUTAMATE, GLUCOSE, POWDERED YEAST EXTRACT, POWDERED KELP EXTRACT, CARAMEL, CORN OIL, GUAR GUM, DISODIUM INOSINATE, DISODIUM GUANYLATE",
+      "price": "$20",
+      "productId": "105675",
+      "ocrConfidence": 93,
+      "ocrImageUrl": "https://img06.weeecdn.com/item/image/824/601/1355BC08B6B7111B.png",
+      "ingredientSource": "ocr",
+      "productUrl": "https://www.sayweee.com/en/product/JDZW-Sukiyaki-Soup-Base/105675",
+      "scannedAt": "2026-01-25T08:19:10.014Z",
+      "analysis": {
+        "isVegetarian": true,
+        "hasRestrictedIngredients": false,
+        "restrictedFound": [],
+        "nonVegFound": []
+      }
     }
   ],
-  "noIngredients": [
+  "noIngredients": [],
+  "featured": [
     {
-      "title": "Mizkan Sushi Vinegar 24 fl.oz",
-      "images": [],
+      "title": "Laoganma Spicy Crispy Chili Oil 210 g",
+      "images": [
+        "https://img06.weeecdn.com/product/image/061/101/58E9329B422EB408.png",
+        "https://img06.weeecdn.com/product/image/189/064/113DCEF462F052FE.png",
+        "https://img06.weeecdn.com/product/image/530/920/5617518FBF0AA7F.png",
+        "https://img06.weeecdn.com/product/image/976/980/47FDB4BEEAEA3EA7.png",
+        "https://img06.weeecdn.com/product/image/476/188/46F9826A64510800.png"
+      ],
+      "ingredients": "Rapeseed oil, chili pepper flakes, fermented soybean, salt, sugar, Sichuan pepper, spices, monosodium glutamate.",
       "price": "$20",
-      "productId": "13983",
-      "productUrl": "https://www.sayweee.com/en/product/Mizkan-Sushi-Vinegar/13983",
-      "scannedAt": "2026-01-25T08:18:32.059Z"
+      "productId": "36443",
+      "ingredientSource": "manual",
+      "productUrl": "https://www.sayweee.com/en/product/Laoganma-Spicy-Crispy-Chili-Oil/36443",
+      "scannedAt": "2026-01-25T08:18:41.354Z",
+      "analysis": {
+        "isVegetarian": true,
+        "hasRestrictedIngredients": false,
+        "restrictedFound": [],
+        "nonVegFound": []
+      }
     }
   ]
 }
