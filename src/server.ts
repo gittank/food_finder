@@ -181,13 +181,15 @@ app.post('/api/products/move', (req, res) => {
     for (const file of files) {
       const filePath = path.join(DATA_DIR, file);
       const data = JSON.parse(fs.readFileSync(filePath, 'utf-8'));
-      const source = file.startsWith('sayweee') ? 'Sayweee' : file.startsWith('lkk') ? 'LKK' : 'H Mart';
+      let fileSource = 'Other';
+      if (file.startsWith('sayweee')) fileSource = 'Sayweee';
+      else if (file.startsWith('lkk')) fileSource = 'LKK';
+      else if (file.startsWith('hmart')) fileSource = 'H Mart';
+      else if (file.startsWith('mexican')) fileSource = 'Mexican';
 
       let modified = false;
 
       for (const change of changes) {
-        // Only process changes for this source
-        if (change.source !== source) continue;
 
         const { productId, fromCategory, toCategory } = change;
 

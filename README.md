@@ -56,9 +56,61 @@ npm run sayweee:scan -- --category seasoning --limit 10
 
 ### Start web UI
 ```bash
-npm run server
+npm run serve
 ```
 Then open http://localhost:3000
+
+### Export data for static deployment
+```bash
+npm run export
+```
+Merges all data files into `data/products.json` with only `featured` and `suitable` products, normalized and deduplicated.
+
+## Static Deployment (Docker)
+
+A read-only version of Food Finder lives on the `deploy` branch. It serves only the Featured and Suitable tabs via nginx in Docker — no backend, no editing.
+
+### Deploy branch structure
+
+```
+deploy/
+├── index.html          # Static frontend (read-only)
+├── data/
+│   └── products.json   # Pre-built data snapshot
+├── nginx.conf          # nginx config
+├── Dockerfile          # nginx:alpine container
+└── .dockerignore
+```
+
+### Build and run
+
+```bash
+git checkout deploy
+docker build -t food-finder .
+docker run -p 8080:80 food-finder
+```
+
+Then open http://localhost:8080
+
+### Update deployed data
+
+When you scan new products on main and want to update the deployment:
+
+```bash
+# 1. On main, regenerate the data snapshot
+git checkout main
+npm run export
+
+# 2. Copy to deploy branch
+cp data/products.json /tmp/products.json
+git checkout deploy
+cp /tmp/products.json data/products.json
+
+# 3. Commit and rebuild
+git add data/products.json
+git commit -m "Update data"
+docker build -t food-finder .
+```
 
 ## How it works
 
@@ -80,12 +132,13 @@ food_finder/
 ├── src/
 │   ├── sayweee-scan.ts      # Main scanner
 │   ├── server.ts            # Web server
+│   ├── export-data.ts       # Data export for static deployment
 │   └── services/
 │       ├── ocr/extractor.ts # OCR processing
 │       └── sayweee/client.ts # Sayweee API client
 ├── web/
 │   └── index.html           # Web UI
-├── data/                    # Scan results (gitignored)
+├── data/                    # Scan results
 └── package.json
 ```
 

@@ -16,7 +16,8 @@
     "lkk:scan": "ts-node src/lkk-scan.ts",
     "fix:images": "ts-node src/fix-images.ts",
     "ocr:fix": "ts-node src/ocr-fix.ts",
-    "bulk:scan": "ts-node src/sayweee-bulk-scan.ts"
+    "bulk:scan": "ts-node src/sayweee-bulk-scan.ts",
+    "export": "ts-node src/export-data.ts"
   },
   "keywords": [
     "amazon",
