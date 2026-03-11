@@ -617,6 +617,17 @@
       "productId": "687",
       "productUrl": "https://www.sayweee.com/en/product/image/687",
       "scannedAt": "2026-01-25T06:10:54.026Z"
+    },
+    {
+      "title": "Simple Mini Fruit Yogurt 18.6 oz",
+      "images": [
+        "https://img06.weeecdn.com/item/image/993/535/1F8C2FCE51A8E3E1.jpg",
+        "https://img08.weeecdn.net/item/image/993/535/1F8C2FCE51A8E3E1.jpg"
+      ],
+      "price": "$20",
+      "productId": "475",
+      "productUrl": "https://www.sayweee.com/en/product/image/475",
+      "scannedAt": "2026-01-25T06:12:54.064Z"
     }
   ],
   "unsuitable": [
@@ -3478,17 +3489,6 @@
       "productId": "747",
       "productUrl": "https://www.sayweee.com/en/product/image/747",
       "scannedAt": "2026-01-25T06:12:52.204Z"
-    },
-    {
-      "title": "Simple Mini Fruit Yogurt 18.6 oz",
-      "images": [
-        "https://img06.weeecdn.com/item/image/993/535/1F8C2FCE51A8E3E1.jpg",
-        "https://img08.weeecdn.net/item/image/993/535/1F8C2FCE51A8E3E1.jpg"
-      ],
-      "price": "$20",
-      "productId": "475",
-      "productUrl": "https://www.sayweee.com/en/product/image/475",
-      "scannedAt": "2026-01-25T06:12:54.064Z"
     },
     {
       "title": "Taro Sago with Taro Balls 1 each",
