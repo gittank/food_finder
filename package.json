@@ -17,6 +17,9 @@
     "fix:images": "ts-node src/fix-images.ts",
     "ocr:fix": "ts-node src/ocr-fix.ts",
     "bulk:scan": "ts-node src/sayweee-bulk-scan.ts",
+    "veganessentials:scan": "ts-node src/veganessentials-scan.ts",
+    "shopify:scan": "ts-node src/shopify-scan.ts",
+    "woo:scan": "ts-node src/woo-scan.ts",
     "export": "ts-node src/export-data.ts"
   },
   "keywords": [

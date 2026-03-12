@@ -76,7 +76,8 @@ async function main() {
   // Process specific product first if requested
   const priorityId = '16759'; // Szechuan Flavor Crispy Chili Sauce
 
-  const files = fs.readdirSync(DATA_DIR).filter(f => f.startsWith('sayweee-') && f.endsWith('.json'));
+  const prefix = process.argv[2] || 'sayweee-';
+  const files = fs.readdirSync(DATA_DIR).filter(f => f.startsWith(prefix) && f.endsWith('.json'));
 
   let totalScanned = 0;
   let totalFixed = 0;

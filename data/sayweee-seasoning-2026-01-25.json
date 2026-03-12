@@ -3311,6 +3311,45 @@
       "productId": "500",
       "productUrl": "https://www.sayweee.com/en/product/image/500",
       "scannedAt": "2026-01-25T06:14:00.088Z"
+    },
+    {
+      "title": "Garlic Chili Sauce 280g*1 Bottle 280 g",
+      "images": [
+        "https://img06.weeecdn.com/item/image/000/385/2E84EFCADCBB0B94.jpeg",
+        "https://img06.weeecdn.com/item/image/581/211/20E2D31B77D21512.webp",
+        "https://img06.weeecdn.com/item/image/234/487/27D683A6200EB992.webp",
+        "https://img06.weeecdn.com/item/image/874/081/57E3422C13C3B871.webp",
+        "https://img06.weeecdn.com/item/image/491/317/5D1C5D864ADA82DA.webp"
+      ],
+      "price": "$20",
+      "productId": "2975568",
+      "productUrl": "https://www.sayweee.com/en/product/Garlic-Chili-Sauce-280g-1-Bottle/2975568",
+      "scannedAt": "2026-02-01T21:15:23.092Z"
+    },
+    {
+      "title": "Garlic chili sauce 125g*3 bags 375 g",
+      "images": [
+        "https://img06.weeecdn.com/item/image/726/598/2B0FE2A8D1772F22.jpeg",
+        "https://img06.weeecdn.com/item/image/788/391/347D36A592F4F194.jpeg",
+        "https://img06.weeecdn.com/item/image/751/273/645B44E1362DF840.jpeg",
+        "https://img06.weeecdn.com/item/image/255/924/4BF6AF621A9FC445.jpeg"
+      ],
+      "price": "$20",
+      "productId": "2912824",
+      "productUrl": "https://www.sayweee.com/en/product/Garlic-chili-sauce-125g-3-bags/2912824",
+      "scannedAt": "2026-02-01T21:15:22.462Z"
+    },
+    {
+      "title": "100g*1 bag of garlic chili sauce 100 g",
+      "images": [
+        "https://img06.weeecdn.com/item/image/762/329/42D0CE07446E2FDC.webp",
+        "https://img06.weeecdn.com/item/image/913/807/3A35EBFB48806913.webp",
+        "https://img06.weeecdn.com/item/image/594/632/5575F2D8B6154D3.webp"
+      ],
+      "price": "$20",
+      "productId": "2810448",
+      "productUrl": "https://www.sayweee.com/en/product/100g-1-bag-of-garlic-chili-sauce/2810448",
+      "scannedAt": "2026-02-01T21:15:21.673Z"
     }
   ],
   "noIngredients": [
@@ -4110,45 +4149,6 @@
       "productId": "2146666",
       "productUrl": "https://www.sayweee.com/en/product/Fried-Crispy-Chili-In-oil-in-Jar/2146666",
       "scannedAt": "2026-02-01T21:15:19.854Z"
-    },
-    {
-      "title": "100g*1 bag of garlic chili sauce 100 g",
-      "images": [
-        "https://img06.weeecdn.com/item/image/762/329/42D0CE07446E2FDC.webp",
-        "https://img06.weeecdn.com/item/image/913/807/3A35EBFB48806913.webp",
-        "https://img06.weeecdn.com/item/image/594/632/5575F2D8B6154D3.webp"
-      ],
-      "price": "$20",
-      "productId": "2810448",
-      "productUrl": "https://www.sayweee.com/en/product/100g-1-bag-of-garlic-chili-sauce/2810448",
-      "scannedAt": "2026-02-01T21:15:21.673Z"
-    },
-    {
-      "title": "Garlic chili sauce 125g*3 bags 375 g",
-      "images": [
-        "https://img06.weeecdn.com/item/image/726/598/2B0FE2A8D1772F22.jpeg",
-        "https://img06.weeecdn.com/item/image/788/391/347D36A592F4F194.jpeg",
-        "https://img06.weeecdn.com/item/image/751/273/645B44E1362DF840.jpeg",
-        "https://img06.weeecdn.com/item/image/255/924/4BF6AF621A9FC445.jpeg"
-      ],
-      "price": "$20",
-      "productId": "2912824",
-      "productUrl": "https://www.sayweee.com/en/product/Garlic-chili-sauce-125g-3-bags/2912824",
-      "scannedAt": "2026-02-01T21:15:22.462Z"
-    },
-    {
-      "title": "Garlic Chili Sauce 280g*1 Bottle 280 g",
-      "images": [
-        "https://img06.weeecdn.com/item/image/000/385/2E84EFCADCBB0B94.jpeg",
-        "https://img06.weeecdn.com/item/image/581/211/20E2D31B77D21512.webp",
-        "https://img06.weeecdn.com/item/image/234/487/27D683A6200EB992.webp",
-        "https://img06.weeecdn.com/item/image/874/081/57E3422C13C3B871.webp",
-        "https://img06.weeecdn.com/item/image/491/317/5D1C5D864ADA82DA.webp"
-      ],
-      "price": "$20",
-      "productId": "2975568",
-      "productUrl": "https://www.sayweee.com/en/product/Garlic-Chili-Sauce-280g-1-Bottle/2975568",
-      "scannedAt": "2026-02-01T21:15:23.092Z"
     },
     {
       "title": "Tianjin Tongchu garlic chili sauce 100g 100 g",

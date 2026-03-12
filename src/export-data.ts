@@ -40,6 +40,9 @@ for (const file of files) {
   else if (file.startsWith('lkk')) source = 'LKK';
   else if (file.startsWith('hmart')) source = 'H Mart';
   else if (file.startsWith('mexican')) source = 'Mexican';
+  else if (file.startsWith('veganessentials')) source = 'Vegan Essentials';
+  else if (file.startsWith('fody')) source = 'Fody';
+  else if (file.startsWith('vreamery')) source = 'Vreamery';
 
   for (const category of ['featured', 'suitable']) {
     if (data[category]) {
