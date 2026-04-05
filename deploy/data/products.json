@@ -1,6 +1,246 @@
 {
   "featured": [
     {
+      "id": "yo-egg-the-patty-one",
+      "title": "Yo Egg - The Patty One",
+      "price": "$10.00",
+      "ingredients": "Water, Sunflower Oil, Lentil Flour, Soy Protein, Chickpea Protein, , Contains 2% or less of: Corn Flour, Potato Starch, Yeast, Psyllium, Seaweed Extract, Beta Carotene (color), Pectin, Calcium Lactate, Potassium Salt, Carob Gum, Methylcellulose.",
+      "productUrl": "https://thevreamery.com/product/yo-egg-the-patty-one/",
+      "imageUrl": "https://thevreamery.com/wp-content/uploads/2025/10/Yo-Egg-The-Pattie-One.webp",
+      "source": "Vreamery",
+      "analysis": {
+        "isVegetarian": true,
+        "hasRestrictedIngredients": false,
+        "restrictedFound": [],
+        "nonVegFound": []
+      }
+    },
+    {
+      "id": "prime-roots-vegan-bacon",
+      "title": "Prime Roots - Applewood Smoked Vegan Bacon",
+      "price": "$17.00",
+      "ingredients": "Whole Food Clean Protein Blend (Mycoprotein, Yeast, Koji), Water, Coconut Oil, Konjac Root Flour, Natural Flavor, Less than 2% of &#8211; Pea Fiber, Baking Soda, Sodium Ascorbate (Vitamin C), Natural Lycopene For Color, Hydrated Lime, Natural Smoke Flavor, Rice Bran Oil, Sea Salt.,",
+      "productUrl": "https://thevreamery.com/product/prime-roots-vegan-bacon/",
+      "imageUrl": "https://thevreamery.com/wp-content/uploads/2023/10/Prime-Roots-Bacon-on-White-WebP-1.webp",
+      "source": "Vreamery",
+      "analysis": {
+        "isVegetarian": true,
+        "hasRestrictedIngredients": false,
+        "restrictedFound": [],
+        "nonVegFound": []
+      }
+    },
+    {
+      "id": "oshi-plant-based-salmon-filet",
+      "title": "Oshi - Plant Based Salmon Filet",
+      "price": "$17.00",
+      "ingredients": "Water, Soy Protein Isolate, Blend of Vegetable Oils (Sunflower Oil, DHA and EPA Algal Oil from Schizochytrium), Fungi Protein, Contains 2% or less of: , Rice Flour, Tapioca Starch, Salt, Sugar, Maltodextrin, Thickeners (Carrageenan, Pectin), Antioxidant (Tocopherols), Lycopene (Natural Color), Natural and Artificial Flavors, ,",
+      "productUrl": "https://thevreamery.com/product/oshi-plant-based-salmon-filet/",
+      "imageUrl": "https://thevreamery.com/wp-content/uploads/2025/01/Oshi-Salmon-977x977-1.png",
+      "source": "Vreamery",
+      "analysis": {
+        "isVegetarian": true,
+        "hasRestrictedIngredients": false,
+        "restrictedFound": [],
+        "nonVegFound": []
+      }
+    },
+    {
+      "id": "chunk-foods-steakhouse-cut",
+      "title": "Chunk Foods - Steakhouse Cut",
+      "price": "$16.50",
+      "ingredients": "Water, Cultured Soy Protein (Defatted Soy Flour, Soy Protein Isolate, Wheat Gluten), Coconut Oil, Natural Flavors, Beet Juice Concentrate (for color), Salt, Iron Bisglycinate (Iron), Cyanocobalamin (Vitamin B12),",
+      "productUrl": "https://thevreamery.com/product/chunk-foods-steakhouse-cut/",
+      "imageUrl": "https://thevreamery.com/wp-content/uploads/2025/04/Chunk-Steakhouse-Cut-Box.webp",
+      "source": "Vreamery",
+      "analysis": {
+        "isVegetarian": true,
+        "hasRestrictedIngredients": false,
+        "restrictedFound": [],
+        "nonVegFound": []
+      }
+    },
+    {
+      "id": "lypid-plant-based-smoked-pork-belly-slices",
+      "title": "Lypid - Plant-Based Thick Cut Bacon",
+      "price": "$18.00",
+      "ingredients": "Water, Soybean Oil, Wheat Protein, Soy Protein, Soy Sauce, Contains 2% or less of: Artificial Flavors, Candelilla Wax, Salt, Mushroom Seasonings, Yeast Extract, Smoked Paprika Powder, Hydrolyzed Soy Protein, Carrageenan, Sodium Alginate, Maltodextrin, Sugar, Artificial Colorant,",
+      "productUrl": "https://thevreamery.com/product/lypid-plant-based-smoked-pork-belly-slices/",
+      "imageUrl": "https://thevreamery.com/wp-content/uploads/2024/02/Lypid-Pork-Belly-2.webp",
+      "source": "Vreamery",
+      "analysis": {
+        "isVegetarian": true,
+        "hasRestrictedIngredients": false,
+        "restrictedFound": [],
+        "nonVegFound": []
+      }
+    },
+    {
+      "id": "chunk-foods-chunk-slab",
+      "title": "Chunk Foods - Chunk Slab",
+      "price": "$18.50",
+      "ingredients": "Water, Cultured Soy Protein (Defatted Soy Flour, Soy Protein Isolate, Wheat Gluten), Coconut Oil, Natural Flavors, Beet Juice Concentrate (for color), Salt, Iron Bisglycinate (Iron), Cyanocobalamin (Vitamin B12),",
+      "productUrl": "https://thevreamery.com/product/chunk-foods-chunk-slab/",
+      "imageUrl": "https://thevreamery.com/wp-content/uploads/2025/04/CHUNK-salb-New.webp",
+      "source": "Vreamery",
+      "analysis": {
+        "isVegetarian": true,
+        "hasRestrictedIngredients": false,
+        "restrictedFound": [],
+        "nonVegFound": []
+      }
+    },
+    {
+      "id": "chunk-foods-chunk-pulled",
+      "title": "Chunk Foods - Chunk Pulled",
+      "price": "$16.00",
+      "ingredients": "Water, Cultured Soy Protein (Defatted Soy Flour, Soy Protein Isolate, Wheat Gluten), Coconut Oil, Natural Flavors, Beet Juice Concentrate (for color), Salt, Iron Bisglycinate (Iron), Cyanocobalamin (Vitamin B12),",
+      "productUrl": "https://thevreamery.com/product/chunk-foods-chunk-pulled/",
+      "imageUrl": "https://thevreamery.com/wp-content/uploads/2025/04/Chunk-Pulled-Box.webp",
+      "source": "Vreamery",
+      "analysis": {
+        "isVegetarian": true,
+        "hasRestrictedIngredients": false,
+        "restrictedFound": [],
+        "nonVegFound": []
+      }
+    },
+    {
+      "id": "snapper-creek-jerky-al-pastor",
+      "title": "Snapper Creek Jerky - Al Pastor",
+      "price": "$9.00",
+      "ingredients": "Vital Wheat Gluten, Lentils, Apple Cider Vinegar (Apples, Filtered Water), Less Sodium Soy Sauce (Water, Wheat, Soybeans, Salt, Lactic Acid), Inactive",
+      "productUrl": "https://thevreamery.com/product/snapper-creek-jerky-al-pastor/",
+      "imageUrl": "https://thevreamery.com/wp-content/uploads/2025/12/Snapper-Creeek-Jerky-Al-Pastor.webp",
+      "source": "Vreamery",
+      "analysis": {
+        "isVegetarian": true,
+        "hasRestrictedIngredients": false,
+        "restrictedFound": [],
+        "nonVegFound": []
+      }
+    },
+    {
+      "id": "midcoast-vegan-pepperoni",
+      "title": "Midcoast Vegan - Pepperoni",
+      "price": "$19.00",
+      "ingredients": "Vital Wheat Gluten, Water, Vegetable Bouillon (Spices, Shea Butter, Maltodextrin), Vegan Red Wine, Sun-Dried Tomatoes, Salt, Red Wine Vinegar, Spices, Lycopene, Hickory &#038; Oak Smoke,",
+      "productUrl": "https://thevreamery.com/product/midcoast-vegan-pepperoni/",
+      "imageUrl": "https://thevreamery.com/wp-content/uploads/2026/03/Midcoast-Vegan-Pepperoni.webp",
+      "source": "Vreamery",
+      "analysis": {
+        "isVegetarian": true,
+        "hasRestrictedIngredients": false,
+        "restrictedFound": [],
+        "nonVegFound": []
+      }
+    },
+    {
+      "id": "tofuna-fysh-vegan-fysh-sauce",
+      "title": "Tofuna Fysh - Vegan Fysh Sauce",
+      "price": "$16.00",
+      "ingredients": "Water, Organic Brown Rice Vinegar (Organic Brown Rice, Sea Salt, Koji Spores), Non-GMO Tamari Soy Sauce (Water, Soybeans, Salt, Alcohol), Organic Pineapple Juice (Organic Pineapple Juice, Filtered Water, Organic Pineapple Juice Concentrate), Dried Kombu, Dried Shiitake Mushrooms, Organic Horseradish Powder,",
+      "productUrl": "https://thevreamery.com/product/tofuna-fysh-vegan-fysh-sauce/",
+      "imageUrl": "https://thevreamery.com/wp-content/uploads/2026/01/Tofuna-Fysh-Vegan-Fish-Sauce.webp",
+      "source": "Vreamery",
+      "analysis": {
+        "isVegetarian": true,
+        "hasRestrictedIngredients": false,
+        "restrictedFound": [],
+        "nonVegFound": []
+      }
+    },
+    {
+      "id": "louisville-vegan-jerky-co-buffalo-hot-wing",
+      "title": "Louisville Vegan Jerky Co. - Buffalo Hot Wing",
+      "price": "$8.00",
+      "ingredients": "Textured Soy Protein, Cayenne Pepper Paste (Red Cayenne Pepper, Salt, Vinegar), Water",
+      "productUrl": "https://thevreamery.com/product/louisville-vegan-jerky-co-buffalo-hot-wing/",
+      "imageUrl": "https://thevreamery.com/wp-content/uploads/2024/08/Louisville-Vegan-Jerky-Buffalo-Hot-Wing.webp",
+      "source": "Vreamery",
+      "analysis": {
+        "isVegetarian": true,
+        "hasRestrictedIngredients": false,
+        "restrictedFound": [],
+        "nonVegFound": []
+      }
+    },
+    {
+      "id": "shroomeats-mushroom-shred-it-vegan-ground-meat",
+      "title": "Shroomeats® - Mushroom Shred-It: Vegan Ground Meat",
+      "price": "$10.00",
+      "ingredients": "Shiitake Mushroom , Pea Protein , Sunflower Oil , Salt , Pepper , Potato Flour ,",
+      "productUrl": "https://thevreamery.com/product/shroomeats-mushroom-shred-it-vegan-ground-meat/",
+      "imageUrl": "https://thevreamery.com/wp-content/uploads/2025/04/Shroomeats-Mushroom-Shred-It.webp",
+      "source": "Vreamery",
+      "analysis": {
+        "isVegetarian": true,
+        "hasRestrictedIngredients": false,
+        "restrictedFound": [],
+        "nonVegFound": []
+      }
+    },
+    {
+      "id": "shroomeats-mushroom-patties-vegan-burgers",
+      "title": "Shroomeats® - Mushroom Patties: Vegan Burgers",
+      "price": "$10.00",
+      "ingredients": "Shiitake Mushroom , Pea Protein , Sunflower Oil , Salt , Pepper , Potato Flour ,",
+      "productUrl": "https://thevreamery.com/product/shroomeats-mushroom-patties-vegan-burgers/",
+      "imageUrl": "https://thevreamery.com/wp-content/uploads/2025/04/Shroomeats-Mushroom-Patties.webp",
+      "source": "Vreamery",
+      "analysis": {
+        "isVegetarian": true,
+        "hasRestrictedIngredients": false,
+        "restrictedFound": [],
+        "nonVegFound": []
+      }
+    },
+    {
+      "id": "nutcase-vegan-nutty-burger-patties",
+      "title": "Nutcase Organics - Gourmet Nut Burger Patties",
+      "price": "$9.50",
+      "ingredients": "*Denotes Organic Ingredients , Filtered Water, Brown Rice*, Quinoa*, Hazelnut*, Walnut*, Hemp Seed*, Flax Seed*, Beet Powder*, Balsamic Vinegar*, Sesame Seed*, Sea Salt, Black Pepper*, Cumin*, Mesquite Powder*",
+      "productUrl": "https://thevreamery.com/product/nutcase-vegan-nutty-burger-patties/",
+      "imageUrl": "https://thevreamery.com/wp-content/uploads/2024/09/Nutcase-Nut-Burger-NEW.webp",
+      "source": "Vreamery",
+      "analysis": {
+        "isVegetarian": true,
+        "hasRestrictedIngredients": false,
+        "restrictedFound": [],
+        "nonVegFound": []
+      }
+    },
+    {
+      "id": "chunk-foods-chunk-steak",
+      "title": "Chunk Foods - Chunk Steak",
+      "price": "$17.00",
+      "ingredients": "Water, Cultured Soy Protein (Defatted Soy Flour, Soy Protein Isolate, Wheat Gluten), Coconut Oil, Natural Flavors, Beet Juice Concentrate (for color), Salt, Iron Bisglycinate (Iron), Cyanocobalamin (Vitamin B12),",
+      "productUrl": "https://thevreamery.com/product/chunk-foods-chunk-steak/",
+      "imageUrl": "https://thevreamery.com/wp-content/uploads/2025/04/Chunk-Steak-Box.webp",
+      "source": "Vreamery",
+      "analysis": {
+        "isVegetarian": true,
+        "hasRestrictedIngredients": false,
+        "restrictedFound": [],
+        "nonVegFound": []
+      }
+    },
+    {
+      "id": "thrilling-foods-bakon-strips-vegan-bacon",
+      "title": "Thrilling Foods - Bakon Strips",
+      "price": "$20.00",
+      "ingredients": "Non-GMO Soy Milk (Water, Soybeans), Sustainable Non-Hydrogenated Palm Oil, Color from Radish and Paprika, Yeast Extract, Maple Syrup, Sea Salt, Black Pepper, Citric Acid,",
+      "productUrl": "https://thevreamery.com/product/thrilling-foods-bakon-strips-vegan-bacon/",
+      "imageUrl": "https://thevreamery.com/wp-content/uploads/2024/02/Thrilling-Foods-Bakon-Strips.webp",
+      "source": "Vreamery",
+      "analysis": {
+        "isVegetarian": true,
+        "hasRestrictedIngredients": false,
+        "restrictedFound": [],
+        "nonVegFound": []
+      }
+    },
+    {
       "id": "cavi-art-vegan-caviar-alternative-black",
       "title": "Cavi-Art Vegan Caviar Alternative, 3.5oz | Multiple Flavors",
       "price": "$9.99",
@@ -106,6 +346,21 @@
       "productUrl": "https://veganessentials.com/products/ocean-s-halo-soy-free-organic-vegan-fish-sauce",
       "imageUrl": "https://cdn.shopify.com/s/files/1/0612/9260/9676/products/ocean-s-halo-soy-free-organic-vegan-fish-sauce-vegan-essentials-online-store.jpg?v=1666994585",
       "source": "Vegan Essentials"
+    },
+    {
+      "id": "cavi-art-vegan-caviar-alternative-foodservice-size-jar-17-6oz-multiple-flavors",
+      "title": "Cavi-Art Vegan Caviar Alternative, Foodservice Size Jar, 17.6oz | Multiple Flavors",
+      "price": "$35.49",
+      "ingredients": "Black: Seaweed alginates (83%), water, salt, spices, aroma, acidifier (citric acid), stabilizer (xanthan gum), preservatives (potassium sorbate, sodium benzoate), caramel color",
+      "productUrl": "https://veganessentials.com/products/cavi-art-vegan-caviar-alternative-foodservice-size-jar-17-6oz-multiple-flavors",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0612/9260/9676/files/PlantBasedFoods_CaviArt_Foodservice_Black.jpg?v=1771870102",
+      "source": "Vegan Essentials",
+      "analysis": {
+        "isVegetarian": true,
+        "hasRestrictedIngredients": false,
+        "restrictedFound": [],
+        "nonVegFound": []
+      }
     },
     {
       "id": "plant-basics-seasoning-just-like-steak-2oz",
@@ -219,6 +474,126 @@
       "ingredients": "Water, natural hickory smoke flavor, vinegar, molasses, caramel color, salt",
       "productUrl": "https://veganessentials.com/products/natural-liquid-smoke-by-colgin-hickory",
       "imageUrl": "https://cdn.shopify.com/s/files/1/0612/9260/9676/products/natural-liquid-smoke-by-colgin-hickory-vegan-essentials-online-store.jpg?v=1666994343",
+      "source": "Vegan Essentials",
+      "analysis": {
+        "isVegetarian": true,
+        "hasRestrictedIngredients": false,
+        "restrictedFound": [],
+        "nonVegFound": []
+      }
+    },
+    {
+      "id": "rawmio-almond-superfoood-spread-6oz",
+      "title": "Rawmio - Almond Superfoood Spread, 6oz",
+      "price": "$14.99",
+      "ingredients": "Raw Almonds, Raw Cashews, Raw Goji Berries, Raw Chia Seeds, Raw Hemp Seeds, Himalayan Pink Sea Salt",
+      "productUrl": "https://veganessentials.com/products/rawmio-almond-superfoood-spread-6oz",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0612/9260/9676/files/Rawmio_Superfood_Spread_Front2_c3ad096c-deff-48dc-a6a3-c54a8ec6bf82.webp?v=1762544957",
+      "source": "Vegan Essentials",
+      "analysis": {
+        "isVegetarian": true,
+        "hasRestrictedIngredients": false,
+        "restrictedFound": [],
+        "nonVegFound": []
+      }
+    },
+    {
+      "id": "loma-linda-plant-based-tuno-in-spring-water-5oz",
+      "title": "Loma Linda - Plant-Based Tuno - In Spring Water, 5oz",
+      "price": "$2.99",
+      "ingredients": "TEXTURED SOY PROTEIN, WATER, SEA SALT, YEAS EXTRACT, SEAWEED POWDER, POTASSIUM CHLORIDE, DHA ALGAL OL CONTAINS SOY. a",
+      "productUrl": "https://veganessentials.com/products/loma-linda-plant-based-tuno-in-spring-water-5oz",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0612/9260/9676/files/LomaLinda_PlantBased_TunoSpringWater_5OZCan.gif?v=1732483101",
+      "source": "Vegan Essentials",
+      "analysis": {
+        "isVegetarian": true,
+        "hasRestrictedIngredients": false,
+        "restrictedFound": [],
+        "nonVegFound": []
+      }
+    },
+    {
+      "id": "unmeat-fish-free-tuna-hot-spicy-6-35-oz-pack-of-12",
+      "title": "Unmeat - Fish Free - Tuna in Water, 6.3oz.",
+      "price": "$2.99",
+      "ingredients": "WATER WHEAT AND NON-GMO SOY PROTEINS, NATURAL FLAVORS, SALT GREER HO chi OES (CORN TARCH, CORN SUGAR QU) S GAR, I AND YEAST EXTRACT",
+      "productUrl": "https://veganessentials.com/products/unmeat-fish-free-tuna-hot-spicy-6-35-oz-pack-of-12",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0612/9260/9676/products/UnMeat-FishFreeTunaStyleFlakes_6.3OzWater.jpg?v=1673885892",
+      "source": "Vegan Essentials",
+      "analysis": {
+        "isVegetarian": true,
+        "hasRestrictedIngredients": false,
+        "restrictedFound": [],
+        "nonVegFound": []
+      }
+    },
+    {
+      "id": "better-than-bouillon-base-vegan-no-beef-base",
+      "title": "Better Than Bouillon - No Beef Base, 8oz",
+      "price": "$8.99",
+      "ingredients": "Sodium 710mg 30% Total Carbohydrate 2g 1% Dietary Fiber 0g 0% Sugars 0",
+      "productUrl": "https://veganessentials.com/products/better-than-bouillon-base-vegan-no-beef-base",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0612/9260/9676/products/BetterThanBouillon-BaseVeganNoBeefBase_8oz.jpg?v=1690632761",
+      "source": "Vegan Essentials",
+      "analysis": {
+        "isVegetarian": true,
+        "hasRestrictedIngredients": false,
+        "restrictedFound": [],
+        "nonVegFound": []
+      }
+    },
+    {
+      "id": "loma-blue-tuno-lemon-pepper",
+      "title": "Loma Linda - Plant-Based Tuno - Lemon Pepper, 5oz",
+      "price": "$2.99",
+      "ingredients": "EXTURED SOY. PROTEIN, WATER, SOYBEAN OL 5k I I Th LEMON JUICE, SALT, BLACK PEPPER, CTRICACID, SEAWEED POVDER I I Slo I MNTHAN GUM, LEMON FLAVOR, I I I Lal I CONTAINS SOY. Ms",
+      "productUrl": "https://veganessentials.com/products/loma-blue-tuno-lemon-pepper",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0612/9260/9676/files/LomaLinda_PlantBased_TunoLemonPepper_5OZCan.gif?v=1732482821",
+      "source": "Vegan Essentials",
+      "analysis": {
+        "isVegetarian": true,
+        "hasRestrictedIngredients": false,
+        "restrictedFound": [],
+        "nonVegFound": []
+      }
+    },
+    {
+      "id": "plant-basics-hearty-plant-protein-ground-16oz",
+      "title": "Plant Basics - Hearty Plant Protein - Ground, 16oz",
+      "price": "$12.99",
+      "ingredients": "Defatted soybean flour",
+      "productUrl": "https://veganessentials.com/products/plant-basics-hearty-plant-protein-ground-16oz",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0612/9260/9676/files/PlantBasics_HeartyPlantProtein_UnflavoredGround_2024-05_Front_Square.jpg?v=1754592062",
+      "source": "Vegan Essentials",
+      "analysis": {
+        "isVegetarian": true,
+        "hasRestrictedIngredients": false,
+        "restrictedFound": [],
+        "nonVegFound": []
+      }
+    },
+    {
+      "id": "plant-basics-hearty-plant-protein-chunks-16oz",
+      "title": "Plant Basics - Hearty Plant Protein - Chunks, 16oz",
+      "price": "$12.99",
+      "ingredients": "Defatted soybean flour",
+      "productUrl": "https://veganessentials.com/products/plant-basics-hearty-plant-protein-chunks-16oz",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0612/9260/9676/files/PlantBasics_HeartyPlantProtein_UnflavoredChunks_2024-05_Front_Square.jpg?v=1759262151",
+      "source": "Vegan Essentials",
+      "analysis": {
+        "isVegetarian": true,
+        "hasRestrictedIngredients": false,
+        "restrictedFound": [],
+        "nonVegFound": []
+      }
+    },
+    {
+      "id": "plant-basics-hearty-plant-protein-pea-crumbles-8oz",
+      "title": "Plant Basics - Hearty Plant Protein - Pea Crumbles, 8oz",
+      "price": "$12.99",
+      "ingredients": "Pea Protein, Processed on equipment that also handles soy",
+      "productUrl": "https://veganessentials.com/products/plant-basics-hearty-plant-protein-pea-crumbles-8oz",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0612/9260/9676/files/PlantBasics_HeartyPlantProtein_UnflavoredPeaCrumbles_2024-05_Front_Square.jpg?v=1759262570",
       "source": "Vegan Essentials",
       "analysis": {
         "isVegetarian": true,
@@ -483,6 +858,194 @@
       }
     },
     {
+      "id": "smoked-black-pepper-jerky-by-louisville-vegan-jerky-co",
+      "title": "Louisville Vegan Jerky - Smoked Black Pepper, 3oz.",
+      "price": "$7.99",
+      "ingredients": "SOY % ab, man RGETEATEROPNS STIFLE: 5 JIL * = ET I Bi TR : I a — it IL eco LOSE VEGAN KRY 70 0X 2306 ORSYLE KY 4022 5 llh7905 00000 g",
+      "productUrl": "https://veganessentials.com/products/smoked-black-pepper-jerky-by-louisville-vegan-jerky-co",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0612/9260/9676/files/LouisvilleVeganJerky_3oz_2022_SmokedBlackPepper_Square.jpg?v=1732486549",
+      "source": "Vegan Essentials",
+      "analysis": {
+        "isVegetarian": true,
+        "hasRestrictedIngredients": false,
+        "restrictedFound": [],
+        "nonVegFound": []
+      }
+    },
+    {
+      "id": "beyond-meat-plant-based-burger-patties",
+      "title": "Beyond Meat - Beyond Burger Plant-Based Patties 2 pk, 8oz",
+      "price": "$10.99",
+      "ingredients": "WATER, PEA PROTEIN, AVOCADO OIL, NATURAL FLAVORS, RICE PROTEIN, LENTIL PROTEIN, 2% OR LESS OF METHYLCELLULOSE, POTATO STARCH, PEA STARCH, POTASSIUM LACTATE (TO PRESERVE FRESHNESS), FABA BEAN PROTEIN, APPLE EXTRACT, POMEGRANATE CONCENTRATE, POTASSIUM SALT, SPICE, VINEGAR, VEGETABLE JUICE COLOR (WITH BEET). IPEAS ARE LEGUMES. PEOPLE WITH SEVERE ALLERGIES TO LEGUMES LIKE PEANUTS SHOULD BE CAUTIOUS WHEN INTRODUCING PEA PROTEIN INTO THEIR DIET BECAUSE OF THE POSSIBILITY OF A PEA ALLERGY, CONTAINS NO PEANUTS OR TREE NUTS.",
+      "productUrl": "https://veganessentials.com/products/beyond-meat-plant-based-burger-patties",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0612/9260/9676/files/BeyondMeat_BeyondBurger_Plant-Based-Patties_2024.gif?v=1735586858",
+      "source": "Vegan Essentials",
+      "analysis": {
+        "isVegetarian": true,
+        "hasRestrictedIngredients": false,
+        "restrictedFound": [],
+        "nonVegFound": []
+      }
+    },
+    {
+      "id": "beyond-meat-beyond-beef-plant-based-ground-16oz",
+      "title": "Beyond Meat - Plant-Based Ground, 16oz",
+      "price": "$15.99",
+      "ingredients": "WATER, PEA PROTEIN, AVOCADO OIL, NATURAL FLAVORS, RICE PROTEIN, LENTIL PROTEIN, 2% OR LESS OF METHYLCELLULOSE, I POTATO STARCH, PEA STARCH, POTASSIUM LACTATE E(0 PRESERVE Tl FABA BEAN PROTEIN, APPLE EXTRACT, POMEGRANATE I CONCENTRATE, POTASSIUM SALT, SPICE, VINEGAR, VEGETABLE JUICE COLOR (WITH BEET). I PEAS ARE LEGUMES, PEOPLE WITH SEVERE ALLERGIES TO LEGUMES LIKE PEANUTS SHOULD BE CAUTIOUS WHEN INTRODUCING PEA PROTEN ~~ I INTO THEIR DIET BECAUSE OF THE POSSIBILITY OF A PEA ALLERGY",
+      "productUrl": "https://veganessentials.com/products/beyond-meat-beyond-beef-plant-based-ground-16oz",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0612/9260/9676/files/BeyondMeat_BeyondBurger_Plant-Based-Ground_2024.gif?v=1735585497",
+      "source": "Vegan Essentials",
+      "analysis": {
+        "isVegetarian": true,
+        "hasRestrictedIngredients": false,
+        "restrictedFound": [],
+        "nonVegFound": []
+      }
+    },
+    {
+      "id": "perfect-pepperoni-jerky-by-louisville-vegan-jerky-co",
+      "title": "Louisville Vegan Jerky - Pepperoni Pizza, 3oz.",
+      "price": "$7.99",
+      "ingredients": "Textured Soy Protein, Tamari (Water, Soybezne, Salt, Alcohol [To Preserve Freshness), Water, High Oleic Sunflower Oil (Tocopherols, Rosemary Extract, and Ascorbyl Palmitate [Added As An Antioxidant), Pizz2 FCS (Concentrated Crushed Tomatoes, Sea Salt Qiive Ol, Spices, Goriic powder, And Naturally Derived Citic Add): Lemon Juice, Vegan Sugar, Nutritional Yeast, Contalrs Less Than 2% 9 Natural Smoke Flavor, Mustard Seed, Granulated i ic, Vegetable Juice Color, Red Pepper Flakes, Spices. Papri CONTAINS: Soy REFRIGERATE AFTER OPENING am as SERS ee aA SHE",
+      "productUrl": "https://veganessentials.com/products/perfect-pepperoni-jerky-by-louisville-vegan-jerky-co",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0612/9260/9676/files/LouisvilleVeganJerky_3oz_2024_PepperoniPizza_Square.jpg?v=1732486549",
+      "source": "Vegan Essentials",
+      "analysis": {
+        "isVegetarian": true,
+        "hasRestrictedIngredients": false,
+        "restrictedFound": [],
+        "nonVegFound": []
+      }
+    },
+    {
+      "id": "noble-jerky-original",
+      "title": "Noble Jerky - Original, 2.47oz",
+      "price": "$6.49",
+      "ingredients": "Soy pro (non-GMO), Rice re salt, Expeller pressed canola oil Contains; Soy May Contain: Nuts, Peanuts, Tree Nuts, Mustard, Sesame, Wheat, Gluten , Epices, Ail . Ingrédients: Protéine de soja (sans OGM). Tad 2 Al Sel de mer, Huile de canola (sans OGM), Contient: Soja peut contenir: Noix, Arachides, BI&, Moutarde, Sésame, Gluten === =—— 99, I\" [Nutrition FactsIs %e I [sev ver container E 5 I IServing size 1.24 0z (350) 5 IGERA - I : RU Hs www .noblejerky.com : ICalories LJP REQUIRED dl) [i= ez Ell AUCUNE REFRIGERATION OrgralI Er er—E REQUISE HH See Tae xl 2 (CANADA DISTRIBUTION I (0SUME WITHIN 3 DAYS x Ts — WI \\FTER OPENING a: Ni = Jr —m—— (ONSOMMER DA = RIT rr — ) — re ——— SU 0(RS SUIVANT LOUVERTURE = TTI — ~ 5 ee ls N = I ht =\" Tom 0ch Vevs 0) ote ren I ——ul } [SalelniiiEE II& IMPORTED AND DISTRIBUTED BY / — I CaifforniaResicents Only: ~~ IMPORTE ET DISTRIBUE PAR: == + INWARNING: Cancer and Reproductive Urbani Foods Inc. A == 3 4 Harm -viww PESWarnings.ca gov/food New Westminster, BC, V3M 6B9 Gos pDA . NOBLE JERKY IS A TRADEMARK",
+      "productUrl": "https://veganessentials.com/products/noble-jerky-original",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0612/9260/9676/products/noble-jerky-original-vegan-essentials-online-store.jpg?v=1666994489",
+      "source": "Vegan Essentials",
+      "analysis": {
+        "isVegetarian": true,
+        "hasRestrictedIngredients": false,
+        "restrictedFound": [],
+        "nonVegFound": []
+      }
+    },
+    {
+      "id": "impossible-bratwurst-sausage-links",
+      "title": "Impossible - Sausage Links - Bratwurst, 13.5oz",
+      "price": "$12.99",
+      "ingredients": "Water, Soy H Protein Concentrate Nutrition Facts osc Er or ET [a 4 servings per container Hetrycolics, sar. feast Extract, tal Serving size 1 link (359) Casing (Sodium Alginate, ree I ount per ultured Dextrose, Foo - Starch Modified, Calories 230 Dextrose, Natural Flavors, ——————— Citric ACId, White Pepper, % Dally Value* I Garf Powder, Spioss, Os SS TET ER om oe I Total Fat 16g 21% Legpemasionn. I rotor Cot Ss Vitamin E (Tocopherals), Saturated Fat 7g 35% I (Tvamopnen Soybroten Isolate, Vitamins SCE Be Cholesterol Omg 0% I (83.86, Eran B12) i Sodium 630mg 27% I Dacaiadt Total Carbohvdrate 9 3% I Impossible Foods inc, I alandyiatesy Redwood City, I _ Dietary bibeiso Eo ire ImpossibleFoods.com Total Sugars <1g Includes <1g Added Sugars 2% Protein 13g 27% (a Vit. DOmeg 0% Calcium 190mg 15% Iron 2.6mg 15% e Potassium 450mg 10% Riboflavin 8% Niacin 40% Vitamin Bg 20% Folate 20% REPT 7 JOINER, Vitamin B12.110% Zinc 35% Ve XN Ay Gs “The % Daly Value (OV) tells you how much 4 nutrient I (bg BH (MV J ) in 2s Ea a daity bo AZ) 15) x 7 I{ Is used nerf nition advices \\ HALAL calories a day Is ust i wo ics, Nee CNS",
+      "productUrl": "https://veganessentials.com/products/impossible-bratwurst-sausage-links",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0612/9260/9676/files/Impossible-BratwurstSausageLinks_13.5oz.jpg?v=1721125733",
+      "source": "Vegan Essentials",
+      "analysis": {
+        "isVegetarian": true,
+        "hasRestrictedIngredients": false,
+        "restrictedFound": [],
+        "nonVegFound": []
+      }
+    },
+    {
+      "id": "impossible-hot-dogs",
+      "title": "Impossible - Beef Hot Dogs, 10oz",
+      "price": "$12.99",
+      "ingredients": "Wheat Gluten, oll, C . 5 MEGaaiuiose, Spices Cultured Bextmas, Yeast Extract dead Er icovar Brin oe Amino poi (Lysine, Lr ee Fowaee ow Rromote color retention) Cultured Celery [pared Soy io Saari & Minor eS Zinc, Vitamins (83.81, Be. Bp. noo a = Distribus: Soy, Wheat code Ine Redwood Cit: GA a4nez 1mnnssibleFoode arm (=",
+      "productUrl": "https://veganessentials.com/products/impossible-hot-dogs",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0612/9260/9676/files/Impossible-HotDogs_10oz.jpg?v=1727281484",
+      "source": "Vegan Essentials",
+      "analysis": {
+        "isVegetarian": true,
+        "hasRestrictedIngredients": false,
+        "restrictedFound": [],
+        "nonVegFound": []
+      }
+    },
+    {
+      "id": "feed-your-head-vegan-italian-sausage",
+      "title": "Feed Your Head - Vegan Italian Sausage, 12oz",
+      "price": "$9.99",
+      "ingredients": "VITAL WHEAT GLUTEN, NUTRITIONAL YEAST, SOY SAUCE, SPICE, OLIVE OIL, EDWARD AND SONS BOUILLON CONTAINS: WHEAT, SOY",
+      "productUrl": "https://veganessentials.com/products/feed-your-head-vegan-italian-sausage",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0612/9260/9676/products/FeedYourHead-VeganItalianSausage_4Pack.jpg?v=1670257118",
+      "source": "Vegan Essentials",
+      "analysis": {
+        "isVegetarian": true,
+        "hasRestrictedIngredients": false,
+        "restrictedFound": [],
+        "nonVegFound": []
+      }
+    },
+    {
+      "id": "impossible-burger-patties-2-pack",
+      "title": "Impossible - Burger Patties - 2 pack, 8oz",
+      "price": "$10.69",
+      "ingredients": "Water, Soy Protein Concentrate, Sunflower Oil, Coconut OR 2% Or Less Of: Natural Flavors, Methyiceliulose, Cultured Dextrose, Food Starch Modified, Yeast Extract, Dextrose, Soy Leghemoglobin, Sait. Vitamin E (Tocopherols), L-Tryptophan, Soy Protein Isolate Vitamins & Minerals: Zinc, Vitamins (B3, B1, B6, B2, and B12) Contains: Soy EEA",
+      "productUrl": "https://veganessentials.com/products/impossible-burger-patties-2-pack",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0612/9260/9676/files/ImpossibleFoods_PlantBased_BurgerPatties.gif?v=1735590348",
+      "source": "Vegan Essentials",
+      "analysis": {
+        "isVegetarian": true,
+        "hasRestrictedIngredients": false,
+        "restrictedFound": [],
+        "nonVegFound": []
+      }
+    },
+    {
+      "id": "cherry-sage-sausages-by-feed-your-head",
+      "title": "Feed Your Head - Vegan Cherry Sage Sausage, 12oz",
+      "price": "$9.99",
+      "ingredients": "VITAL WHEAT GLUTEN, SOY SAUCE, NUTRITIONAL YEAST, CHERRIES, SPICE, OLIVE OIL, EDWARD AND SONS BOUILLON, LIQUID SMOKE CONTAINS: WHEAT, SOY made & packaged in KITCHEN CHICAGO 8 51910 00806 4 324 N. Leavitt Ave. Pe SS",
+      "productUrl": "https://veganessentials.com/products/cherry-sage-sausages-by-feed-your-head",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0612/9260/9676/products/FeedYourHead-VeganCherrySageSausage_4Pack.jpg?v=1670257397",
+      "source": "Vegan Essentials",
+      "analysis": {
+        "isVegetarian": true,
+        "hasRestrictedIngredients": false,
+        "restrictedFound": [],
+        "nonVegFound": []
+      }
+    },
+    {
+      "id": "beyond-breakfast-sausage-links-by-beyond-meat-classic",
+      "title": "Beyond Meat - Breakfast Sausage Links - Classic, 8.3oz",
+      "price": "$10.99",
+      "productUrl": "https://veganessentials.com/products/beyond-breakfast-sausage-links-by-beyond-meat-classic",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0612/9260/9676/products/beyond-breakfast-sausage-links-by-beyond-meat-classic-vegan-essentials-online-store.jpg?v=1666990057",
+      "source": "Vegan Essentials"
+    },
+    {
+      "id": "bankok-bites-vegan-jerky-thai-bbq-2oz",
+      "title": "Bankok Bites - Vegan Jerky - Thai BBQ, 2oz",
+      "price": "$8.99",
+      "ingredients": "Texture Vegetable Protein (Soy, Wheat, : Corn), Glycerine, Sugar, Salt, Yeast Extract, Corn ED SM4 i J ) ) To “g, starch, Seasoning Sauce, Soy Sauce, Fermented §£ 2 Red Yeast Rice, Seasoning Powder (Soy Sauce Se 2% Powder, Disodium 5-ribonucleotide, Maltodextrin, . 8 “ re J «8 Modified tapioca starch (E1412), Vegetable Oil, Gogdness py, - a> Mushroom Powder, Tapioca Starch, Nature Plant NESS © Identical Flavour, Pepper) Contains: soy, wheat",
+      "productUrl": "https://veganessentials.com/products/bankok-bites-vegan-jerky-thai-bbq-2oz",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0612/9260/9676/files/BankokBites_VeganJerky_ThaiBBQ.jpg?v=1761162404",
+      "source": "Vegan Essentials",
+      "analysis": {
+        "isVegetarian": true,
+        "hasRestrictedIngredients": false,
+        "restrictedFound": [],
+        "nonVegFound": []
+      }
+    },
+    {
+      "id": "bankok-bites-vegan-jerky-pad-thai-2oz",
+      "title": "Bankok Bites - Vegan Jerky - Pad Thai, 2oz",
+      "price": "$8.99",
+      "ingredients": "Texture Vegetable Protein (Soy, Wheat, Corn), Spice WEP SMa, % Glycerine, Palm Sugar, Soy Sauce, Seasoning Powder Level 8 % (soy Sauce Powder, Disodium 5-ribonucleotide, 5 Zz Maltodextrin, Modified tapioca starch (E1412), vegetable = = \\199 Oil, Mushroom powder, tapioca starch, nature identical - C % p: «© flavour, pepper), Chilli, Peanut, Tartaric Acid (E334), Lime Gogdness So e © Powder (Concentrated Lime Juice Powder, Dextrose, an DNESS OV Citric Acid (E330), Silicon dioxide (E651), Curcumin (E100) Contains: soy, wheat",
+      "productUrl": "https://veganessentials.com/products/bankok-bites-vegan-jerky-pad-thai-2oz",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0612/9260/9676/files/BankokBites_VeganJerky_PadThai.jpg?v=1761161619",
+      "source": "Vegan Essentials",
+      "analysis": {
+        "isVegetarian": true,
+        "hasRestrictedIngredients": false,
+        "restrictedFound": [],
+        "nonVegFound": []
+      }
+    },
+    {
       "id": "95680",
       "title": "Ajishima Furikake Seaweed Nori Rice Seasoning 1.7 oz",
       "price": "$20",
@@ -626,6 +1189,21 @@
       }
     },
     {
+      "id": "94773",
+      "title": "Lee Kum Kee Sesame Sauce 190 g",
+      "price": "$20",
+      "ingredients": "SESAME PASTE, SOYBEAN OIL, GUMARAEICH _ XANTHAN GUM. CONTAIN S50; BEANS, No",
+      "productUrl": "https://www.sayweee.com/en/product/Lee-Kum-Kee-Sesame-Sauce/94773",
+      "imageUrl": "https://img06.weeecdn.com/item/image/561/594/149733854A1A3AEB.jpg",
+      "source": "Sayweee",
+      "analysis": {
+        "isVegetarian": true,
+        "hasRestrictedIngredients": false,
+        "restrictedFound": [],
+        "nonVegFound": []
+      }
+    },
+    {
       "id": "40267",
       "title": "Sichuan Style Hot &amp; Spicy Soup Base (Malatang) - Lee Kum Kee 7 oz",
       "price": "$20",
@@ -639,17 +1217,15 @@
         "restrictedFound": [],
         "nonVegFound": []
       }
-    }
-  ],
-  "suitable": [
+    },
     {
-      "id": "prime-roots-vegan-bacon",
-      "title": "Prime Roots - Applewood Smoked Vegan Bacon",
-      "price": "$17.00",
-      "ingredients": "Whole Food Clean Protein Blend (Mycoprotein, Yeast, Koji), Water, Coconut Oil, Konjac Root Flour, Natural Flavor, Less than 2% of &#8211; Pea Fiber, Baking Soda, Sodium Ascorbate (Vitamin C), Natural Lycopene For Color, Hydrated Lime, Natural Smoke Flavor, Rice Bran Oil, Sea Salt.,",
-      "productUrl": "https://thevreamery.com/product/prime-roots-vegan-bacon/",
-      "imageUrl": "https://thevreamery.com/wp-content/uploads/2023/10/Prime-Roots-Bacon-on-White-WebP-1.webp",
-      "source": "Vreamery",
+      "id": "low-fodmap-vegetable-soup-base",
+      "title": "Vegetable Soup Base",
+      "price": "$8.99",
+      "ingredients": "Salt, Dehydrated Vegetables (Carrots, Tomatoes), Sugar, Potato Starch, Herbs &amp; Spices (Basil, Celery, Oregano, Rosemary, Parsley, Paprika), Canola Oil, Extra Virgin Olive Oil.",
+      "productUrl": "https://www.fodyfoods.com/products/low-fodmap-vegetable-soup-base",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/1657/0407/files/VegeBase_1_84640f85-7658-4cdd-918b-0a7a7171c093.webp?v=1767014860",
+      "source": "Fody",
       "analysis": {
         "isVegetarian": true,
         "hasRestrictedIngredients": false,
@@ -657,6 +1233,368 @@
         "nonVegFound": []
       }
     },
+    {
+      "id": "low-fodmap-caesar-salad-dressing",
+      "title": "Vegan Caesar Salad Dressing",
+      "price": "$7.99",
+      "ingredients": "Avocado oil, Water, Organic cider vinegar, Mustard seed, Sea salt, Nutritional yeast, Lemon juice concentrate, Rosemary extract, Black pepper, Xanthan gum May Contain: Soy, Sesame.",
+      "productUrl": "https://www.fodyfoods.com/products/low-fodmap-caesar-salad-dressing",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/1657/0407/files/ICz88NB8.png?v=1724682366",
+      "source": "Fody",
+      "analysis": {
+        "isVegetarian": true,
+        "hasRestrictedIngredients": false,
+        "restrictedFound": [],
+        "nonVegFound": []
+      }
+    },
+    {
+      "id": "tikka-masala-seasoning",
+      "title": "Tikka Masala Seasoning",
+      "price": "$8.99",
+      "ingredients": "Spices (Cumin, Coriander, Fennel, Cinnamon, Star Anise, Clove, Cardamom, Nutmeg, Red Pepper), Paprika (Color), and Rice Hulls.",
+      "productUrl": "https://www.fodyfoods.com/products/tikka-masala-seasoning",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/1657/0407/files/NEW_Tikka_Masala_Seasoning.webp?v=1768497993",
+      "source": "Fody",
+      "analysis": {
+        "isVegetarian": true,
+        "hasRestrictedIngredients": false,
+        "restrictedFound": [],
+        "nonVegFound": []
+      }
+    },
+    {
+      "id": "low-fodmap-tomato-basil-sauce",
+      "title": "Tomato Basil Pasta Sauce",
+      "price": "$8.99",
+      "ingredients": "Chopped Tomatoes, Extra Virgin Olive Oil, Carrot Puree, Basil, Sea Salt.",
+      "productUrl": "https://www.fodyfoods.com/products/low-fodmap-tomato-basil-sauce",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/1657/0407/files/TomatoBasilSensitiveRecipe-1_889dd731-e05b-4389-a212-5dc917fec58b.webp?v=1766503051",
+      "source": "Fody",
+      "analysis": {
+        "isVegetarian": true,
+        "hasRestrictedIngredients": false,
+        "restrictedFound": [],
+        "nonVegFound": []
+      }
+    },
+    {
+      "id": "low-fodmap-vegan-bolognese-pasta-sauce",
+      "title": "Vegan Bolognese Pasta Sauce",
+      "price": "$8.99",
+      "ingredients": "Chopped Tomatoes, Extra Virgin Olive Oil, Kabocha Squash, Carrot Puree, Shiitake Mushrooms, Walnuts, Dehydrated Carrots, Sea Salt. Contains: Walnuts.",
+      "productUrl": "https://www.fodyfoods.com/products/low-fodmap-vegan-bolognese-pasta-sauce",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/1657/0407/files/VeganBoloSensitiveRecipe-1_5791b155-d935-4e8d-b14a-fffe75114b3f.webp?v=1766502963",
+      "source": "Fody",
+      "analysis": {
+        "isVegetarian": true,
+        "hasRestrictedIngredients": false,
+        "restrictedFound": [],
+        "nonVegFound": []
+      }
+    },
+    {
+      "id": "low-fodmap-br-b-big-taco-seasoning-b-big-br-small-no-onion-no-garlic-gluten-free-small",
+      "title": "Taco Seasoning",
+      "price": "$8.99",
+      "ingredients": "Sea Salt, Chili Pepper, Cumin, Paprika, Oregano.",
+      "productUrl": "https://www.fodyfoods.com/products/low-fodmap-br-b-big-taco-seasoning-b-big-br-small-no-onion-no-garlic-gluten-free-small",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/1657/0407/files/NEW_Taco_Seasoning_d2408b74-434d-456f-b5e4-be47d52aa411.webp?v=1768497928",
+      "source": "Fody",
+      "analysis": {
+        "isVegetarian": true,
+        "hasRestrictedIngredients": false,
+        "restrictedFound": [],
+        "nonVegFound": []
+      }
+    },
+    {
+      "id": "low-fodmap-taco-sauce",
+      "title": "Taco Sauce",
+      "price": "$7.49",
+      "ingredients": "Water, Tomato Paste, Distilled Vinegar, Cumin, Himalayan Pink Salt, Avocado Oil, Arrowroot Powder, Paprika, Organic Raw Cane Sugar, Ancho Powder.",
+      "productUrl": "https://www.fodyfoods.com/products/low-fodmap-taco-sauce",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/1657/0407/files/U_RP5qaA.png?v=1712850589",
+      "source": "Fody",
+      "analysis": {
+        "isVegetarian": true,
+        "hasRestrictedIngredients": false,
+        "restrictedFound": [],
+        "nonVegFound": []
+      }
+    },
+    {
+      "id": "low-fodmap-br-b-big-steak-seasoning-b-big-br-small-no-onion-no-garlic-gluten-free-small",
+      "title": "Steak Seasoning",
+      "price": "$8.99",
+      "ingredients": "Sea Salt, Black Pepper, Dill, Coriander, Red Pepper.",
+      "productUrl": "https://www.fodyfoods.com/products/low-fodmap-br-b-big-steak-seasoning-b-big-br-small-no-onion-no-garlic-gluten-free-small",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/1657/0407/files/NEW_Steak_Seasoning_95fe7f43-9f89-4fef-806e-3b1c4e615375.webp?v=1768497853",
+      "source": "Fody",
+      "analysis": {
+        "isVegetarian": true,
+        "hasRestrictedIngredients": false,
+        "restrictedFound": [],
+        "nonVegFound": []
+      }
+    },
+    {
+      "id": "low-fodmap-arrabbiata-sauce",
+      "title": "Spicy Marinara (Arrabbiata) Pasta Sauce",
+      "price": "$8.99",
+      "ingredients": "Chopped Tomatoes, Extra Virgin Olive Oil, Sea Salt, Crushed Red Pepper.",
+      "productUrl": "https://www.fodyfoods.com/products/low-fodmap-arrabbiata-sauce",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/1657/0407/files/SpicyMarinaraSensitiveRecipe-1_1f2be782-b6f8-419d-ad40-516417b7ab33.webp?v=1766503103",
+      "source": "Fody",
+      "analysis": {
+        "isVegetarian": true,
+        "hasRestrictedIngredients": false,
+        "restrictedFound": [],
+        "nonVegFound": []
+      }
+    },
+    {
+      "id": "low-fodmap-sesame-ginger-sauce-marinade",
+      "title": "Sesame Ginger Sauce & Marinade",
+      "price": "$7.49",
+      "ingredients": "WATER, DISTILLED VINEGAR, TOASTED SESAME OIL, GLUTEN &amp; SOY FREE TAMARI SAUCE (WATER, PEA, SALT, PEA PROTEIN, ALCOHOL), ORGANIC RAW CANE SUGAR, ARROWROOT POWDER, AVOCADO OIL, GINGER, HIMALAYAN PINK SALT, ORANGE JUICE CONCENTRATE, TAMARIND. Contains: Sesame.",
+      "productUrl": "https://www.fodyfoods.com/products/low-fodmap-sesame-ginger-sauce-marinade",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/1657/0407/files/1JWb5iYQ.png?v=1712850430",
+      "source": "Fody",
+      "analysis": {
+        "isVegetarian": true,
+        "hasRestrictedIngredients": false,
+        "restrictedFound": [],
+        "nonVegFound": []
+      }
+    },
+    {
+      "id": "low-fodmap-salsa-verde",
+      "title": "Salsa Verde",
+      "price": "$7.99",
+      "ingredients": "Roasted Green Tomatoes, Green Bell Peppers, Jalapeño Peppers, Tomatillos, Water, Roasted Tomatoes, Lime Juice Concentrate, Cilantro, Sea Salt, Black Pepper, Cumin.",
+      "productUrl": "https://www.fodyfoods.com/products/low-fodmap-salsa-verde",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/1657/0407/files/SalsaVerdeSensitiveRecipe-1_fd3de362-bd33-443b-a77a-e202747ea5ba.webp?v=1768498138",
+      "source": "Fody",
+      "analysis": {
+        "isVegetarian": true,
+        "hasRestrictedIngredients": false,
+        "restrictedFound": [],
+        "nonVegFound": []
+      }
+    },
+    {
+      "id": "low-fodmap-ranch-style-seasoning",
+      "title": "Ranch Style Seasoning",
+      "price": "$8.99",
+      "ingredients": "Spices (Parsley, Mustard, Dill, Black Pepper), Sea Salt, White Rice Flour, Dehydrated Tomato, Lemon Peel, Nutritional Yeast, Dill Extract.",
+      "productUrl": "https://www.fodyfoods.com/products/low-fodmap-ranch-style-seasoning",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/1657/0407/files/NEW_Ranch_Seasoning_02d38d9d-204f-483e-b98a-9b257627d099.webp?v=1768497781",
+      "source": "Fody",
+      "analysis": {
+        "isVegetarian": true,
+        "hasRestrictedIngredients": false,
+        "restrictedFound": [],
+        "nonVegFound": []
+      }
+    },
+    {
+      "id": "original-ketchup",
+      "title": "Original Ketchup",
+      "price": "$7.49",
+      "ingredients": "Tomato Puree (Water, Tomato Paste), Organic Cane Sugar, Distilled Vinegar, Salt, Black Pepper, Clove Powder, Chili Powder, Allspice Powder, Cinnamon Powder.",
+      "productUrl": "https://www.fodyfoods.com/products/original-ketchup",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/1657/0407/files/zwuyTC-A.png?v=1712850490",
+      "source": "Fody",
+      "analysis": {
+        "isVegetarian": true,
+        "hasRestrictedIngredients": false,
+        "restrictedFound": [],
+        "nonVegFound": []
+      }
+    },
+    {
+      "id": "low-fodmap-mild-salsa",
+      "title": "Mild Salsa",
+      "price": "$7.99",
+      "ingredients": "Diced Tomatoes, Tomato Puree (Water, Tomato Paste), Jalapeno Peppers, Apple Cider Vinegar, Sea Salt, Cilantro, Lime Juice Concentrate, Cumin.",
+      "productUrl": "https://www.fodyfoods.com/products/low-fodmap-mild-salsa",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/1657/0407/files/MildSalsaSensitiveRecipe-1.webp?v=1757528191",
+      "source": "Fody",
+      "analysis": {
+        "isVegetarian": true,
+        "hasRestrictedIngredients": false,
+        "restrictedFound": [],
+        "nonVegFound": []
+      }
+    },
+    {
+      "id": "low-fodmap-teriyaki-sauce-marinade",
+      "title": "NO SOY Teriyaki Sauce & Marinade",
+      "price": "$7.49",
+      "ingredients": "WATER, GLUTEN &amp; SOY FREE TAMARI SAUCE (WATER, PEA, SALT, PEA PROTEIN, ALCOHOL), RICE WINE VINEGAR, ORGANIC DARK SUGAR, ARROWROOT POWDER, TOASTED SESAME OIL, PINEAPPLE JUICE CONCENTRATE, TAMARIND, GINGER.",
+      "productUrl": "https://www.fodyfoods.com/products/low-fodmap-teriyaki-sauce-marinade",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/1657/0407/files/Teriyaki_Sauce_Sensitive_Recipe_-_1_0f08b70b-3bb1-4d57-8725-aac295b9b604.webp?v=1768498371",
+      "source": "Fody",
+      "analysis": {
+        "isVegetarian": true,
+        "hasRestrictedIngredients": false,
+        "restrictedFound": [],
+        "nonVegFound": []
+      }
+    },
+    {
+      "id": "low-fodmap-bbq-sauce",
+      "title": "Original BBQ Sauce",
+      "price": "$6.99",
+      "ingredients": "Tomato Paste, Apple Cider Vinegar, Water, Organic Cane Sugar, Molasses, Organic Horseradish, Sea Salt, Natural Smoke Flavor, Black Pepper.",
+      "productUrl": "https://www.fodyfoods.com/products/low-fodmap-bbq-sauce",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/1657/0407/files/83grVxsw.webp?v=1757539846",
+      "source": "Fody",
+      "analysis": {
+        "isVegetarian": true,
+        "hasRestrictedIngredients": false,
+        "restrictedFound": [],
+        "nonVegFound": []
+      }
+    },
+    {
+      "id": "low-fodmap-salsa-medium",
+      "title": "Medium Salsa",
+      "price": "$7.99",
+      "ingredients": "Diced Tomatoes, Tomato Puree (Water, Tomato Paste), Jalapeno Peppers, Cilantro, Apple Cider Vinegar, Sea Salt, Lime Juice Concentrate, Cumin.",
+      "productUrl": "https://www.fodyfoods.com/products/low-fodmap-salsa-medium",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/1657/0407/files/MediumSalsaSensitiveRecipe-1_46fdae4e-c63e-487f-baeb-8b11c4499e2d.webp?v=1768497506",
+      "source": "Fody",
+      "analysis": {
+        "isVegetarian": true,
+        "hasRestrictedIngredients": false,
+        "restrictedFound": [],
+        "nonVegFound": []
+      }
+    },
+    {
+      "id": "low-fodmap-marinara-sauce",
+      "title": "Marinara Pasta Sauce",
+      "price": "$8.99",
+      "ingredients": "Chopped Tomatoes, Extra Virgin Olive Oil, Carrots Puree, Celery Puree, Sea Salt, Basil.",
+      "productUrl": "https://www.fodyfoods.com/products/low-fodmap-marinara-sauce",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/1657/0407/files/MarinaraSensitiveRecipe-1_27a6f66b-8be5-4786-8dab-9c948d08f71e.webp?v=1767050181",
+      "source": "Fody",
+      "analysis": {
+        "isVegetarian": true,
+        "hasRestrictedIngredients": false,
+        "restrictedFound": [],
+        "nonVegFound": []
+      }
+    },
+    {
+      "id": "italian-seasoning-blend",
+      "title": "Italian Blend Seasoning",
+      "price": "$8.99",
+      "ingredients": "Spices (Oregano, Basil, Thyme, Marjoram, Rosemary, Spearmint).",
+      "productUrl": "https://www.fodyfoods.com/products/italian-seasoning-blend",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/1657/0407/files/NEW_Italian_Blend_Seasoning.webp?v=1768497678",
+      "source": "Fody",
+      "analysis": {
+        "isVegetarian": true,
+        "hasRestrictedIngredients": false,
+        "restrictedFound": [],
+        "nonVegFound": []
+      }
+    },
+    {
+      "id": "low-fodmap-lemon-herb-seasoning",
+      "title": "Lemon & Herb Seasoning",
+      "price": "$8.99",
+      "ingredients": "Spices (Rosemary, Thyme, Sage, Black Pepper), Sea Salt, Orange Peel, Lemon Extractives.",
+      "productUrl": "https://www.fodyfoods.com/products/low-fodmap-lemon-herb-seasoning",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/1657/0407/files/NEW_Lemon_Herb_Seasoning_3d98602f-ab6b-427e-9565-eeacf4a81c17.webp?v=1767052546",
+      "source": "Fody",
+      "analysis": {
+        "isVegetarian": true,
+        "hasRestrictedIngredients": false,
+        "restrictedFound": [],
+        "nonVegFound": []
+      }
+    },
+    {
+      "id": "low-fodmap-maple-dijon-salad-dressing",
+      "title": "Maple Dijon Salad Dressing",
+      "price": "$7.99",
+      "ingredients": "Avocado oil, Water, Maple syrup, Organic cane sugar, Organic white wine vinegar, Ground Mustard, Sea salt, Organic apple cider vinegar, Nutritional yeast, Rosemary extract, Black pepper, Tarragon, Xanthan gum. May Contain: Soy, Sesame.",
+      "productUrl": "https://www.fodyfoods.com/products/low-fodmap-maple-dijon-salad-dressing",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/1657/0407/files/MapleDijon-SensitiveRecipe-1_ed7c8e2c-231e-4447-9e45-abc308104bfc.webp?v=1768497400",
+      "source": "Fody",
+      "analysis": {
+        "isVegetarian": true,
+        "hasRestrictedIngredients": false,
+        "restrictedFound": [],
+        "nonVegFound": []
+      }
+    },
+    {
+      "id": "low-fodmap-green-enchilada-sauce",
+      "title": "Green Enchilada Sauce",
+      "price": "$7.49",
+      "ingredients": "TOMATILLOS, WATER, ANAHEIM PEPPERS, DISTILLED VINEGAR, AVOCADO OIL, ARROWROOT POWDER, ROASTED POBLANO PUREE, HIMALAYAN PINK SALT, CUMIN, CORIANDER, BLACK PEPPER, CILANTRO.",
+      "productUrl": "https://www.fodyfoods.com/products/low-fodmap-green-enchilada-sauce",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/1657/0407/files/AMXpO95Q.png?v=1712850567",
+      "source": "Fody",
+      "analysis": {
+        "isVegetarian": true,
+        "hasRestrictedIngredients": false,
+        "restrictedFound": [],
+        "nonVegFound": []
+      }
+    },
+    {
+      "id": "low-fodmap-garden-herb-salad-dressing",
+      "title": "Garden Herb Salad Dressing",
+      "price": "$7.99",
+      "ingredients": "Avocado oil, Water, Organic cider vinegar, Organic cane sugar, Sea salt, Mustard seed, Lemon juice concentrate, Black pepper, Rosemary extract, Tarragon, Rosemary, Dill, Celery seed, Xanthan gum, Parsley May Contain: Soy, Sesame.",
+      "productUrl": "https://www.fodyfoods.com/products/low-fodmap-garden-herb-salad-dressing",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/1657/0407/files/4Ik56nzk.png?v=1724682220",
+      "source": "Fody",
+      "analysis": {
+        "isVegetarian": true,
+        "hasRestrictedIngredients": false,
+        "restrictedFound": [],
+        "nonVegFound": []
+      }
+    },
+    {
+      "id": "low-fodmap-balsamic-vinaigrette",
+      "title": "Balsamic Vinaigrette",
+      "price": "$7.99",
+      "ingredients": "Water, Avocado oil, Organic balsamic vinegar (Organic wine vinegar, organic concentrated grape must), Organic cider vinegar, Sea salt, Rosemary extract, Xanthan gum, Basil, Black pepper, Oregano, Rosemary May Contain: Soy, Sesame.",
+      "productUrl": "https://www.fodyfoods.com/products/low-fodmap-balsamic-vinaigrette",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/1657/0407/files/fVTEJWxQ.png?v=1724682457",
+      "source": "Fody",
+      "analysis": {
+        "isVegetarian": true,
+        "hasRestrictedIngredients": false,
+        "restrictedFound": [],
+        "nonVegFound": []
+      }
+    },
+    {
+      "id": "low-fodmap-everyday-seasoning",
+      "title": "Everyday Seasoning",
+      "price": "$8.99",
+      "ingredients": "Dehydrated Vegetables (Carrot, Red Bell Pepper, Tomato, Spinach), Spices (Parsley, Black Pepper, Red Pepper, Basil, Celery Seed, Rosemary, Thyme, Oregano, Savory, Mustard, Marjoram, Coriander), Sea Salt, Orange Peel, Black Sesame Seed, Lemon Peel, and White Sesame Seed.",
+      "productUrl": "https://www.fodyfoods.com/products/low-fodmap-everyday-seasoning",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/1657/0407/files/NEW_Everyday_Seasoning.webp?v=1768497580",
+      "source": "Fody",
+      "analysis": {
+        "isVegetarian": true,
+        "hasRestrictedIngredients": false,
+        "restrictedFound": [],
+        "nonVegFound": []
+      }
+    }
+  ],
+  "suitable": [
     {
       "id": "rebel-cave-aged-classic-brie",
       "title": "Rebel Cheese - Cave Aged Classic Brie",
@@ -673,42 +1611,12 @@
       }
     },
     {
-      "id": "thrilling-foods-bakon-strips-vegan-bacon",
-      "title": "Thrilling Foods - Bakon Strips",
-      "price": "$20.00",
-      "ingredients": "Non-GMO Soy Milk (Water, Soybeans), Sustainable Non-Hydrogenated Palm Oil, Color from Radish and Paprika, Yeast Extract, Maple Syrup, Sea Salt, Black Pepper, Citric Acid,",
-      "productUrl": "https://thevreamery.com/product/thrilling-foods-bakon-strips-vegan-bacon/",
-      "imageUrl": "https://thevreamery.com/wp-content/uploads/2024/02/Thrilling-Foods-Bakon-Strips.webp",
-      "source": "Vreamery",
-      "analysis": {
-        "isVegetarian": true,
-        "hasRestrictedIngredients": false,
-        "restrictedFound": [],
-        "nonVegFound": []
-      }
-    },
-    {
       "id": "bandit-barn-cat-ash-rind-vegan-brie",
       "title": "Bandit - Barn Cat Ash Rind Brie",
       "price": "$22.50",
       "ingredients": "Cashews, Filtered Water, Coconut Oil, Salt, Vegetable Ash, Cultures & Enzymes,",
       "productUrl": "https://thevreamery.com/product/bandit-barn-cat-ash-rind-vegan-brie/",
       "imageUrl": "https://thevreamery.com/wp-content/uploads/2024/03/Bandit-Barn-Cat-2.webp",
-      "source": "Vreamery",
-      "analysis": {
-        "isVegetarian": true,
-        "hasRestrictedIngredients": false,
-        "restrictedFound": [],
-        "nonVegFound": []
-      }
-    },
-    {
-      "id": "oshi-plant-based-salmon-filet",
-      "title": "Oshi - Plant Based Salmon Filet",
-      "price": "$17.00",
-      "ingredients": "Water, Soy Protein Isolate, Blend of Vegetable Oils (Sunflower Oil, DHA and EPA Algal Oil from Schizochytrium), Fungi Protein, Contains 2% or less of: , Rice Flour, Tapioca Starch, Salt, Sugar, Maltodextrin, Thickeners (Carrageenan, Pectin), Antioxidant (Tocopherols), Lycopene (Natural Color), Natural and Artificial Flavors, ,",
-      "productUrl": "https://thevreamery.com/product/oshi-plant-based-salmon-filet/",
-      "imageUrl": "https://thevreamery.com/wp-content/uploads/2025/01/Oshi-Salmon-977x977-1.png",
       "source": "Vreamery",
       "analysis": {
         "isVegetarian": true,
@@ -739,21 +1647,6 @@
       "ingredients": "Water, White Rice Flour, Coconut Oil*, Mellow White Miso*",
       "productUrl": "https://thevreamery.com/product/rebel-smoked-cheddar/",
       "imageUrl": "https://thevreamery.com/wp-content/uploads/2024/03/Rebel-New-Smoked-Cheddar.webp",
-      "source": "Vreamery",
-      "analysis": {
-        "isVegetarian": true,
-        "hasRestrictedIngredients": false,
-        "restrictedFound": [],
-        "nonVegFound": []
-      }
-    },
-    {
-      "id": "chunk-foods-chunk-steak",
-      "title": "Chunk Foods - Chunk Steak",
-      "price": "$17.00",
-      "ingredients": "Water, Cultured Soy Protein (Defatted Soy Flour, Soy Protein Isolate, Wheat Gluten), Coconut Oil, Natural Flavors, Beet Juice Concentrate (for color), Salt, Iron Bisglycinate (Iron), Cyanocobalamin (Vitamin B12),",
-      "productUrl": "https://thevreamery.com/product/chunk-foods-chunk-steak/",
-      "imageUrl": "https://thevreamery.com/wp-content/uploads/2025/04/Chunk-Steak-Box.webp",
       "source": "Vreamery",
       "analysis": {
         "isVegetarian": true,
@@ -913,42 +1806,12 @@
       }
     },
     {
-      "id": "chunk-foods-steakhouse-cut",
-      "title": "Chunk Foods - Steakhouse Cut",
-      "price": "$16.50",
-      "ingredients": "Water, Cultured Soy Protein (Defatted Soy Flour, Soy Protein Isolate, Wheat Gluten), Coconut Oil, Natural Flavors, Beet Juice Concentrate (for color), Salt, Iron Bisglycinate (Iron), Cyanocobalamin (Vitamin B12),",
-      "productUrl": "https://thevreamery.com/product/chunk-foods-steakhouse-cut/",
-      "imageUrl": "https://thevreamery.com/wp-content/uploads/2025/04/Chunk-Steakhouse-Cut-Box.webp",
-      "source": "Vreamery",
-      "analysis": {
-        "isVegetarian": true,
-        "hasRestrictedIngredients": false,
-        "restrictedFound": [],
-        "nonVegFound": []
-      }
-    },
-    {
       "id": "rebel-balsamic-fig-walnut-fromage",
       "title": "Rebel Cheese - Balsamic Fig Walnut Fromage",
       "price": "$22.50",
       "ingredients": "Organic Cashews, Organic Figs, Organic Coconut Oil, Organic Coconut Milk, Organic Lemon Juice, Water, Walnuts, Balsamic Glaze (Wine Vinegar, Concentrated Grape Must, Caramel Color, Glucose Syrup, Sugar, Modified Corn Starch, Xanthan Gum, Sulfites), Fine Salt,",
       "productUrl": "https://thevreamery.com/product/rebel-balsamic-fig-walnut-fromage/",
       "imageUrl": "https://thevreamery.com/wp-content/uploads/2024/02/balsamic-fig-11.webp",
-      "source": "Vreamery",
-      "analysis": {
-        "isVegetarian": true,
-        "hasRestrictedIngredients": false,
-        "restrictedFound": [],
-        "nonVegFound": []
-      }
-    },
-    {
-      "id": "lypid-plant-based-smoked-pork-belly-slices",
-      "title": "Lypid - Plant-Based Thick Cut Bacon",
-      "price": "$18.00",
-      "ingredients": "Water, Soybean Oil, Wheat Protein, Soy Protein, Soy Sauce, Contains 2% or less of: Artificial Flavors, Candelilla Wax, Salt, Mushroom Seasonings, Yeast Extract, Smoked Paprika Powder, Hydrolyzed Soy Protein, Carrageenan, Sodium Alginate, Maltodextrin, Sugar, Artificial Colorant,",
-      "productUrl": "https://thevreamery.com/product/lypid-plant-based-smoked-pork-belly-slices/",
-      "imageUrl": "https://thevreamery.com/wp-content/uploads/2024/02/Lypid-Pork-Belly-2.webp",
       "source": "Vreamery",
       "analysis": {
         "isVegetarian": true,
@@ -1069,21 +1932,6 @@
       "ingredients": "Cashews, Filtered Water, Coconut Oil, Coconut Milk, Cultures, Roasted Red Pepper, Sundried Tomatoes, ‘Miso Master’ Chickpea Miso, Salt",
       "productUrl": "https://thevreamery.com/product/dare-vegan-smoked-pimento-cheese/",
       "imageUrl": "https://thevreamery.com/wp-content/uploads/2024/02/Dare-Smoked-Pimento-Single.webp",
-      "source": "Vreamery",
-      "analysis": {
-        "isVegetarian": true,
-        "hasRestrictedIngredients": false,
-        "restrictedFound": [],
-        "nonVegFound": []
-      }
-    },
-    {
-      "id": "chunk-foods-chunk-slab",
-      "title": "Chunk Foods - Chunk Slab",
-      "price": "$18.50",
-      "ingredients": "Water, Cultured Soy Protein (Defatted Soy Flour, Soy Protein Isolate, Wheat Gluten), Coconut Oil, Natural Flavors, Beet Juice Concentrate (for color), Salt, Iron Bisglycinate (Iron), Cyanocobalamin (Vitamin B12),",
-      "productUrl": "https://thevreamery.com/product/chunk-foods-chunk-slab/",
-      "imageUrl": "https://thevreamery.com/wp-content/uploads/2025/04/CHUNK-salb-New.webp",
       "source": "Vreamery",
       "analysis": {
         "isVegetarian": true,
@@ -1249,36 +2097,6 @@
       "ingredients": "Organic Wheat Flour , Organic Brown Rice Syrup , Organic Palm Fruit Oil (Sustainably Sourced), Organic Sugar , Organic Soy Flour , Molasses , Sea Salt , Soy Lecithin , Baking Soda , Organic Cinnamon , Organic Vanilla Extract ,",
       "productUrl": "https://thevreamery.com/product/stroop-club-traditional-caramel-stroopwafel/",
       "imageUrl": "https://thevreamery.com/wp-content/uploads/2024/02/Stroop-Traditional-Carmel.webp",
-      "source": "Vreamery",
-      "analysis": {
-        "isVegetarian": true,
-        "hasRestrictedIngredients": false,
-        "restrictedFound": [],
-        "nonVegFound": []
-      }
-    },
-    {
-      "id": "yo-egg-the-patty-one",
-      "title": "Yo Egg - The Patty One",
-      "price": "$10.00",
-      "ingredients": "Water, Sunflower Oil, Lentil Flour, Soy Protein, Chickpea Protein, , Contains 2% or less of: Corn Flour, Potato Starch, Yeast, Psyllium, Seaweed Extract, Beta Carotene (color), Pectin, Calcium Lactate, Potassium Salt, Carob Gum, Methylcellulose.",
-      "productUrl": "https://thevreamery.com/product/yo-egg-the-patty-one/",
-      "imageUrl": "https://thevreamery.com/wp-content/uploads/2025/10/Yo-Egg-The-Pattie-One.webp",
-      "source": "Vreamery",
-      "analysis": {
-        "isVegetarian": true,
-        "hasRestrictedIngredients": false,
-        "restrictedFound": [],
-        "nonVegFound": []
-      }
-    },
-    {
-      "id": "chunk-foods-chunk-pulled",
-      "title": "Chunk Foods - Chunk Pulled",
-      "price": "$16.00",
-      "ingredients": "Water, Cultured Soy Protein (Defatted Soy Flour, Soy Protein Isolate, Wheat Gluten), Coconut Oil, Natural Flavors, Beet Juice Concentrate (for color), Salt, Iron Bisglycinate (Iron), Cyanocobalamin (Vitamin B12),",
-      "productUrl": "https://thevreamery.com/product/chunk-foods-chunk-pulled/",
-      "imageUrl": "https://thevreamery.com/wp-content/uploads/2025/04/Chunk-Pulled-Box.webp",
       "source": "Vreamery",
       "analysis": {
         "isVegetarian": true,
@@ -1483,21 +2301,6 @@
       }
     },
     {
-      "id": "nutcase-vegan-nutty-burger-patties",
-      "title": "Nutcase Organics - Gourmet Nut Burger Patties",
-      "price": "$9.50",
-      "ingredients": "*Denotes Organic Ingredients , Filtered Water, Brown Rice*, Quinoa*, Hazelnut*, Walnut*, Hemp Seed*, Flax Seed*, Beet Powder*, Balsamic Vinegar*, Sesame Seed*, Sea Salt, Black Pepper*, Cumin*, Mesquite Powder*",
-      "productUrl": "https://thevreamery.com/product/nutcase-vegan-nutty-burger-patties/",
-      "imageUrl": "https://thevreamery.com/wp-content/uploads/2024/09/Nutcase-Nut-Burger-NEW.webp",
-      "source": "Vreamery",
-      "analysis": {
-        "isVegetarian": true,
-        "hasRestrictedIngredients": false,
-        "restrictedFound": [],
-        "nonVegFound": []
-      }
-    },
-    {
       "id": "scratch-house-dill-havarti",
       "title": "Scratch House - Dill Havarti",
       "price": "$17.50",
@@ -1684,21 +2487,6 @@
       "ingredients": "Textured Soy Protein, Tamari (Water, Soybeans, Salt, Alcohol), Maple Syrup, Water, Natural Smoke Flavor, Extra Virgin Olive Oil or High Oleic Sunflower Oil, Vinegar, Contains Less Than 2% Of: Beet Juice (for color), Vegan Brown Sugar, Spices, Paprika,",
       "productUrl": "https://thevreamery.com/product/louisville-vegan-jerky-co-toppins-bacon-bits/",
       "imageUrl": "https://thevreamery.com/wp-content/uploads/2024/01/Louisville-Bacon-Bits-1.webp",
-      "source": "Vreamery",
-      "analysis": {
-        "isVegetarian": true,
-        "hasRestrictedIngredients": false,
-        "restrictedFound": [],
-        "nonVegFound": []
-      }
-    },
-    {
-      "id": "shroomeats-mushroom-patties-vegan-burgers",
-      "title": "Shroomeats® - Mushroom Patties: Vegan Burgers",
-      "price": "$10.00",
-      "ingredients": "Shiitake Mushroom , Pea Protein , Sunflower Oil , Salt , Pepper , Potato Flour ,",
-      "productUrl": "https://thevreamery.com/product/shroomeats-mushroom-patties-vegan-burgers/",
-      "imageUrl": "https://thevreamery.com/wp-content/uploads/2025/04/Shroomeats-Mushroom-Patties.webp",
       "source": "Vreamery",
       "analysis": {
         "isVegetarian": true,
@@ -2098,21 +2886,6 @@
       }
     },
     {
-      "id": "shroomeats-mushroom-shred-it-vegan-ground-meat",
-      "title": "Shroomeats® - Mushroom Shred-It: Vegan Ground Meat",
-      "price": "$10.00",
-      "ingredients": "Shiitake Mushroom , Pea Protein , Sunflower Oil , Salt , Pepper , Potato Flour ,",
-      "productUrl": "https://thevreamery.com/product/shroomeats-mushroom-shred-it-vegan-ground-meat/",
-      "imageUrl": "https://thevreamery.com/wp-content/uploads/2025/04/Shroomeats-Mushroom-Shred-It.webp",
-      "source": "Vreamery",
-      "analysis": {
-        "isVegetarian": true,
-        "hasRestrictedIngredients": false,
-        "restrictedFound": [],
-        "nonVegFound": []
-      }
-    },
-    {
       "id": "mad-flavor-native-blue-chevre",
       "title": "Mad Flavor - Native Blue Chevre",
       "price": "$19.50",
@@ -2179,21 +2952,6 @@
       "ingredients": "Organic Cashews, Organic Coconut Oil",
       "productUrl": "https://thevreamery.com/product/rose-city-creamery-aged-cheddar/",
       "imageUrl": "https://thevreamery.com/wp-content/uploads/2025/12/Rose-City-Aged-Cheddar.webp",
-      "source": "Vreamery",
-      "analysis": {
-        "isVegetarian": true,
-        "hasRestrictedIngredients": false,
-        "restrictedFound": [],
-        "nonVegFound": []
-      }
-    },
-    {
-      "id": "louisville-vegan-jerky-co-buffalo-hot-wing",
-      "title": "Louisville Vegan Jerky Co. - Buffalo Hot Wing",
-      "price": "$8.00",
-      "ingredients": "Textured Soy Protein, Cayenne Pepper Paste (Red Cayenne Pepper, Salt, Vinegar), Water",
-      "productUrl": "https://thevreamery.com/product/louisville-vegan-jerky-co-buffalo-hot-wing/",
-      "imageUrl": "https://thevreamery.com/wp-content/uploads/2024/08/Louisville-Vegan-Jerky-Buffalo-Hot-Wing.webp",
       "source": "Vreamery",
       "analysis": {
         "isVegetarian": true,
@@ -2713,21 +3471,6 @@
       }
     },
     {
-      "id": "tofuna-fysh-vegan-fysh-sauce",
-      "title": "Tofuna Fysh - Vegan Fysh Sauce",
-      "price": "$16.00",
-      "ingredients": "Water, Organic Brown Rice Vinegar (Organic Brown Rice, Sea Salt, Koji Spores), Non-GMO Tamari Soy Sauce (Water, Soybeans, Salt, Alcohol), Organic Pineapple Juice (Organic Pineapple Juice, Filtered Water, Organic Pineapple Juice Concentrate), Dried Kombu, Dried Shiitake Mushrooms, Organic Horseradish Powder,",
-      "productUrl": "https://thevreamery.com/product/tofuna-fysh-vegan-fysh-sauce/",
-      "imageUrl": "https://thevreamery.com/wp-content/uploads/2026/01/Tofuna-Fysh-Vegan-Fish-Sauce.webp",
-      "source": "Vreamery",
-      "analysis": {
-        "isVegetarian": true,
-        "hasRestrictedIngredients": false,
-        "restrictedFound": [],
-        "nonVegFound": []
-      }
-    },
-    {
       "id": "rose-city-creamery-bold-and-smoky",
       "title": "Rose City Creamery - Bold and Smoky",
       "price": "$20.00",
@@ -2878,36 +3621,6 @@
       }
     },
     {
-      "id": "midcoast-vegan-pepperoni",
-      "title": "Midcoast Vegan - Pepperoni",
-      "price": "$19.00",
-      "ingredients": "Vital Wheat Gluten, Water, Vegetable Bouillon (Spices, Shea Butter, Maltodextrin), Vegan Red Wine, Sun-Dried Tomatoes, Salt, Red Wine Vinegar, Spices, Lycopene, Hickory &#038; Oak Smoke,",
-      "productUrl": "https://thevreamery.com/product/midcoast-vegan-pepperoni/",
-      "imageUrl": "https://thevreamery.com/wp-content/uploads/2026/03/Midcoast-Vegan-Pepperoni.webp",
-      "source": "Vreamery",
-      "analysis": {
-        "isVegetarian": true,
-        "hasRestrictedIngredients": false,
-        "restrictedFound": [],
-        "nonVegFound": []
-      }
-    },
-    {
-      "id": "snapper-creek-jerky-al-pastor",
-      "title": "Snapper Creek Jerky - Al Pastor",
-      "price": "$9.00",
-      "ingredients": "Vital Wheat Gluten, Lentils, Apple Cider Vinegar (Apples, Filtered Water), Less Sodium Soy Sauce (Water, Wheat, Soybeans, Salt, Lactic Acid), Inactive",
-      "productUrl": "https://thevreamery.com/product/snapper-creek-jerky-al-pastor/",
-      "imageUrl": "https://thevreamery.com/wp-content/uploads/2025/12/Snapper-Creeek-Jerky-Al-Pastor.webp",
-      "source": "Vreamery",
-      "analysis": {
-        "isVegetarian": true,
-        "hasRestrictedIngredients": false,
-        "restrictedFound": [],
-        "nonVegFound": []
-      }
-    },
-    {
       "id": "avafina-organics-original-queen-cheese",
       "title": "Avafina Organics - Original Queen Cheese™",
       "price": "$10.25",
@@ -2959,21 +3672,6 @@
       "ingredients": "Tapioca syrup, cane sugar, filtered water, tapioca starch, carrageenan, soy protein, colored with apple cider concentrate, natural vanilla flavor, maple syrup, natural maple flavor",
       "productUrl": "https://veganessentials.com/products/maple-flavored-dandies-mini-marshmallows-by-chicago-vegan-foods",
       "imageUrl": "https://cdn.shopify.com/s/files/1/0612/9260/9676/products/maple-flavored-dandies-mini-marshmallows-by-chicago-vegan-foods-vegan-essentials-online-store.jpg?v=1666993994",
-      "source": "Vegan Essentials",
-      "analysis": {
-        "isVegetarian": true,
-        "hasRestrictedIngredients": false,
-        "restrictedFound": [],
-        "nonVegFound": []
-      }
-    },
-    {
-      "id": "cavi-art-vegan-caviar-alternative-foodservice-size-jar-17-6oz-multiple-flavors",
-      "title": "Cavi-Art Vegan Caviar Alternative, Foodservice Size Jar, 17.6oz | Multiple Flavors",
-      "price": "$35.49",
-      "ingredients": "Black: Seaweed alginates (83%), water, salt, spices, aroma, acidifier (citric acid), stabilizer (xanthan gum), preservatives (potassium sorbate, sodium benzoate), caramel color",
-      "productUrl": "https://veganessentials.com/products/cavi-art-vegan-caviar-alternative-foodservice-size-jar-17-6oz-multiple-flavors",
-      "imageUrl": "https://cdn.shopify.com/s/files/1/0612/9260/9676/files/PlantBasedFoods_CaviArt_Foodservice_Black.jpg?v=1771870102",
       "source": "Vegan Essentials",
       "analysis": {
         "isVegetarian": true,
@@ -3532,267 +4230,12 @@
       }
     },
     {
-      "id": "rawmio-almond-superfoood-spread-6oz",
-      "title": "Rawmio - Almond Superfoood Spread, 6oz",
-      "price": "$14.99",
-      "ingredients": "Raw Almonds, Raw Cashews, Raw Goji Berries, Raw Chia Seeds, Raw Hemp Seeds, Himalayan Pink Sea Salt",
-      "productUrl": "https://veganessentials.com/products/rawmio-almond-superfoood-spread-6oz",
-      "imageUrl": "https://cdn.shopify.com/s/files/1/0612/9260/9676/files/Rawmio_Superfood_Spread_Front2_c3ad096c-deff-48dc-a6a3-c54a8ec6bf82.webp?v=1762544957",
-      "source": "Vegan Essentials",
-      "analysis": {
-        "isVegetarian": true,
-        "hasRestrictedIngredients": false,
-        "restrictedFound": [],
-        "nonVegFound": []
-      }
-    },
-    {
-      "id": "loma-linda-plant-based-tuno-in-spring-water-5oz",
-      "title": "Loma Linda - Plant-Based Tuno - In Spring Water, 5oz",
-      "price": "$2.99",
-      "ingredients": "TEXTURED SOY PROTEIN, WATER, SEA SALT, YEAS EXTRACT, SEAWEED POWDER, POTASSIUM CHLORIDE, DHA ALGAL OL CONTAINS SOY. a",
-      "productUrl": "https://veganessentials.com/products/loma-linda-plant-based-tuno-in-spring-water-5oz",
-      "imageUrl": "https://cdn.shopify.com/s/files/1/0612/9260/9676/files/LomaLinda_PlantBased_TunoSpringWater_5OZCan.gif?v=1732483101",
-      "source": "Vegan Essentials",
-      "analysis": {
-        "isVegetarian": true,
-        "hasRestrictedIngredients": false,
-        "restrictedFound": [],
-        "nonVegFound": []
-      }
-    },
-    {
-      "id": "unmeat-fish-free-tuna-hot-spicy-6-35-oz-pack-of-12",
-      "title": "Unmeat - Fish Free - Tuna in Water, 6.3oz.",
-      "price": "$2.99",
-      "ingredients": "WATER WHEAT AND NON-GMO SOY PROTEINS, NATURAL FLAVORS, SALT GREER HO chi OES (CORN TARCH, CORN SUGAR QU) S GAR, I AND YEAST EXTRACT",
-      "productUrl": "https://veganessentials.com/products/unmeat-fish-free-tuna-hot-spicy-6-35-oz-pack-of-12",
-      "imageUrl": "https://cdn.shopify.com/s/files/1/0612/9260/9676/products/UnMeat-FishFreeTunaStyleFlakes_6.3OzWater.jpg?v=1673885892",
-      "source": "Vegan Essentials",
-      "analysis": {
-        "isVegetarian": true,
-        "hasRestrictedIngredients": false,
-        "restrictedFound": [],
-        "nonVegFound": []
-      }
-    },
-    {
-      "id": "better-than-bouillon-base-vegan-no-beef-base",
-      "title": "Better Than Bouillon - No Beef Base, 8oz",
-      "price": "$8.99",
-      "ingredients": "Sodium 710mg 30% Total Carbohydrate 2g 1% Dietary Fiber 0g 0% Sugars 0",
-      "productUrl": "https://veganessentials.com/products/better-than-bouillon-base-vegan-no-beef-base",
-      "imageUrl": "https://cdn.shopify.com/s/files/1/0612/9260/9676/products/BetterThanBouillon-BaseVeganNoBeefBase_8oz.jpg?v=1690632761",
-      "source": "Vegan Essentials",
-      "analysis": {
-        "isVegetarian": true,
-        "hasRestrictedIngredients": false,
-        "restrictedFound": [],
-        "nonVegFound": []
-      }
-    },
-    {
-      "id": "loma-blue-tuno-lemon-pepper",
-      "title": "Loma Linda - Plant-Based Tuno - Lemon Pepper, 5oz",
-      "price": "$2.99",
-      "ingredients": "EXTURED SOY. PROTEIN, WATER, SOYBEAN OL 5k I I Th LEMON JUICE, SALT, BLACK PEPPER, CTRICACID, SEAWEED POVDER I I Slo I MNTHAN GUM, LEMON FLAVOR, I I I Lal I CONTAINS SOY. Ms",
-      "productUrl": "https://veganessentials.com/products/loma-blue-tuno-lemon-pepper",
-      "imageUrl": "https://cdn.shopify.com/s/files/1/0612/9260/9676/files/LomaLinda_PlantBased_TunoLemonPepper_5OZCan.gif?v=1732482821",
-      "source": "Vegan Essentials",
-      "analysis": {
-        "isVegetarian": true,
-        "hasRestrictedIngredients": false,
-        "restrictedFound": [],
-        "nonVegFound": []
-      }
-    },
-    {
-      "id": "plant-basics-hearty-plant-protein-ground-16oz",
-      "title": "Plant Basics - Hearty Plant Protein - Ground, 16oz",
-      "price": "$12.99",
-      "ingredients": "Defatted soybean flour",
-      "productUrl": "https://veganessentials.com/products/plant-basics-hearty-plant-protein-ground-16oz",
-      "imageUrl": "https://cdn.shopify.com/s/files/1/0612/9260/9676/files/PlantBasics_HeartyPlantProtein_UnflavoredGround_2024-05_Front_Square.jpg?v=1754592062",
-      "source": "Vegan Essentials",
-      "analysis": {
-        "isVegetarian": true,
-        "hasRestrictedIngredients": false,
-        "restrictedFound": [],
-        "nonVegFound": []
-      }
-    },
-    {
-      "id": "plant-basics-hearty-plant-protein-chunks-16oz",
-      "title": "Plant Basics - Hearty Plant Protein - Chunks, 16oz",
-      "price": "$12.99",
-      "ingredients": "Defatted soybean flour",
-      "productUrl": "https://veganessentials.com/products/plant-basics-hearty-plant-protein-chunks-16oz",
-      "imageUrl": "https://cdn.shopify.com/s/files/1/0612/9260/9676/files/PlantBasics_HeartyPlantProtein_UnflavoredChunks_2024-05_Front_Square.jpg?v=1759262151",
-      "source": "Vegan Essentials",
-      "analysis": {
-        "isVegetarian": true,
-        "hasRestrictedIngredients": false,
-        "restrictedFound": [],
-        "nonVegFound": []
-      }
-    },
-    {
-      "id": "plant-basics-hearty-plant-protein-pea-crumbles-8oz",
-      "title": "Plant Basics - Hearty Plant Protein - Pea Crumbles, 8oz",
-      "price": "$12.99",
-      "ingredients": "Pea Protein, Processed on equipment that also handles soy",
-      "productUrl": "https://veganessentials.com/products/plant-basics-hearty-plant-protein-pea-crumbles-8oz",
-      "imageUrl": "https://cdn.shopify.com/s/files/1/0612/9260/9676/files/PlantBasics_HeartyPlantProtein_UnflavoredPeaCrumbles_2024-05_Front_Square.jpg?v=1759262570",
-      "source": "Vegan Essentials",
-      "analysis": {
-        "isVegetarian": true,
-        "hasRestrictedIngredients": false,
-        "restrictedFound": [],
-        "nonVegFound": []
-      }
-    },
-    {
       "id": "stonewall-s-jerquee-country-bacon",
       "title": "Stonewall's Jerquee, 1.5oz. - Multiple Flavors",
       "price": "$3.89",
       "ingredients": "Sodium 537mg 227% [Jl] on th bs o amore fom bap and mic Sodium 537mg ____22% fon te bg of tnve fom bsg a nko I Soum 475mg 22% of a enue fom bag nd ico JURY Sodium 450mg 19% Vl Toor So” — eT Tg 2s ff or T0suens forahol sale’ snc Total Carbohydrates 7g 2% Jf wareor 10seconds forahol, sui’ snack Total Carbohydrates 793% : Rs - II Total Carbohydrates 11g 4% ay Fie seat Ml vores: ve sr row, en",
       "productUrl": "https://veganessentials.com/products/stonewall-s-jerquee-country-bacon",
       "imageUrl": "https://cdn.shopify.com/s/files/1/0612/9260/9676/files/Stonewall_sJerquee-OriginalMild.jpg?v=1689094952",
-      "source": "Vegan Essentials",
-      "analysis": {
-        "isVegetarian": true,
-        "hasRestrictedIngredients": false,
-        "restrictedFound": [],
-        "nonVegFound": []
-      }
-    },
-    {
-      "id": "smoked-black-pepper-jerky-by-louisville-vegan-jerky-co",
-      "title": "Louisville Vegan Jerky - Smoked Black Pepper, 3oz.",
-      "price": "$7.99",
-      "ingredients": "SOY % ab, man RGETEATEROPNS STIFLE: 5 JIL * = ET I Bi TR : I a — it IL eco LOSE VEGAN KRY 70 0X 2306 ORSYLE KY 4022 5 llh7905 00000 g",
-      "productUrl": "https://veganessentials.com/products/smoked-black-pepper-jerky-by-louisville-vegan-jerky-co",
-      "imageUrl": "https://cdn.shopify.com/s/files/1/0612/9260/9676/files/LouisvilleVeganJerky_3oz_2022_SmokedBlackPepper_Square.jpg?v=1732486549",
-      "source": "Vegan Essentials",
-      "analysis": {
-        "isVegetarian": true,
-        "hasRestrictedIngredients": false,
-        "restrictedFound": [],
-        "nonVegFound": []
-      }
-    },
-    {
-      "id": "noble-jerky-original",
-      "title": "Noble Jerky - Original, 2.47oz",
-      "price": "$6.49",
-      "ingredients": "Soy pro (non-GMO), Rice re salt, Expeller pressed canola oil Contains; Soy May Contain: Nuts, Peanuts, Tree Nuts, Mustard, Sesame, Wheat, Gluten , Epices, Ail . Ingrédients: Protéine de soja (sans OGM). Tad 2 Al Sel de mer, Huile de canola (sans OGM), Contient: Soja peut contenir: Noix, Arachides, BI&, Moutarde, Sésame, Gluten === =—— 99, I\" [Nutrition FactsIs %e I [sev ver container E 5 I IServing size 1.24 0z (350) 5 IGERA - I : RU Hs www .noblejerky.com : ICalories LJP REQUIRED dl) [i= ez Ell AUCUNE REFRIGERATION OrgralI Er er—E REQUISE HH See Tae xl 2 (CANADA DISTRIBUTION I (0SUME WITHIN 3 DAYS x Ts — WI \\FTER OPENING a: Ni = Jr —m—— (ONSOMMER DA = RIT rr — ) — re ——— SU 0(RS SUIVANT LOUVERTURE = TTI — ~ 5 ee ls N = I ht =\" Tom 0ch Vevs 0) ote ren I ——ul } [SalelniiiEE II& IMPORTED AND DISTRIBUTED BY / — I CaifforniaResicents Only: ~~ IMPORTE ET DISTRIBUE PAR: == + INWARNING: Cancer and Reproductive Urbani Foods Inc. A == 3 4 Harm -viww PESWarnings.ca gov/food New Westminster, BC, V3M 6B9 Gos pDA . NOBLE JERKY IS A TRADEMARK",
-      "productUrl": "https://veganessentials.com/products/noble-jerky-original",
-      "imageUrl": "https://cdn.shopify.com/s/files/1/0612/9260/9676/products/noble-jerky-original-vegan-essentials-online-store.jpg?v=1666994489",
-      "source": "Vegan Essentials",
-      "analysis": {
-        "isVegetarian": true,
-        "hasRestrictedIngredients": false,
-        "restrictedFound": [],
-        "nonVegFound": []
-      }
-    },
-    {
-      "id": "perfect-pepperoni-jerky-by-louisville-vegan-jerky-co",
-      "title": "Louisville Vegan Jerky - Pepperoni Pizza, 3oz.",
-      "price": "$7.99",
-      "ingredients": "Textured Soy Protein, Tamari (Water, Soybezne, Salt, Alcohol [To Preserve Freshness), Water, High Oleic Sunflower Oil (Tocopherols, Rosemary Extract, and Ascorbyl Palmitate [Added As An Antioxidant), Pizz2 FCS (Concentrated Crushed Tomatoes, Sea Salt Qiive Ol, Spices, Goriic powder, And Naturally Derived Citic Add): Lemon Juice, Vegan Sugar, Nutritional Yeast, Contalrs Less Than 2% 9 Natural Smoke Flavor, Mustard Seed, Granulated i ic, Vegetable Juice Color, Red Pepper Flakes, Spices. Papri CONTAINS: Soy REFRIGERATE AFTER OPENING am as SERS ee aA SHE",
-      "productUrl": "https://veganessentials.com/products/perfect-pepperoni-jerky-by-louisville-vegan-jerky-co",
-      "imageUrl": "https://cdn.shopify.com/s/files/1/0612/9260/9676/files/LouisvilleVeganJerky_3oz_2024_PepperoniPizza_Square.jpg?v=1732486549",
-      "source": "Vegan Essentials",
-      "analysis": {
-        "isVegetarian": true,
-        "hasRestrictedIngredients": false,
-        "restrictedFound": [],
-        "nonVegFound": []
-      }
-    },
-    {
-      "id": "beyond-meat-beyond-beef-plant-based-ground-16oz",
-      "title": "Beyond Meat - Plant-Based Ground, 16oz",
-      "price": "$15.99",
-      "ingredients": "WATER, PEA PROTEIN, AVOCADO OIL, NATURAL FLAVORS, RICE PROTEIN, LENTIL PROTEIN, 2% OR LESS OF METHYLCELLULOSE, I POTATO STARCH, PEA STARCH, POTASSIUM LACTATE E(0 PRESERVE Tl FABA BEAN PROTEIN, APPLE EXTRACT, POMEGRANATE I CONCENTRATE, POTASSIUM SALT, SPICE, VINEGAR, VEGETABLE JUICE COLOR (WITH BEET). I PEAS ARE LEGUMES, PEOPLE WITH SEVERE ALLERGIES TO LEGUMES LIKE PEANUTS SHOULD BE CAUTIOUS WHEN INTRODUCING PEA PROTEN ~~ I INTO THEIR DIET BECAUSE OF THE POSSIBILITY OF A PEA ALLERGY",
-      "productUrl": "https://veganessentials.com/products/beyond-meat-beyond-beef-plant-based-ground-16oz",
-      "imageUrl": "https://cdn.shopify.com/s/files/1/0612/9260/9676/files/BeyondMeat_BeyondBurger_Plant-Based-Ground_2024.gif?v=1735585497",
-      "source": "Vegan Essentials",
-      "analysis": {
-        "isVegetarian": true,
-        "hasRestrictedIngredients": false,
-        "restrictedFound": [],
-        "nonVegFound": []
-      }
-    },
-    {
-      "id": "beyond-meat-plant-based-burger-patties",
-      "title": "Beyond Meat - Beyond Burger Plant-Based Patties 2 pk, 8oz",
-      "price": "$10.99",
-      "ingredients": "WATER, PEA PROTEIN, AVOCADO OIL, NATURAL FLAVORS, RICE PROTEIN, LENTIL PROTEIN, 2% OR LESS OF METHYLCELLULOSE, POTATO STARCH, PEA STARCH, POTASSIUM LACTATE (TO PRESERVE FRESHNESS), FABA BEAN PROTEIN, APPLE EXTRACT, POMEGRANATE CONCENTRATE, POTASSIUM SALT, SPICE, VINEGAR, VEGETABLE JUICE COLOR (WITH BEET). IPEAS ARE LEGUMES. PEOPLE WITH SEVERE ALLERGIES TO LEGUMES LIKE PEANUTS SHOULD BE CAUTIOUS WHEN INTRODUCING PEA PROTEIN INTO THEIR DIET BECAUSE OF THE POSSIBILITY OF A PEA ALLERGY, CONTAINS NO PEANUTS OR TREE NUTS.",
-      "productUrl": "https://veganessentials.com/products/beyond-meat-plant-based-burger-patties",
-      "imageUrl": "https://cdn.shopify.com/s/files/1/0612/9260/9676/files/BeyondMeat_BeyondBurger_Plant-Based-Patties_2024.gif?v=1735586858",
-      "source": "Vegan Essentials",
-      "analysis": {
-        "isVegetarian": true,
-        "hasRestrictedIngredients": false,
-        "restrictedFound": [],
-        "nonVegFound": []
-      }
-    },
-    {
-      "id": "impossible-bratwurst-sausage-links",
-      "title": "Impossible - Sausage Links - Bratwurst, 13.5oz",
-      "price": "$12.99",
-      "ingredients": "Water, Soy H Protein Concentrate Nutrition Facts osc Er or ET [a 4 servings per container Hetrycolics, sar. feast Extract, tal Serving size 1 link (359) Casing (Sodium Alginate, ree I ount per ultured Dextrose, Foo - Starch Modified, Calories 230 Dextrose, Natural Flavors, ——————— Citric ACId, White Pepper, % Dally Value* I Garf Powder, Spioss, Os SS TET ER om oe I Total Fat 16g 21% Legpemasionn. I rotor Cot Ss Vitamin E (Tocopherals), Saturated Fat 7g 35% I (Tvamopnen Soybroten Isolate, Vitamins SCE Be Cholesterol Omg 0% I (83.86, Eran B12) i Sodium 630mg 27% I Dacaiadt Total Carbohvdrate 9 3% I Impossible Foods inc, I alandyiatesy Redwood City, I _ Dietary bibeiso Eo ire ImpossibleFoods.com Total Sugars <1g Includes <1g Added Sugars 2% Protein 13g 27% (a Vit. DOmeg 0% Calcium 190mg 15% Iron 2.6mg 15% e Potassium 450mg 10% Riboflavin 8% Niacin 40% Vitamin Bg 20% Folate 20% REPT 7 JOINER, Vitamin B12.110% Zinc 35% Ve XN Ay Gs “The % Daly Value (OV) tells you how much 4 nutrient I (bg BH (MV J ) in 2s Ea a daity bo AZ) 15) x 7 I{ Is used nerf nition advices \\ HALAL calories a day Is ust i wo ics, Nee CNS",
-      "productUrl": "https://veganessentials.com/products/impossible-bratwurst-sausage-links",
-      "imageUrl": "https://cdn.shopify.com/s/files/1/0612/9260/9676/files/Impossible-BratwurstSausageLinks_13.5oz.jpg?v=1721125733",
-      "source": "Vegan Essentials",
-      "analysis": {
-        "isVegetarian": true,
-        "hasRestrictedIngredients": false,
-        "restrictedFound": [],
-        "nonVegFound": []
-      }
-    },
-    {
-      "id": "impossible-hot-dogs",
-      "title": "Impossible - Beef Hot Dogs, 10oz",
-      "price": "$12.99",
-      "ingredients": "Wheat Gluten, oll, C . 5 MEGaaiuiose, Spices Cultured Bextmas, Yeast Extract dead Er icovar Brin oe Amino poi (Lysine, Lr ee Fowaee ow Rromote color retention) Cultured Celery [pared Soy io Saari & Minor eS Zinc, Vitamins (83.81, Be. Bp. noo a = Distribus: Soy, Wheat code Ine Redwood Cit: GA a4nez 1mnnssibleFoode arm (=",
-      "productUrl": "https://veganessentials.com/products/impossible-hot-dogs",
-      "imageUrl": "https://cdn.shopify.com/s/files/1/0612/9260/9676/files/Impossible-HotDogs_10oz.jpg?v=1727281484",
-      "source": "Vegan Essentials",
-      "analysis": {
-        "isVegetarian": true,
-        "hasRestrictedIngredients": false,
-        "restrictedFound": [],
-        "nonVegFound": []
-      }
-    },
-    {
-      "id": "impossible-sausage-by-impossible-foods-savory",
-      "title": "Impossible - Ground Sausage - Savory, 14oz",
-      "price": "$8.99",
-      "ingredients": "Water, Soy Protein Concentrate, Sunflower anit Ol 2% Or Logs OF: Metnylogthiose, Saft Yeast “Bytract, Cuitured Dextrose, Spices, Food Starch Modified, Oped r, Dextrose, Gariic Powuer, Natural Flavors, \"Citra Acid",
-      "productUrl": "https://veganessentials.com/products/impossible-sausage-by-impossible-foods-savory",
-      "imageUrl": "https://cdn.shopify.com/s/files/1/0612/9260/9676/files/816697021088.jpg?v=1721858867",
-      "source": "Vegan Essentials",
-      "analysis": {
-        "isVegetarian": true,
-        "hasRestrictedIngredients": false,
-        "restrictedFound": [],
-        "nonVegFound": []
-      }
-    },
-    {
-      "id": "impossible-burger-patties-2-pack",
-      "title": "Impossible - Burger Patties - 2 pack, 8oz",
-      "price": "$10.69",
-      "ingredients": "Water, Soy Protein Concentrate, Sunflower Oil, Coconut OR 2% Or Less Of: Natural Flavors, Methyiceliulose, Cultured Dextrose, Food Starch Modified, Yeast Extract, Dextrose, Soy Leghemoglobin, Sait. Vitamin E (Tocopherols), L-Tryptophan, Soy Protein Isolate Vitamins & Minerals: Zinc, Vitamins (B3, B1, B6, B2, and B12) Contains: Soy EEA",
-      "productUrl": "https://veganessentials.com/products/impossible-burger-patties-2-pack",
-      "imageUrl": "https://cdn.shopify.com/s/files/1/0612/9260/9676/files/ImpossibleFoods_PlantBased_BurgerPatties.gif?v=1735590348",
       "source": "Vegan Essentials",
       "analysis": {
         "isVegetarian": true,
@@ -3847,36 +4290,6 @@
       }
     },
     {
-      "id": "feed-your-head-vegan-italian-sausage",
-      "title": "Feed Your Head - Vegan Italian Sausage, 12oz",
-      "price": "$9.99",
-      "ingredients": "VITAL WHEAT GLUTEN, NUTRITIONAL YEAST, SOY SAUCE, SPICE, OLIVE OIL, EDWARD AND SONS BOUILLON CONTAINS: WHEAT, SOY",
-      "productUrl": "https://veganessentials.com/products/feed-your-head-vegan-italian-sausage",
-      "imageUrl": "https://cdn.shopify.com/s/files/1/0612/9260/9676/products/FeedYourHead-VeganItalianSausage_4Pack.jpg?v=1670257118",
-      "source": "Vegan Essentials",
-      "analysis": {
-        "isVegetarian": true,
-        "hasRestrictedIngredients": false,
-        "restrictedFound": [],
-        "nonVegFound": []
-      }
-    },
-    {
-      "id": "cherry-sage-sausages-by-feed-your-head",
-      "title": "Feed Your Head - Vegan Cherry Sage Sausage, 12oz",
-      "price": "$9.99",
-      "ingredients": "VITAL WHEAT GLUTEN, SOY SAUCE, NUTRITIONAL YEAST, CHERRIES, SPICE, OLIVE OIL, EDWARD AND SONS BOUILLON, LIQUID SMOKE CONTAINS: WHEAT, SOY made & packaged in KITCHEN CHICAGO 8 51910 00806 4 324 N. Leavitt Ave. Pe SS",
-      "productUrl": "https://veganessentials.com/products/cherry-sage-sausages-by-feed-your-head",
-      "imageUrl": "https://cdn.shopify.com/s/files/1/0612/9260/9676/products/FeedYourHead-VeganCherrySageSausage_4Pack.jpg?v=1670257397",
-      "source": "Vegan Essentials",
-      "analysis": {
-        "isVegetarian": true,
-        "hasRestrictedIngredients": false,
-        "restrictedFound": [],
-        "nonVegFound": []
-      }
-    },
-    {
       "id": "big-mountain-foods-lions-mane-mushroom-burger",
       "title": "Big Mountain Foods - Lion's Mane Mushroom Burger, 8.46oz",
       "price": "$11.99",
@@ -3898,66 +4311,6 @@
       "ingredients": "Sodium 50mg 2% Total Carbohydrate Oy 0% Dietary Fiber Og 0% Total Sugars Og Includes 0g Added Sugars 0% Protein 16g I Vit",
       "productUrl": "https://veganessentials.com/products/big-mountain-foods-soy-free-tofu-12oz",
       "imageUrl": "https://cdn.shopify.com/s/files/1/0612/9260/9676/files/BigMountain_SoyFreeTofu.jpg?v=1746197937",
-      "source": "Vegan Essentials",
-      "analysis": {
-        "isVegetarian": true,
-        "hasRestrictedIngredients": false,
-        "restrictedFound": [],
-        "nonVegFound": []
-      }
-    },
-    {
-      "id": "beyond-meat-plant-based-steak-chimichuri-10oz-copy",
-      "title": "Beyond Meat - Plant-Based Steak - Chimichuri, 10oz",
-      "price": "$14.49",
-      "ingredients": "SOY Saturated Fat 1g 5% Trans Fat Og Polyunsaturated Fat 1",
-      "productUrl": "https://veganessentials.com/products/beyond-meat-plant-based-steak-chimichuri-10oz-copy",
-      "imageUrl": "https://cdn.shopify.com/s/files/1/0612/9260/9676/files/BeyondMeat_PlantBasedPieces_Steak-Chimichurri_10oz.jpg?v=1747167360",
-      "source": "Vegan Essentials",
-      "analysis": {
-        "isVegetarian": true,
-        "hasRestrictedIngredients": false,
-        "restrictedFound": [],
-        "nonVegFound": []
-      }
-    },
-    {
-      "id": "beyond-meat-plant-based-chicken-pieces-10oz",
-      "title": "Beyond Meat - Plant-Based Chicken Pieces, 10oz",
-      "price": "$13.99",
-      "ingredients": "WATER, SOY PROTEIN, WHEAT GLUTEN, A NATURAL FLAVORS, AVOCADO OIL, POTATO STARCH, 2% OR & #4 LESS OF ELBE, POTASSIUN SALT, YEAST EXTRACT, CONTAINS; SOV WERT fl SC Poway, >",
-      "productUrl": "https://veganessentials.com/products/beyond-meat-plant-based-chicken-pieces-10oz",
-      "imageUrl": "https://cdn.shopify.com/s/files/1/0612/9260/9676/files/BeyondMeat_PlantBasedPieces_Chicken_10oz.jpg?v=1747167408",
-      "source": "Vegan Essentials",
-      "analysis": {
-        "isVegetarian": true,
-        "hasRestrictedIngredients": false,
-        "restrictedFound": [],
-        "nonVegFound": []
-      }
-    },
-    {
-      "id": "bankok-bites-vegan-jerky-pad-thai-2oz",
-      "title": "Bankok Bites - Vegan Jerky - Pad Thai, 2oz",
-      "price": "$8.99",
-      "ingredients": "Texture Vegetable Protein (Soy, Wheat, Corn), Spice WEP SMa, % Glycerine, Palm Sugar, Soy Sauce, Seasoning Powder Level 8 % (soy Sauce Powder, Disodium 5-ribonucleotide, 5 Zz Maltodextrin, Modified tapioca starch (E1412), vegetable = = \\199 Oil, Mushroom powder, tapioca starch, nature identical - C % p: «© flavour, pepper), Chilli, Peanut, Tartaric Acid (E334), Lime Gogdness So e © Powder (Concentrated Lime Juice Powder, Dextrose, an DNESS OV Citric Acid (E330), Silicon dioxide (E651), Curcumin (E100) Contains: soy, wheat",
-      "productUrl": "https://veganessentials.com/products/bankok-bites-vegan-jerky-pad-thai-2oz",
-      "imageUrl": "https://cdn.shopify.com/s/files/1/0612/9260/9676/files/BankokBites_VeganJerky_PadThai.jpg?v=1761161619",
-      "source": "Vegan Essentials",
-      "analysis": {
-        "isVegetarian": true,
-        "hasRestrictedIngredients": false,
-        "restrictedFound": [],
-        "nonVegFound": []
-      }
-    },
-    {
-      "id": "bankok-bites-vegan-jerky-thai-bbq-2oz",
-      "title": "Bankok Bites - Vegan Jerky - Thai BBQ, 2oz",
-      "price": "$8.99",
-      "ingredients": "Texture Vegetable Protein (Soy, Wheat, : Corn), Glycerine, Sugar, Salt, Yeast Extract, Corn ED SM4 i J ) ) To “g, starch, Seasoning Sauce, Soy Sauce, Fermented §£ 2 Red Yeast Rice, Seasoning Powder (Soy Sauce Se 2% Powder, Disodium 5-ribonucleotide, Maltodextrin, . 8 “ re J «8 Modified tapioca starch (E1412), Vegetable Oil, Gogdness py, - a> Mushroom Powder, Tapioca Starch, Nature Plant NESS © Identical Flavour, Pepper) Contains: soy, wheat",
-      "productUrl": "https://veganessentials.com/products/bankok-bites-vegan-jerky-thai-bbq-2oz",
-      "imageUrl": "https://cdn.shopify.com/s/files/1/0612/9260/9676/files/BankokBites_VeganJerky_ThaiBBQ.jpg?v=1761162404",
       "source": "Vegan Essentials",
       "analysis": {
         "isVegetarian": true,
@@ -3997,14 +4350,6 @@
       }
     },
     {
-      "id": "beyond-breakfast-sausage-links-by-beyond-meat-classic",
-      "title": "Beyond Meat - Breakfast Sausage Links - Classic, 8.3oz",
-      "price": "$10.99",
-      "productUrl": "https://veganessentials.com/products/beyond-breakfast-sausage-links-by-beyond-meat-classic",
-      "imageUrl": "https://cdn.shopify.com/s/files/1/0612/9260/9676/products/beyond-breakfast-sausage-links-by-beyond-meat-classic-vegan-essentials-online-store.jpg?v=1666990057",
-      "source": "Vegan Essentials"
-    },
-    {
       "id": "86143",
       "title": "Wang Shou Yi Multi-Flavored Seasoning 45 g",
       "price": "$20",
@@ -4041,21 +4386,6 @@
       "ingredients": "Sodium 590mg 26% Total Carbohydrate 0g 0% Protein Og EEE $20 lodine 68mcg 45% Not a significant source of saturated fat, trans fat, cholesterol, dietary fiber, total sugars, added sugars, vitamin D, calcium, iron and potassium",
       "productUrl": "https://www.sayweee.com/en/product/Deep-Cinnamon-Stick/105040",
       "imageUrl": "https://img06.weeecdn.com/item/image/027/952/5CF33CD0583C4B2A.jpg",
-      "source": "Sayweee",
-      "analysis": {
-        "isVegetarian": true,
-        "hasRestrictedIngredients": false,
-        "restrictedFound": [],
-        "nonVegFound": []
-      }
-    },
-    {
-      "id": "94773",
-      "title": "Lee Kum Kee Sesame Sauce 190 g",
-      "price": "$20",
-      "ingredients": "SESAME PASTE, SOYBEAN OIL, GUMARAEICH _ XANTHAN GUM. CONTAIN S50; BEANS, No",
-      "productUrl": "https://www.sayweee.com/en/product/Lee-Kum-Kee-Sesame-Sauce/94773",
-      "imageUrl": "https://img06.weeecdn.com/item/image/561/594/149733854A1A3AEB.jpg",
       "source": "Sayweee",
       "analysis": {
         "isVegetarian": true,
@@ -4468,72 +4798,12 @@
       }
     },
     {
-      "id": "low-fodmap-balsamic-vinaigrette",
-      "title": "Balsamic Vinaigrette",
-      "price": "$7.99",
-      "ingredients": "Water, Avocado oil, Organic balsamic vinegar (Organic wine vinegar, organic concentrated grape must), Organic cider vinegar, Sea salt, Rosemary extract, Xanthan gum, Basil, Black pepper, Oregano, Rosemary May Contain: Soy, Sesame.",
-      "productUrl": "https://www.fodyfoods.com/products/low-fodmap-balsamic-vinaigrette",
-      "imageUrl": "https://cdn.shopify.com/s/files/1/1657/0407/files/fVTEJWxQ.png?v=1724682457",
-      "source": "Fody",
-      "analysis": {
-        "isVegetarian": true,
-        "hasRestrictedIngredients": false,
-        "restrictedFound": [],
-        "nonVegFound": []
-      }
-    },
-    {
-      "id": "low-fodmap-everyday-seasoning",
-      "title": "Everyday Seasoning",
-      "price": "$8.99",
-      "ingredients": "Dehydrated Vegetables (Carrot, Red Bell Pepper, Tomato, Spinach), Spices (Parsley, Black Pepper, Red Pepper, Basil, Celery Seed, Rosemary, Thyme, Oregano, Savory, Mustard, Marjoram, Coriander), Sea Salt, Orange Peel, Black Sesame Seed, Lemon Peel, and White Sesame Seed.",
-      "productUrl": "https://www.fodyfoods.com/products/low-fodmap-everyday-seasoning",
-      "imageUrl": "https://cdn.shopify.com/s/files/1/1657/0407/files/NEW_Everyday_Seasoning.webp?v=1768497580",
-      "source": "Fody",
-      "analysis": {
-        "isVegetarian": true,
-        "hasRestrictedIngredients": false,
-        "restrictedFound": [],
-        "nonVegFound": []
-      }
-    },
-    {
       "id": "low-fodmap-sourdough-bread",
       "title": "Fody's Gluten Free Low FODMAP Sourdough Bread - 3-Pack",
       "price": "$49.99",
       "ingredients": "Water, Organic white rice flour, Organic millet flour, Organic sorghum flour, Arrowroot, Xanthan gum, Salt",
       "productUrl": "https://www.fodyfoods.com/products/low-fodmap-sourdough-bread",
       "imageUrl": "https://cdn.shopify.com/s/files/1/1657/0407/files/Shot2_1.webp?v=1768498313",
-      "source": "Fody",
-      "analysis": {
-        "isVegetarian": true,
-        "hasRestrictedIngredients": false,
-        "restrictedFound": [],
-        "nonVegFound": []
-      }
-    },
-    {
-      "id": "low-fodmap-garden-herb-salad-dressing",
-      "title": "Garden Herb Salad Dressing",
-      "price": "$7.99",
-      "ingredients": "Avocado oil, Water, Organic cider vinegar, Organic cane sugar, Sea salt, Mustard seed, Lemon juice concentrate, Black pepper, Rosemary extract, Tarragon, Rosemary, Dill, Celery seed, Xanthan gum, Parsley May Contain: Soy, Sesame.",
-      "productUrl": "https://www.fodyfoods.com/products/low-fodmap-garden-herb-salad-dressing",
-      "imageUrl": "https://cdn.shopify.com/s/files/1/1657/0407/files/4Ik56nzk.png?v=1724682220",
-      "source": "Fody",
-      "analysis": {
-        "isVegetarian": true,
-        "hasRestrictedIngredients": false,
-        "restrictedFound": [],
-        "nonVegFound": []
-      }
-    },
-    {
-      "id": "low-fodmap-green-enchilada-sauce",
-      "title": "Green Enchilada Sauce",
-      "price": "$7.49",
-      "ingredients": "TOMATILLOS, WATER, ANAHEIM PEPPERS, DISTILLED VINEGAR, AVOCADO OIL, ARROWROOT POWDER, ROASTED POBLANO PUREE, HIMALAYAN PINK SALT, CUMIN, CORIANDER, BLACK PEPPER, CILANTRO.",
-      "productUrl": "https://www.fodyfoods.com/products/low-fodmap-green-enchilada-sauce",
-      "imageUrl": "https://cdn.shopify.com/s/files/1/1657/0407/files/AMXpO95Q.png?v=1712850567",
       "source": "Fody",
       "analysis": {
         "isVegetarian": true,
@@ -4558,72 +4828,12 @@
       }
     },
     {
-      "id": "italian-seasoning-blend",
-      "title": "Italian Blend Seasoning",
-      "price": "$8.99",
-      "ingredients": "Spices (Oregano, Basil, Thyme, Marjoram, Rosemary, Spearmint).",
-      "productUrl": "https://www.fodyfoods.com/products/italian-seasoning-blend",
-      "imageUrl": "https://cdn.shopify.com/s/files/1/1657/0407/files/NEW_Italian_Blend_Seasoning.webp?v=1768497678",
-      "source": "Fody",
-      "analysis": {
-        "isVegetarian": true,
-        "hasRestrictedIngredients": false,
-        "restrictedFound": [],
-        "nonVegFound": []
-      }
-    },
-    {
-      "id": "low-fodmap-lemon-herb-seasoning",
-      "title": "Lemon & Herb Seasoning",
-      "price": "$8.99",
-      "ingredients": "Spices (Rosemary, Thyme, Sage, Black Pepper), Sea Salt, Orange Peel, Lemon Extractives.",
-      "productUrl": "https://www.fodyfoods.com/products/low-fodmap-lemon-herb-seasoning",
-      "imageUrl": "https://cdn.shopify.com/s/files/1/1657/0407/files/NEW_Lemon_Herb_Seasoning_3d98602f-ab6b-427e-9565-eeacf4a81c17.webp?v=1767052546",
-      "source": "Fody",
-      "analysis": {
-        "isVegetarian": true,
-        "hasRestrictedIngredients": false,
-        "restrictedFound": [],
-        "nonVegFound": []
-      }
-    },
-    {
       "id": "low-fodmap-pasta-sauce-variety-pack-1",
       "title": "Low FODMAP Pasta Sauce Variety Pack",
       "price": "$32.29",
       "ingredients": "Marinara: Chopped Tomatoes, Extra Virgin Olive Oil, Carrots Puree, Celery Puree, Sea Salt, Basil. Tomato Basil: Chopped Tomatoes, Extra Virgin Olive Oil, Carrot Puree, Basil, Sea Salt. Vegan Bolognese: Chopped Tomatoes, Extra Virgin Olive Oil, Kabocha Squash, Carrot Puree, Shiitake Mushrooms, Walnuts, Dehydrated Carrots, Sea Salt. Spicy Marinara (Arrabbiata): Chopped Tomatoes, Extra Virgin Olive Oil, Sea Salt, Crushed Red Pepper.",
       "productUrl": "https://www.fodyfoods.com/products/low-fodmap-pasta-sauce-variety-pack-1",
       "imageUrl": "https://cdn.shopify.com/s/files/1/1657/0407/files/pvudh0oQ.png?v=1708353130",
-      "source": "Fody",
-      "analysis": {
-        "isVegetarian": true,
-        "hasRestrictedIngredients": false,
-        "restrictedFound": [],
-        "nonVegFound": []
-      }
-    },
-    {
-      "id": "low-fodmap-maple-dijon-salad-dressing",
-      "title": "Maple Dijon Salad Dressing",
-      "price": "$7.99",
-      "ingredients": "Avocado oil, Water, Maple syrup, Organic cane sugar, Organic white wine vinegar, Ground Mustard, Sea salt, Organic apple cider vinegar, Nutritional yeast, Rosemary extract, Black pepper, Tarragon, Xanthan gum. May Contain: Soy, Sesame.",
-      "productUrl": "https://www.fodyfoods.com/products/low-fodmap-maple-dijon-salad-dressing",
-      "imageUrl": "https://cdn.shopify.com/s/files/1/1657/0407/files/MapleDijon-SensitiveRecipe-1_ed7c8e2c-231e-4447-9e45-abc308104bfc.webp?v=1768497400",
-      "source": "Fody",
-      "analysis": {
-        "isVegetarian": true,
-        "hasRestrictedIngredients": false,
-        "restrictedFound": [],
-        "nonVegFound": []
-      }
-    },
-    {
-      "id": "low-fodmap-marinara-sauce",
-      "title": "Marinara Pasta Sauce",
-      "price": "$8.99",
-      "ingredients": "Chopped Tomatoes, Extra Virgin Olive Oil, Carrots Puree, Celery Puree, Sea Salt, Basil.",
-      "productUrl": "https://www.fodyfoods.com/products/low-fodmap-marinara-sauce",
-      "imageUrl": "https://cdn.shopify.com/s/files/1/1657/0407/files/MarinaraSensitiveRecipe-1_27a6f66b-8be5-4786-8dab-9c948d08f71e.webp?v=1767050181",
       "source": "Fody",
       "analysis": {
         "isVegetarian": true,
@@ -4648,21 +4858,6 @@
       }
     },
     {
-      "id": "low-fodmap-salsa-medium",
-      "title": "Medium Salsa",
-      "price": "$7.99",
-      "ingredients": "Diced Tomatoes, Tomato Puree (Water, Tomato Paste), Jalapeno Peppers, Cilantro, Apple Cider Vinegar, Sea Salt, Lime Juice Concentrate, Cumin.",
-      "productUrl": "https://www.fodyfoods.com/products/low-fodmap-salsa-medium",
-      "imageUrl": "https://cdn.shopify.com/s/files/1/1657/0407/files/MediumSalsaSensitiveRecipe-1_46fdae4e-c63e-487f-baeb-8b11c4499e2d.webp?v=1768497506",
-      "source": "Fody",
-      "analysis": {
-        "isVegetarian": true,
-        "hasRestrictedIngredients": false,
-        "restrictedFound": [],
-        "nonVegFound": []
-      }
-    },
-    {
       "id": "medium-salsa-3-pack",
       "title": "Medium Salsa - 3 Pack",
       "price": "$18.99",
@@ -4678,72 +4873,12 @@
       }
     },
     {
-      "id": "low-fodmap-mild-salsa",
-      "title": "Mild Salsa",
-      "price": "$7.99",
-      "ingredients": "Diced Tomatoes, Tomato Puree (Water, Tomato Paste), Jalapeno Peppers, Apple Cider Vinegar, Sea Salt, Cilantro, Lime Juice Concentrate, Cumin.",
-      "productUrl": "https://www.fodyfoods.com/products/low-fodmap-mild-salsa",
-      "imageUrl": "https://cdn.shopify.com/s/files/1/1657/0407/files/MildSalsaSensitiveRecipe-1.webp?v=1757528191",
-      "source": "Fody",
-      "analysis": {
-        "isVegetarian": true,
-        "hasRestrictedIngredients": false,
-        "restrictedFound": [],
-        "nonVegFound": []
-      }
-    },
-    {
       "id": "mild-salsa-3-pack",
       "title": "Mild Salsa - 3 Pack",
       "price": "$18.99",
       "ingredients": "Diced Tomatoes, Tomato Puree (Water, Tomato Paste), Jalapeno Peppers, Apple Cider Vinegar, Sea Salt, Cilantro, Lime Juice Concentrate, Cumin.",
       "productUrl": "https://www.fodyfoods.com/products/mild-salsa-3-pack",
       "imageUrl": "https://cdn.shopify.com/s/files/1/1657/0407/files/Untitled_design_667910f4-cf57-4b0f-8e70-dac9494a044a.png?v=1723475145",
-      "source": "Fody",
-      "analysis": {
-        "isVegetarian": true,
-        "hasRestrictedIngredients": false,
-        "restrictedFound": [],
-        "nonVegFound": []
-      }
-    },
-    {
-      "id": "low-fodmap-teriyaki-sauce-marinade",
-      "title": "NO SOY Teriyaki Sauce & Marinade",
-      "price": "$7.49",
-      "ingredients": "WATER, GLUTEN &amp; SOY FREE TAMARI SAUCE (WATER, PEA, SALT, PEA PROTEIN, ALCOHOL), RICE WINE VINEGAR, ORGANIC DARK SUGAR, ARROWROOT POWDER, TOASTED SESAME OIL, PINEAPPLE JUICE CONCENTRATE, TAMARIND, GINGER.",
-      "productUrl": "https://www.fodyfoods.com/products/low-fodmap-teriyaki-sauce-marinade",
-      "imageUrl": "https://cdn.shopify.com/s/files/1/1657/0407/files/Teriyaki_Sauce_Sensitive_Recipe_-_1_0f08b70b-3bb1-4d57-8725-aac295b9b604.webp?v=1768498371",
-      "source": "Fody",
-      "analysis": {
-        "isVegetarian": true,
-        "hasRestrictedIngredients": false,
-        "restrictedFound": [],
-        "nonVegFound": []
-      }
-    },
-    {
-      "id": "low-fodmap-bbq-sauce",
-      "title": "Original BBQ Sauce",
-      "price": "$6.99",
-      "ingredients": "Tomato Paste, Apple Cider Vinegar, Water, Organic Cane Sugar, Molasses, Organic Horseradish, Sea Salt, Natural Smoke Flavor, Black Pepper.",
-      "productUrl": "https://www.fodyfoods.com/products/low-fodmap-bbq-sauce",
-      "imageUrl": "https://cdn.shopify.com/s/files/1/1657/0407/files/83grVxsw.webp?v=1757539846",
-      "source": "Fody",
-      "analysis": {
-        "isVegetarian": true,
-        "hasRestrictedIngredients": false,
-        "restrictedFound": [],
-        "nonVegFound": []
-      }
-    },
-    {
-      "id": "original-ketchup",
-      "title": "Original Ketchup",
-      "price": "$7.49",
-      "ingredients": "Tomato Puree (Water, Tomato Paste), Organic Cane Sugar, Distilled Vinegar, Salt, Black Pepper, Clove Powder, Chili Powder, Allspice Powder, Cinnamon Powder.",
-      "productUrl": "https://www.fodyfoods.com/products/original-ketchup",
-      "imageUrl": "https://cdn.shopify.com/s/files/1/1657/0407/files/zwuyTC-A.png?v=1712850490",
       "source": "Fody",
       "analysis": {
         "isVegetarian": true,
@@ -4783,21 +4918,6 @@
       }
     },
     {
-      "id": "low-fodmap-ranch-style-seasoning",
-      "title": "Ranch Style Seasoning",
-      "price": "$8.99",
-      "ingredients": "Spices (Parsley, Mustard, Dill, Black Pepper), Sea Salt, White Rice Flour, Dehydrated Tomato, Lemon Peel, Nutritional Yeast, Dill Extract.",
-      "productUrl": "https://www.fodyfoods.com/products/low-fodmap-ranch-style-seasoning",
-      "imageUrl": "https://cdn.shopify.com/s/files/1/1657/0407/files/NEW_Ranch_Seasoning_02d38d9d-204f-483e-b98a-9b257627d099.webp?v=1768497781",
-      "source": "Fody",
-      "analysis": {
-        "isVegetarian": true,
-        "hasRestrictedIngredients": false,
-        "restrictedFound": [],
-        "nonVegFound": []
-      }
-    },
-    {
       "id": "low-fodmap-salad-dressing-variety-pack",
       "title": "Salad Dressing Variety Pack",
       "price": "$27.99",
@@ -4828,42 +4948,12 @@
       }
     },
     {
-      "id": "low-fodmap-salsa-verde",
-      "title": "Salsa Verde",
-      "price": "$7.99",
-      "ingredients": "Roasted Green Tomatoes, Green Bell Peppers, Jalapeño Peppers, Tomatillos, Water, Roasted Tomatoes, Lime Juice Concentrate, Cilantro, Sea Salt, Black Pepper, Cumin.",
-      "productUrl": "https://www.fodyfoods.com/products/low-fodmap-salsa-verde",
-      "imageUrl": "https://cdn.shopify.com/s/files/1/1657/0407/files/SalsaVerdeSensitiveRecipe-1_fd3de362-bd33-443b-a77a-e202747ea5ba.webp?v=1768498138",
-      "source": "Fody",
-      "analysis": {
-        "isVegetarian": true,
-        "hasRestrictedIngredients": false,
-        "restrictedFound": [],
-        "nonVegFound": []
-      }
-    },
-    {
       "id": "low-fodmap-sauce-marinade-pack",
       "title": "Sauce & Marinade Variety Pack",
       "price": "$26.79",
       "ingredients": "Sesame Ginger: WATER, DISTILLED VINEGAR, TOASTED SESAME OIL, GLUTEN &amp; SOY FREE TAMARI SAUCE (WATER, PEA, SALT, PEA PROTEIN, ALCOHOL), ORGANIC RAW CANE SUGAR, ARROWROOT POWDER, AVOCADO OIL, GINGER, HIMALAYAN PINK SALT, ORANGE JUICE CONCENTRATE, TAMARIND. Contains: Sesame. Enchilada: TOMATILLOS, WATER, ANAHEIM PEPPERS, DISTILLED VINEGAR, AVOCADO OIL, ARROWROOT POWDER, ROASTED POBLANO PUREE, HIMALAYAN PINK SALT, CUMIN, CORIANDER, BLACK PEPPER, CILANTRO. Teriyaki: WATER, GLUTEN &amp; SOY FREE TAMARI SAUCE (WATER, PEA, SALT, PEA PROTEIN, ALCOHOL), RICE WINE VINEGAR, ORGANIC DARK SUGAR, ARROWROOT POWDER, TOASTED SESAME OIL, PINEAPPLE JUICE CONCENTRATE, TAMARIND, GINGER. Taco: Water, Tomato Paste, Distilled Vinegar, Cumin, Himalayan Pink Salt, Avocado Oil, Arrowroot Powder, Paprika, Organic Raw Cane Sugar, Ancho Powder.",
       "productUrl": "https://www.fodyfoods.com/products/low-fodmap-sauce-marinade-pack",
       "imageUrl": "https://cdn.shopify.com/s/files/1/1657/0407/files/XfRTzJks.png?v=1719516700",
-      "source": "Fody",
-      "analysis": {
-        "isVegetarian": true,
-        "hasRestrictedIngredients": false,
-        "restrictedFound": [],
-        "nonVegFound": []
-      }
-    },
-    {
-      "id": "low-fodmap-sesame-ginger-sauce-marinade",
-      "title": "Sesame Ginger Sauce & Marinade",
-      "price": "$7.49",
-      "ingredients": "WATER, DISTILLED VINEGAR, TOASTED SESAME OIL, GLUTEN &amp; SOY FREE TAMARI SAUCE (WATER, PEA, SALT, PEA PROTEIN, ALCOHOL), ORGANIC RAW CANE SUGAR, ARROWROOT POWDER, AVOCADO OIL, GINGER, HIMALAYAN PINK SALT, ORANGE JUICE CONCENTRATE, TAMARIND. Contains: Sesame.",
-      "productUrl": "https://www.fodyfoods.com/products/low-fodmap-sesame-ginger-sauce-marinade",
-      "imageUrl": "https://cdn.shopify.com/s/files/1/1657/0407/files/1JWb5iYQ.png?v=1712850430",
       "source": "Fody",
       "analysis": {
         "isVegetarian": true,
@@ -4903,21 +4993,6 @@
       }
     },
     {
-      "id": "low-fodmap-arrabbiata-sauce",
-      "title": "Spicy Marinara (Arrabbiata) Pasta Sauce",
-      "price": "$8.99",
-      "ingredients": "Chopped Tomatoes, Extra Virgin Olive Oil, Sea Salt, Crushed Red Pepper.",
-      "productUrl": "https://www.fodyfoods.com/products/low-fodmap-arrabbiata-sauce",
-      "imageUrl": "https://cdn.shopify.com/s/files/1/1657/0407/files/SpicyMarinaraSensitiveRecipe-1_1f2be782-b6f8-419d-ad40-516417b7ab33.webp?v=1766503103",
-      "source": "Fody",
-      "analysis": {
-        "isVegetarian": true,
-        "hasRestrictedIngredients": false,
-        "restrictedFound": [],
-        "nonVegFound": []
-      }
-    },
-    {
       "id": "low-fodmap-pantry-pack",
       "title": "Starter Pack",
       "price": "$32.99",
@@ -4933,132 +5008,12 @@
       }
     },
     {
-      "id": "low-fodmap-br-b-big-steak-seasoning-b-big-br-small-no-onion-no-garlic-gluten-free-small",
-      "title": "Steak Seasoning",
-      "price": "$8.99",
-      "ingredients": "Sea Salt, Black Pepper, Dill, Coriander, Red Pepper.",
-      "productUrl": "https://www.fodyfoods.com/products/low-fodmap-br-b-big-steak-seasoning-b-big-br-small-no-onion-no-garlic-gluten-free-small",
-      "imageUrl": "https://cdn.shopify.com/s/files/1/1657/0407/files/NEW_Steak_Seasoning_95fe7f43-9f89-4fef-806e-3b1c4e615375.webp?v=1768497853",
-      "source": "Fody",
-      "analysis": {
-        "isVegetarian": true,
-        "hasRestrictedIngredients": false,
-        "restrictedFound": [],
-        "nonVegFound": []
-      }
-    },
-    {
-      "id": "low-fodmap-taco-sauce",
-      "title": "Taco Sauce",
-      "price": "$7.49",
-      "ingredients": "Water, Tomato Paste, Distilled Vinegar, Cumin, Himalayan Pink Salt, Avocado Oil, Arrowroot Powder, Paprika, Organic Raw Cane Sugar, Ancho Powder.",
-      "productUrl": "https://www.fodyfoods.com/products/low-fodmap-taco-sauce",
-      "imageUrl": "https://cdn.shopify.com/s/files/1/1657/0407/files/U_RP5qaA.png?v=1712850589",
-      "source": "Fody",
-      "analysis": {
-        "isVegetarian": true,
-        "hasRestrictedIngredients": false,
-        "restrictedFound": [],
-        "nonVegFound": []
-      }
-    },
-    {
-      "id": "low-fodmap-br-b-big-taco-seasoning-b-big-br-small-no-onion-no-garlic-gluten-free-small",
-      "title": "Taco Seasoning",
-      "price": "$8.99",
-      "ingredients": "Sea Salt, Chili Pepper, Cumin, Paprika, Oregano.",
-      "productUrl": "https://www.fodyfoods.com/products/low-fodmap-br-b-big-taco-seasoning-b-big-br-small-no-onion-no-garlic-gluten-free-small",
-      "imageUrl": "https://cdn.shopify.com/s/files/1/1657/0407/files/NEW_Taco_Seasoning_d2408b74-434d-456f-b5e4-be47d52aa411.webp?v=1768497928",
-      "source": "Fody",
-      "analysis": {
-        "isVegetarian": true,
-        "hasRestrictedIngredients": false,
-        "restrictedFound": [],
-        "nonVegFound": []
-      }
-    },
-    {
-      "id": "tikka-masala-seasoning",
-      "title": "Tikka Masala Seasoning",
-      "price": "$8.99",
-      "ingredients": "Spices (Cumin, Coriander, Fennel, Cinnamon, Star Anise, Clove, Cardamom, Nutmeg, Red Pepper), Paprika (Color), and Rice Hulls.",
-      "productUrl": "https://www.fodyfoods.com/products/tikka-masala-seasoning",
-      "imageUrl": "https://cdn.shopify.com/s/files/1/1657/0407/files/NEW_Tikka_Masala_Seasoning.webp?v=1768497993",
-      "source": "Fody",
-      "analysis": {
-        "isVegetarian": true,
-        "hasRestrictedIngredients": false,
-        "restrictedFound": [],
-        "nonVegFound": []
-      }
-    },
-    {
-      "id": "low-fodmap-tomato-basil-sauce",
-      "title": "Tomato Basil Pasta Sauce",
-      "price": "$8.99",
-      "ingredients": "Chopped Tomatoes, Extra Virgin Olive Oil, Carrot Puree, Basil, Sea Salt.",
-      "productUrl": "https://www.fodyfoods.com/products/low-fodmap-tomato-basil-sauce",
-      "imageUrl": "https://cdn.shopify.com/s/files/1/1657/0407/files/TomatoBasilSensitiveRecipe-1_889dd731-e05b-4389-a212-5dc917fec58b.webp?v=1766503051",
-      "source": "Fody",
-      "analysis": {
-        "isVegetarian": true,
-        "hasRestrictedIngredients": false,
-        "restrictedFound": [],
-        "nonVegFound": []
-      }
-    },
-    {
       "id": "tomato-basil-pasta-sauce-3-pack",
       "title": "Tomato Basil Pasta Sauce - 3 Pack",
       "price": "$24.29",
       "ingredients": "Chopped Tomatoes, Extra Virgin Olive Oil, Carrot Puree, Basil, Sea Salt.",
       "productUrl": "https://www.fodyfoods.com/products/tomato-basil-pasta-sauce-3-pack",
       "imageUrl": "https://cdn.shopify.com/s/files/1/1657/0407/files/Untitled_design_4520295a-1d0b-49a9-ab77-17dd56644307.png?v=1723474859",
-      "source": "Fody",
-      "analysis": {
-        "isVegetarian": true,
-        "hasRestrictedIngredients": false,
-        "restrictedFound": [],
-        "nonVegFound": []
-      }
-    },
-    {
-      "id": "low-fodmap-vegan-bolognese-pasta-sauce",
-      "title": "Vegan Bolognese Pasta Sauce",
-      "price": "$8.99",
-      "ingredients": "Chopped Tomatoes, Extra Virgin Olive Oil, Kabocha Squash, Carrot Puree, Shiitake Mushrooms, Walnuts, Dehydrated Carrots, Sea Salt. Contains: Walnuts.",
-      "productUrl": "https://www.fodyfoods.com/products/low-fodmap-vegan-bolognese-pasta-sauce",
-      "imageUrl": "https://cdn.shopify.com/s/files/1/1657/0407/files/VeganBoloSensitiveRecipe-1_5791b155-d935-4e8d-b14a-fffe75114b3f.webp?v=1766502963",
-      "source": "Fody",
-      "analysis": {
-        "isVegetarian": true,
-        "hasRestrictedIngredients": false,
-        "restrictedFound": [],
-        "nonVegFound": []
-      }
-    },
-    {
-      "id": "low-fodmap-caesar-salad-dressing",
-      "title": "Vegan Caesar Salad Dressing",
-      "price": "$7.99",
-      "ingredients": "Avocado oil, Water, Organic cider vinegar, Mustard seed, Sea salt, Nutritional yeast, Lemon juice concentrate, Rosemary extract, Black pepper, Xanthan gum May Contain: Soy, Sesame.",
-      "productUrl": "https://www.fodyfoods.com/products/low-fodmap-caesar-salad-dressing",
-      "imageUrl": "https://cdn.shopify.com/s/files/1/1657/0407/files/ICz88NB8.png?v=1724682366",
-      "source": "Fody",
-      "analysis": {
-        "isVegetarian": true,
-        "hasRestrictedIngredients": false,
-        "restrictedFound": [],
-        "nonVegFound": []
-      }
-    },
-    {
-      "id": "low-fodmap-vegetable-soup-base",
-      "title": "Vegetable Soup Base",
-      "price": "$8.99",
-      "ingredients": "Salt, Dehydrated Vegetables (Carrots, Tomatoes), Sugar, Potato Starch, Herbs &amp; Spices (Basil, Celery, Oregano, Rosemary, Parsley, Paprika), Canola Oil, Extra Virgin Olive Oil.",
-      "productUrl": "https://www.fodyfoods.com/products/low-fodmap-vegetable-soup-base",
-      "imageUrl": "https://cdn.shopify.com/s/files/1/1657/0407/files/VegeBase_1_84640f85-7658-4cdd-918b-0a7a7171c093.webp?v=1767014860",
       "source": "Fody",
       "analysis": {
         "isVegetarian": true,
