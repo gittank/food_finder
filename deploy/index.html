@@ -482,12 +482,6 @@
       <button class="tab active" data-tab="suitable">
         Suitable <span class="count" id="suitable-count">0</span>
       </button>
-      <button class="tab" data-tab="unsuitable">
-        Unsuitable <span class="count" id="unsuitable-count">0</span>
-      </button>
-      <button class="tab" data-tab="noIngredients">
-        Needs Review <span class="count" id="noingredients-count">0</span>
-      </button>
     </div>
 
     <div class="filters">
@@ -495,8 +489,6 @@
       <select id="source-filter" style="padding: 0.75rem; border: 1px solid #ddd; border-radius: 4px; font-size: 1rem;">
         <option value="">All Sources</option>
       </select>
-      <button class="btn btn-secondary" onclick="selectAll()">Select All</button>
-      <button class="btn btn-secondary" onclick="selectNone()">Clear Selection</button>
     </div>
 
     <div class="products" id="products-grid">
@@ -504,19 +496,6 @@
     </div>
   </div>
 
-  <!-- Action bar for selected items -->
-  <div class="action-bar" id="action-bar">
-    <div class="action-bar-left">
-      <span class="selected-count"><span id="selected-count">0</span> selected</span>
-      <button class="btn btn-secondary" onclick="selectNone()">Clear</button>
-    </div>
-    <div class="action-buttons">
-      <button class="btn btn-featured" onclick="moveToCategory('featured')">Mark Featured</button>
-      <button class="btn btn-success" onclick="moveToCategory('suitable')">Mark Suitable</button>
-      <button class="btn btn-danger" onclick="moveToCategory('unsuitable')">Mark Unsuitable</button>
-      <button class="btn btn-warning" onclick="moveToCategory('noIngredients')">Mark Needs Review</button>
-    </div>
-  </div>
 
   <!-- Toast notification -->
   <div class="toast" id="toast"></div>
@@ -556,20 +535,9 @@
           <div class="restricted-list" id="modal-restricted">-</div>
         </div>
 
-        <div class="modal-section">
-          <h3>Edit Image URL</h3>
-          <div style="display: flex; gap: 0.5rem;">
-            <input type="text" id="modal-image-url" placeholder="Enter image URL..." style="flex: 1; padding: 0.5rem; border: 1px solid #ddd; border-radius: 4px;">
-            <button class="btn btn-secondary" onclick="updateProductImage()">Update</button>
-          </div>
-        </div>
       </div>
       <div class="modal-footer">
         <a id="modal-link" href="#" target="_blank" class="btn">View Product</a>
-        <button class="btn btn-featured" onclick="moveModalProductTo('featured')">Mark Featured</button>
-        <button class="btn btn-success" onclick="moveModalProductTo('suitable')">Mark Suitable</button>
-        <button class="btn btn-danger" onclick="moveModalProductTo('unsuitable')">Mark Unsuitable</button>
-        <button class="btn btn-warning" onclick="moveModalProductTo('noIngredients')">Needs Review</button>
       </div>
     </div>
   </div>
