@@ -419,10 +419,10 @@
 
   <div class="container">
     <div class="tabs">
-      <button class="tab" data-tab="featured">
+      <button class="tab active" data-tab="featured">
         Featured <span class="count" id="featured-count">0</span>
       </button>
-      <button class="tab active" data-tab="suitable">
+      <button class="tab" data-tab="suitable">
         Suitable <span class="count" id="suitable-count">0</span>
       </button>
     </div>
@@ -484,7 +484,7 @@
 
   <script>
     let allData = { featured: [], suitable: [] };
-    let currentTab = 'suitable';
+    let currentTab = 'featured';
     let currentProducts = [];
     let currentModalProduct = null;
 
