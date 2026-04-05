@@ -43,6 +43,11 @@ for (const file of files) {
   else if (file.startsWith('veganessentials')) source = 'Vegan Essentials';
   else if (file.startsWith('fody')) source = 'Fody';
   else if (file.startsWith('vreamery')) source = 'Vreamery';
+  else if (file.startsWith('plantx')) source = 'PlantX';
+  else if (file.startsWith('iherb')) source = 'iHerb';
+  else if (file.startsWith('zerooge')) source = 'ZEROoge';
+  else if (file.startsWith('noogeatz')) source = 'NoOgEatz';
+  else if (file.startsWith('ogefreelife')) source = 'OGEFreeLife';
 
   for (const category of ['featured', 'suitable']) {
     if (data[category]) {
