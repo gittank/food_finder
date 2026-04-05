@@ -75,29 +75,6 @@
       }
     },
     {
-      "title": "Lee Kum Kee Sesame Sauce 190 g",
-      "images": [
-        "https://img06.weeecdn.com/item/image/561/594/149733854A1A3AEB.jpg",
-        "https://img06.weeecdn.com/item/image/383/743/3BDC9756148C4407.jpg",
-        "https://img06.weeecdn.com/item/image/217/618/141C8BBAD808E61E.jpg",
-        "https://img06.weeecdn.com/item/image/862/253/5EF985D07F19A31C.jpg"
-      ],
-      "ingredients": "SESAME PASTE, SOYBEAN OIL, GUMARAEICH _ XANTHAN GUM. CONTAIN S50; BEANS, No",
-      "price": "$20",
-      "productId": "94773",
-      "ocrConfidence": 68,
-      "ocrImageUrl": "https://img06.weeecdn.com/item/image/862/253/5EF985D07F19A31C.jpg",
-      "ingredientSource": "ocr",
-      "productUrl": "https://www.sayweee.com/en/product/Lee-Kum-Kee-Sesame-Sauce/94773",
-      "scannedAt": "2026-01-25T06:09:36.048Z",
-      "analysis": {
-        "isVegetarian": true,
-        "hasRestrictedIngredients": false,
-        "restrictedFound": [],
-        "nonVegFound": []
-      }
-    },
-    {
       "title": "ROYAL RICE,5LB",
       "images": [
         "https://img06.weeecdn.com/item/image/748/037/F8007912CF70C6.jpg",
@@ -4417,6 +4394,29 @@
       "ingredientSource": "ocr",
       "productUrl": "https://www.sayweee.com/en/product/Do--a-Maria-Mole/55085",
       "scannedAt": "2026-01-25T06:08:14.422Z",
+      "analysis": {
+        "isVegetarian": true,
+        "hasRestrictedIngredients": false,
+        "restrictedFound": [],
+        "nonVegFound": []
+      }
+    },
+    {
+      "title": "Lee Kum Kee Sesame Sauce 190 g",
+      "images": [
+        "https://img06.weeecdn.com/item/image/561/594/149733854A1A3AEB.jpg",
+        "https://img06.weeecdn.com/item/image/383/743/3BDC9756148C4407.jpg",
+        "https://img06.weeecdn.com/item/image/217/618/141C8BBAD808E61E.jpg",
+        "https://img06.weeecdn.com/item/image/862/253/5EF985D07F19A31C.jpg"
+      ],
+      "ingredients": "SESAME PASTE, SOYBEAN OIL, GUMARAEICH _ XANTHAN GUM. CONTAIN S50; BEANS, No",
+      "price": "$20",
+      "productId": "94773",
+      "ocrConfidence": 68,
+      "ocrImageUrl": "https://img06.weeecdn.com/item/image/862/253/5EF985D07F19A31C.jpg",
+      "ingredientSource": "ocr",
+      "productUrl": "https://www.sayweee.com/en/product/Lee-Kum-Kee-Sesame-Sauce/94773",
+      "scannedAt": "2026-01-25T06:09:36.048Z",
       "analysis": {
         "isVegetarian": true,
         "hasRestrictedIngredients": false,

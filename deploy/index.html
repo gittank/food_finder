@@ -4,6 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Food Finder</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
   <style>
     * {
       box-sizing: border-box;
@@ -12,43 +15,46 @@
     }
 
     body {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-      background: #f5f5f5;
-      color: #333;
-      line-height: 1.6;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif;
+      background: #fff;
+      color: #000;
+      line-height: 1.5;
+      -webkit-font-smoothing: antialiased;
     }
 
     header {
-      background: linear-gradient(135deg, #1565c0, #42a5f5);
-      color: white;
-      padding: 2rem;
+      background: #000;
+      color: #fff;
+      padding: 2.5rem 2rem;
       text-align: center;
     }
 
     header h1 {
-      font-size: 2rem;
-      margin-bottom: 0.5rem;
+      font-size: 1.75rem;
+      font-weight: 300;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      margin-bottom: 0.4rem;
     }
 
     header p {
-      opacity: 0.9;
-      font-size: 1rem;
+      color: #999;
+      font-size: 0.85rem;
+      font-weight: 400;
+      letter-spacing: 0.02em;
     }
 
     .container {
-      max-width: 1400px;
+      max-width: 1440px;
       margin: 0 auto;
-      padding: 2rem;
+      padding: 2.5rem 3rem;
     }
 
     .filters {
-      background: white;
-      padding: 1rem;
-      border-radius: 8px;
-      margin-bottom: 1.5rem;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      padding: 0;
+      margin-bottom: 2rem;
       display: flex;
-      gap: 1rem;
+      gap: 0.75rem;
       flex-wrap: wrap;
       align-items: center;
     }
@@ -56,248 +62,204 @@
     .filters input {
       flex: 1;
       min-width: 200px;
-      padding: 0.75rem;
-      border: 1px solid #ddd;
-      border-radius: 4px;
-      font-size: 1rem;
+      padding: 0.7rem 1rem;
+      border: 1px solid #d4d4d4;
+      border-radius: 0;
+      font-size: 0.85rem;
+      font-family: inherit;
+      color: #000;
+      background: #fff;
+      transition: border-color 0.2s;
+    }
+
+    .filters input:focus {
+      outline: none;
+      border-color: #000;
+    }
+
+    .filters input::placeholder {
+      color: #999;
+    }
+
+    .filters select {
+      padding: 0.7rem 1rem;
+      border: 1px solid #d4d4d4;
+      border-radius: 0;
+      font-size: 0.85rem;
+      font-family: inherit;
+      color: #000;
+      background: #fff;
+      cursor: pointer;
+      transition: border-color 0.2s;
+    }
+
+    .filters select:focus {
+      outline: none;
+      border-color: #000;
     }
 
     .tabs {
       display: flex;
-      gap: 0.5rem;
-      margin-bottom: 1.5rem;
-      flex-wrap: wrap;
+      gap: 0;
+      margin-bottom: 2rem;
+      border-bottom: 1px solid #e5e5e5;
     }
 
     .tab {
-      padding: 0.75rem 1.5rem;
+      padding: 0.9rem 1.8rem;
       border: none;
-      background: white;
-      border-radius: 8px;
+      background: transparent;
+      border-bottom: 2px solid transparent;
       cursor: pointer;
-      font-size: 0.95rem;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      font-size: 0.85rem;
+      font-family: inherit;
+      font-weight: 400;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      color: #666;
       transition: all 0.2s;
     }
 
     .tab:hover {
-      background: #f0f0f0;
+      color: #000;
     }
 
     .tab.active {
-      background: #1565c0;
-      color: white;
+      color: #000;
+      border-bottom-color: #000;
+      font-weight: 500;
     }
 
     .tab .count {
-      background: rgba(0,0,0,0.1);
-      padding: 0.2rem 0.5rem;
-      border-radius: 10px;
-      font-size: 0.8rem;
-      margin-left: 0.5rem;
+      font-size: 0.75rem;
+      margin-left: 0.4rem;
+      color: inherit;
+      opacity: 0.6;
     }
 
     .tab.active .count {
-      background: rgba(255,255,255,0.2);
+      opacity: 0.8;
     }
 
     .products {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-      gap: 1.5rem;
+      gap: 2rem;
     }
 
     .product-card {
-      background: white;
-      border-radius: 8px;
+      background: #fff;
       overflow: hidden;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
       cursor: pointer;
-      transition: transform 0.2s, box-shadow 0.2s;
+      transition: opacity 0.2s;
       position: relative;
+      border: 1px solid #f0f0f0;
     }
 
     .product-card:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-    }
-
-    .product-card.selected {
-      outline: 3px solid #1565c0;
-    }
-
-    .product-checkbox {
-      position: absolute;
-      top: 10px;
-      left: 10px;
-      width: 24px;
-      height: 24px;
-      cursor: pointer;
-      z-index: 10;
-      accent-color: #1565c0;
+      opacity: 0.85;
     }
 
     .product-image {
       width: 100%;
-      height: 180px;
+      height: 220px;
       object-fit: contain;
-      background: #fafafa;
-      padding: 1rem;
-      padding-left: 2.5rem;
+      background: #f7f7f7;
+      padding: 1.5rem;
     }
 
     .product-info {
-      padding: 1rem;
+      padding: 1.2rem 1rem;
+      border-top: 1px solid #f0f0f0;
     }
 
     .product-title {
-      font-weight: 600;
-      font-size: 0.95rem;
+      font-weight: 400;
+      font-size: 0.85rem;
       margin-bottom: 0.5rem;
-      color: #333;
+      color: #000;
       display: -webkit-box;
       -webkit-line-clamp: 2;
       -webkit-box-orient: vertical;
       overflow: hidden;
+      line-height: 1.4;
     }
 
     .product-price {
-      color: #1565c0;
-      font-weight: 600;
-      font-size: 1.1rem;
+      color: #000;
+      font-weight: 500;
+      font-size: 1rem;
     }
 
     .badge {
       display: inline-block;
-      padding: 0.25rem 0.5rem;
-      border-radius: 4px;
-      font-size: 0.75rem;
+      padding: 0.2rem 0.5rem;
+      font-size: 0.7rem;
       margin-top: 0.5rem;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      font-weight: 500;
+      border: 1px solid;
     }
 
     .badge-featured {
-      background: #fff8e1;
-      color: #f57f17;
+      background: transparent;
+      color: #8b6914;
+      border-color: #d4b44a;
     }
 
     .badge-suitable {
-      background: #e8f5e9;
-      color: #2e7d32;
+      background: transparent;
+      color: #2d6a30;
+      border-color: #6abf6e;
     }
 
     .badge-unsuitable {
-      background: #ffebee;
-      color: #c62828;
+      background: transparent;
+      color: #a12020;
+      border-color: #e06060;
     }
 
     .badge-noingredients {
-      background: #fff3e0;
-      color: #e65100;
+      background: transparent;
+      color: #b45309;
+      border-color: #e8a040;
     }
 
     .badge-ocr {
-      background: #e3f2fd;
-      color: #1565c0;
-      font-size: 0.7rem;
+      background: transparent;
+      color: #555;
+      border-color: #ccc;
+      font-size: 0.65rem;
     }
 
     .badge-source {
-      background: #f3e5f5;
-      color: #6a1b9a;
-      font-size: 0.7rem;
-    }
-
-    /* Action bar */
-    .action-bar {
-      position: fixed;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      background: white;
-      padding: 1rem 2rem;
-      box-shadow: 0 -4px 12px rgba(0,0,0,0.15);
-      display: none;
-      align-items: center;
-      justify-content: space-between;
-      z-index: 100;
-    }
-
-    .action-bar.active {
-      display: flex;
-    }
-
-    .action-bar-left {
-      display: flex;
-      align-items: center;
-      gap: 1rem;
-    }
-
-    .selected-count {
-      font-weight: 600;
-      color: #1565c0;
-    }
-
-    .action-buttons {
-      display: flex;
-      gap: 0.5rem;
+      background: transparent;
+      color: #666;
+      border-color: #ccc;
+      font-size: 0.65rem;
     }
 
     .btn {
       display: inline-block;
-      background: #1565c0;
-      color: white;
-      padding: 0.75rem 1.5rem;
-      border-radius: 4px;
+      background: #000;
+      color: #fff;
+      padding: 0.7rem 1.5rem;
+      border-radius: 0;
       text-decoration: none;
       font-weight: 500;
-      border: none;
+      font-family: inherit;
+      border: 1px solid #000;
       cursor: pointer;
-      font-size: 0.9rem;
+      font-size: 0.8rem;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      transition: all 0.2s;
     }
 
     .btn:hover {
-      background: #0d47a1;
-    }
-
-    .btn-secondary {
-      background: #f5f5f5;
-      color: #333;
-    }
-
-    .btn-secondary:hover {
-      background: #e0e0e0;
-    }
-
-    .btn-success {
-      background: #2e7d32;
-    }
-
-    .btn-success:hover {
-      background: #1b5e20;
-    }
-
-    .btn-danger {
-      background: #c62828;
-    }
-
-    .btn-danger:hover {
-      background: #b71c1c;
-    }
-
-    .btn-warning {
-      background: #e65100;
-    }
-
-    .btn-warning:hover {
-      background: #bf360c;
-    }
-
-    .btn-featured {
-      background: #f57f17;
-    }
-
-    .btn-featured:hover {
-      background: #e65100;
+      background: #333;
+      border-color: #333;
     }
 
     /* Modal */
@@ -308,7 +270,7 @@
       left: 0;
       right: 0;
       bottom: 0;
-      background: rgba(0,0,0,0.5);
+      background: rgba(0,0,0,0.6);
       z-index: 1000;
       align-items: center;
       justify-content: center;
@@ -320,8 +282,7 @@
     }
 
     .modal {
-      background: white;
-      border-radius: 12px;
+      background: #fff;
       max-width: 700px;
       width: 100%;
       max-height: 90vh;
@@ -329,15 +290,16 @@
     }
 
     .modal-header {
-      padding: 1.5rem;
-      border-bottom: 1px solid #eee;
+      padding: 1.5rem 2rem;
+      border-bottom: 1px solid #e5e5e5;
       display: flex;
       justify-content: space-between;
       align-items: start;
     }
 
     .modal-header h2 {
-      font-size: 1.25rem;
+      font-size: 1.1rem;
+      font-weight: 400;
       padding-right: 1rem;
     }
 
@@ -346,11 +308,16 @@
       border: none;
       font-size: 1.5rem;
       cursor: pointer;
-      color: #666;
+      color: #999;
+      transition: color 0.2s;
+    }
+
+    .modal-close:hover {
+      color: #000;
     }
 
     .modal-body {
-      padding: 1.5rem;
+      padding: 2rem;
     }
 
     .modal-images {
@@ -362,27 +329,26 @@
     }
 
     .modal-image {
-      width: 150px;
-      height: 150px;
+      width: 80px;
+      height: 80px;
       object-fit: contain;
-      background: #fafafa;
-      border-radius: 8px;
+      background: #f7f7f7;
       flex-shrink: 0;
       cursor: pointer;
-      border: 2px solid transparent;
+      border: 1px solid transparent;
+      transition: border-color 0.2s;
     }
 
     .modal-image.active {
-      border-color: #1565c0;
+      border-color: #000;
     }
 
     .modal-main-image {
       width: 100%;
-      max-height: 300px;
+      max-height: 320px;
       object-fit: contain;
-      background: #fafafa;
-      border-radius: 8px;
-      margin-bottom: 1rem;
+      background: #f7f7f7;
+      margin-bottom: 1.5rem;
     }
 
     .modal-section {
@@ -390,44 +356,41 @@
     }
 
     .modal-section h3 {
-      font-size: 0.875rem;
+      font-size: 0.7rem;
       text-transform: uppercase;
-      color: #666;
+      letter-spacing: 0.08em;
+      color: #999;
       margin-bottom: 0.5rem;
+      font-weight: 500;
     }
 
     .ingredients-list {
-      background: #f9f9f9;
+      background: #f7f7f7;
       padding: 1rem;
-      border-radius: 8px;
-      font-size: 0.95rem;
+      font-size: 0.85rem;
+      line-height: 1.6;
+      color: #333;
     }
 
     .restricted-list {
-      background: #ffebee;
+      background: #faf0f0;
       padding: 1rem;
-      border-radius: 8px;
-      color: #c62828;
-    }
-
-    .modal-footer {
-      padding: 1rem 1.5rem;
-      border-top: 1px solid #eee;
-      display: flex;
-      gap: 1rem;
-      flex-wrap: wrap;
+      color: #a12020;
+      font-size: 0.85rem;
+      border-left: 3px solid #a12020;
     }
 
     .no-results {
       text-align: center;
-      padding: 3rem;
-      color: #666;
+      padding: 4rem 2rem;
+      color: #999;
       grid-column: 1 / -1;
+      font-size: 0.9rem;
     }
 
     .info-row {
       display: flex;
-      gap: 1rem;
+      gap: 1.5rem;
       flex-wrap: wrap;
     }
 
@@ -436,35 +399,15 @@
       min-width: 150px;
     }
 
-    /* Toast notification */
-    .toast {
-      position: fixed;
-      bottom: 100px;
-      left: 50%;
-      transform: translateX(-50%);
-      background: #333;
-      color: white;
-      padding: 1rem 2rem;
-      border-radius: 8px;
-      z-index: 2000;
-      display: none;
+    .info-item p {
+      font-size: 0.9rem;
     }
 
-    .toast.active {
-      display: block;
-    }
-
-    .toast.success {
-      background: #2e7d32;
-    }
-
-    .toast.error {
-      background: #c62828;
-    }
-
-    /* Add padding at bottom for action bar */
-    body.has-selection {
-      padding-bottom: 80px;
+    @media (max-width: 768px) {
+      .container { padding: 1.5rem 1rem; }
+      header { padding: 1.5rem 1rem; }
+      header h1 { font-size: 1.4rem; }
+      .products { gap: 1rem; }
     }
   </style>
 </head>
@@ -486,7 +429,7 @@
 
     <div class="filters">
       <input type="text" id="search" placeholder="Search products...">
-      <select id="source-filter" style="padding: 0.75rem; border: 1px solid #ddd; border-radius: 4px; font-size: 1rem;">
+      <select id="source-filter">
         <option value="">All Sources</option>
       </select>
     </div>
@@ -496,9 +439,6 @@
     </div>
   </div>
 
-
-  <!-- Toast notification -->
-  <div class="toast" id="toast"></div>
 
   <!-- Modal -->
   <div class="modal-overlay" id="modal">
@@ -535,28 +475,27 @@
           <div class="restricted-list" id="modal-restricted">-</div>
         </div>
 
+        <div class="modal-section">
+          <a id="modal-link" href="#" target="_blank" class="btn">View Product</a>
+        </div>
       </div>
     </div>
   </div>
 
   <script>
-    let allData = { featured: [], suitable: [], unsuitable: [], noIngredients: [] };
+    let allData = { featured: [], suitable: [] };
     let currentTab = 'suitable';
     let currentProducts = [];
-    let selectedProducts = new Set(); // Set of "source-id" keys
-    let pendingChanges = []; // Array of { product, fromCategory, toCategory }
     let currentModalProduct = null;
 
-    // Load data from API
     async function loadData() {
       try {
         const response = await fetch('./data/products.json');
-        if (!response.ok) throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+        if (!response.ok) throw new Error(`HTTP ${response.status}`);
         allData = await response.json();
 
-        // Populate source filter
         const sources = new Set();
-        for (const cat of ['featured', 'suitable', 'unsuitable', 'noIngredients']) {
+        for (const cat of ['featured', 'suitable']) {
           (allData[cat] || []).forEach(p => { if (p.source) sources.add(p.source); });
         }
         const select = document.getElementById('source-filter');
@@ -572,39 +511,28 @@
       } catch (error) {
         console.error('Error loading data:', error);
         document.getElementById('products-grid').innerHTML =
-          '<div class="no-results">Error loading products. Make sure the server is running.</div>';
+          '<div class="no-results">Error loading products. Check that data/products.json exists.</div>';
       }
     }
 
     function updateCounts() {
       document.getElementById('featured-count').textContent = allData.featured?.length || 0;
       document.getElementById('suitable-count').textContent = allData.suitable?.length || 0;
-      document.getElementById('unsuitable-count').textContent = allData.unsuitable?.length || 0;
-      document.getElementById('noingredients-count').textContent = allData.noIngredients?.length || 0;
-    }
-
-    function getProductKey(product) {
-      return `${product.source}-${product.id}`;
     }
 
     function showTab(tab) {
       currentTab = tab;
-
-      // Update tab buttons
       document.querySelectorAll('.tab').forEach(btn => {
         btn.classList.toggle('active', btn.dataset.tab === tab);
       });
 
-      // Get products for current tab
       currentProducts = allData[tab] || [];
 
-      // Apply source filter
       const sourceFilter = document.getElementById('source-filter').value;
       if (sourceFilter) {
         currentProducts = currentProducts.filter(p => p.source === sourceFilter);
       }
 
-      // Apply search filter if any
       const query = document.getElementById('search').value.toLowerCase();
       if (query) {
         currentProducts = currentProducts.filter(p =>
@@ -625,23 +553,12 @@
       }
 
       grid.innerHTML = items.map((product, index) => {
-        const key = getProductKey(product);
-        const isSelected = selectedProducts.has(key);
-
         let badgeClass = 'badge-suitable';
         let badgeText = 'Vegetarian Friendly';
 
         if (currentTab === 'featured') {
           badgeClass = 'badge-featured';
           badgeText = 'Featured';
-        } else if (currentTab === 'unsuitable') {
-          badgeClass = 'badge-unsuitable';
-          const restricted = product.analysis?.restrictedFound || [];
-          const nonVeg = product.analysis?.nonVegFound || [];
-          badgeText = [...restricted, ...nonVeg].join(', ') || 'Contains restricted';
-        } else if (currentTab === 'noIngredients') {
-          badgeClass = 'badge-noingredients';
-          badgeText = 'Needs ingredient review';
         }
 
         const ocrBadge = product.ingredientSource === 'ocr' && product.ocrConfidence
@@ -649,21 +566,14 @@
           : '';
 
         return `
-        <div class="product-card ${isSelected ? 'selected' : ''}" data-key="${key}">
-          <input
-            type="checkbox"
-            class="product-checkbox"
-            ${isSelected ? 'checked' : ''}
-            onclick="toggleSelection(event, '${key}')"
-          >
+        <div class="product-card" onclick="openModal(${index})">
           <img
             class="product-image"
             src="${product.imageUrl || 'https://via.placeholder.com/300x200?text=No+Image'}"
             alt="${product.title}"
             onerror="this.src='https://via.placeholder.com/300x200?text=No+Image'"
-            onclick="openModal(${index})"
           >
-          <div class="product-info" onclick="openModal(${index})">
+          <div class="product-info">
             <div class="product-title">${product.title || 'Unknown Product'}</div>
             <div class="product-price">${product.price || '-'}</div>
             <span class="badge ${badgeClass}">${badgeText}</span>
@@ -672,143 +582,6 @@
           </div>
         </div>
       `}).join('');
-    }
-
-    function toggleSelection(event, key) {
-      event.stopPropagation();
-      if (selectedProducts.has(key)) {
-        selectedProducts.delete(key);
-      } else {
-        selectedProducts.add(key);
-      }
-      updateSelectionUI();
-      renderProducts(currentProducts);
-    }
-
-    function selectAll() {
-      currentProducts.forEach(p => selectedProducts.add(getProductKey(p)));
-      updateSelectionUI();
-      renderProducts(currentProducts);
-    }
-
-    function selectNone() {
-      selectedProducts.clear();
-      updateSelectionUI();
-      renderProducts(currentProducts);
-    }
-
-    function updateSelectionUI() {
-      const count = selectedProducts.size;
-      document.getElementById('selected-count').textContent = count;
-      document.getElementById('action-bar').classList.toggle('active', count > 0);
-      document.body.classList.toggle('has-selection', count > 0);
-    }
-
-    async function moveToCategory(toCategory) {
-      if (selectedProducts.size === 0) return;
-
-      const changes = [];
-
-      // Find all selected products and their current categories
-      for (const key of selectedProducts) {
-        let found = false;
-        for (const fromCategory of ['featured', 'suitable', 'unsuitable', 'noIngredients']) {
-          const product = allData[fromCategory]?.find(p => getProductKey(p) === key);
-          if (product && fromCategory !== toCategory) {
-            changes.push({
-              productId: product.id,
-              source: product.source,
-              fromCategory,
-              toCategory
-            });
-            found = true;
-            break;
-          }
-        }
-      }
-
-      if (changes.length === 0) {
-        showToast('No changes to save', 'error');
-        return;
-      }
-
-      try {
-        const response = await fetch('/api/products/move', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ changes })
-        });
-
-        const result = await response.json();
-
-        if (response.ok) {
-          showToast(`Moved ${changes.length} product(s) to ${toCategory}`, 'success');
-          selectedProducts.clear();
-          updateSelectionUI();
-          // Reload data to reflect changes
-          await loadData();
-        } else {
-          showToast(result.error || 'Failed to save changes', 'error');
-        }
-      } catch (error) {
-        console.error('Error saving changes:', error);
-        showToast('Error saving changes', 'error');
-      }
-    }
-
-    async function moveModalProductTo(toCategory) {
-      if (!currentModalProduct) return;
-
-      const key = getProductKey(currentModalProduct);
-      let fromCategory = null;
-
-      // Find current category
-      for (const cat of ['featured', 'suitable', 'unsuitable', 'noIngredients']) {
-        if (allData[cat]?.find(p => getProductKey(p) === key)) {
-          fromCategory = cat;
-          break;
-        }
-      }
-
-      if (!fromCategory || fromCategory === toCategory) {
-        showToast('Product is already in this category', 'error');
-        return;
-      }
-
-      try {
-        const response = await fetch('/api/products/move', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({
-            changes: [{
-              productId: currentModalProduct.id,
-              source: currentModalProduct.source,
-              fromCategory,
-              toCategory
-            }]
-          })
-        });
-
-        const result = await response.json();
-
-        if (response.ok) {
-          showToast(`Moved to ${toCategory}`, 'success');
-          closeModal();
-          await loadData();
-        } else {
-          showToast(result.error || 'Failed to move product', 'error');
-        }
-      } catch (error) {
-        console.error('Error moving product:', error);
-        showToast('Error moving product', 'error');
-      }
-    }
-
-    function showToast(message, type = '') {
-      const toast = document.getElementById('toast');
-      toast.textContent = message;
-      toast.className = 'toast active ' + type;
-      setTimeout(() => toast.classList.remove('active'), 3000);
     }
 
     function openModal(index) {
@@ -823,11 +596,9 @@
         : '';
       document.getElementById('modal-source').textContent = sourceLabel + ingredientMethod;
 
-      // Main image
       const mainImg = document.getElementById('modal-main-image');
       mainImg.src = product.imageUrl || product.images?.[0] || '';
 
-      // Image thumbnails
       const imagesContainer = document.getElementById('modal-images');
       if (product.images && product.images.length > 1) {
         imagesContainer.innerHTML = product.images.map((img, i) => `
@@ -843,7 +614,6 @@
         imagesContainer.style.display = 'none';
       }
 
-      // Ingredients
       const ingredientsSection = document.getElementById('ingredients-section');
       const ingredientsDiv = document.getElementById('modal-ingredients');
       if (product.ingredients) {
@@ -854,7 +624,6 @@
         ingredientsSection.style.display = 'block';
       }
 
-      // Restricted ingredients
       const restrictedSection = document.getElementById('restricted-section');
       const restrictedDiv = document.getElementById('modal-restricted');
       const restricted = product.analysis?.restrictedFound || [];
@@ -868,7 +637,6 @@
         restrictedSection.style.display = 'none';
       }
 
-      // Link
       const link = document.getElementById('modal-link');
       link.href = product.productUrl || '#';
       link.textContent = product.source ? `View on ${product.source}` : 'View Product';
@@ -887,68 +655,26 @@
       currentModalProduct = null;
     }
 
-    async function updateProductImage() {
-      if (!currentModalProduct) return;
-
-      const imageUrl = document.getElementById('modal-image-url').value.trim();
-      if (!imageUrl) {
-        showToast('Please enter an image URL', 'error');
-        return;
-      }
-
-      try {
-        const response = await fetch('/api/products/update-image', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({
-            productId: currentModalProduct.id,
-            source: currentModalProduct.source,
-            imageUrl
-          })
-        });
-
-        const result = await response.json();
-
-        if (response.ok) {
-          showToast('Image updated', 'success');
-          document.getElementById('modal-main-image').src = imageUrl;
-          document.getElementById('modal-image-url').value = '';
-          await loadData();
-        } else {
-          showToast(result.error || 'Failed to update image', 'error');
-        }
-      } catch (error) {
-        console.error('Error updating image:', error);
-        showToast('Error updating image', 'error');
-      }
-    }
-
-    // Tab click handlers
     document.querySelectorAll('.tab').forEach(tab => {
       tab.addEventListener('click', () => showTab(tab.dataset.tab));
     });
 
-    // Close modal on overlay click
     document.getElementById('modal').addEventListener('click', (e) => {
       if (e.target.id === 'modal') closeModal();
     });
 
-    // Close modal on escape
     document.addEventListener('keydown', (e) => {
       if (e.key === 'Escape') closeModal();
     });
 
-    // Search filter
     document.getElementById('search').addEventListener('input', () => {
       showTab(currentTab);
     });
 
-    // Source filter
     document.getElementById('source-filter').addEventListener('change', () => {
       showTab(currentTab);
     });
 
-    // Load data on page load
     loadData();
   </script>
 </body>
