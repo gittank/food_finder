@@ -585,7 +585,8 @@
     // Load data from API
     async function loadData() {
       try {
-        const response = await fetch('data/products.json');
+        const response = await fetch('./data/products.json');
+        if (!response.ok) throw new Error(`HTTP ${response.status}: ${response.statusText}`);
         allData = await response.json();
 
         // Populate source filter
