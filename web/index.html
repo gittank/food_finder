@@ -580,6 +580,9 @@
       <select id="source-filter">
         <option value="">All Sources</option>
       </select>
+      <select id="category-filter">
+        <option value="">All Categories</option>
+      </select>
       <button class="btn btn-secondary" onclick="selectAll()">Select All</button>
       <button class="btn btn-secondary" onclick="selectNone()">Clear Selection</button>
     </div>
@@ -663,9 +666,61 @@
     let allData = { featured: [], suitable: [], unsuitable: [], noIngredients: [] };
     let currentTab = 'suitable';
     let currentProducts = [];
-    let selectedProducts = new Set(); // Set of "source-id" keys
-    let pendingChanges = []; // Array of { product, fromCategory, toCategory }
+    let selectedProducts = new Set();
+    let pendingChanges = [];
     let currentModalProduct = null;
+
+    // Check if a product is in the featured list
+    function isFeatured(product) {
+      return (allData.featured || []).some(fp => fp.id === product.id && fp.source === product.source);
+    }
+
+    // Infer product category from title, section, or product type
+    function inferCategory(product) {
+      const t = (product.title || '').toLowerCase();
+      const sec = (product.section || '').toLowerCase();
+      const type = (product.productType || '').toLowerCase();
+      const src = (product.source || '').toLowerCase();
+
+      // Section-based (ishopindian etc.)
+      if (sec === 'snacks') return 'Snacks';
+      if (sec === 'entrees') return 'Entrees';
+      if (sec === 'sauces') return 'Sauces';
+      if (sec === 'achars') return 'Pickles & Chutneys';
+
+      // Title/type keyword matching
+      if (/\b(pickle|achar|relish)\b/i.test(t)) return 'Pickles & Chutneys';
+      if (/\b(chutney|sauce|salsa|hot sauce|sriracha|ketchup|dressing|marinade|vinaigrette)\b/i.test(t)) return 'Sauces';
+      if (/\b(cookie|biscuit|wafer|shortbread)\b/i.test(t)) return 'Cookies & Biscuits';
+      if (/\b(chocolate|candy|truffle|caramel|gummy|sweet|halwa|barfi|laddu|gulab|rasgulla|jelly|fudge)\b/i.test(t)) return 'Sweets & Chocolate';
+      if (/\b(chip|crisp|namkeen|bhujia|mixture|sev|murukku|chevda|chivda|snack|pretzel|popcorn|puff|cracker|khakhra|papad)\b/i.test(t)) return 'Snacks';
+      if (/\b(bar|protein bar|energy bar|granola bar)\b/i.test(t) || /\bbar\b/i.test(type)) return 'Bars';
+      if (/\b(cheese|cream cheese|mozzarella|cheddar|parmesan|gouda|butter|ghee|paneer)\b/i.test(t)) return 'Dairy & Cheese';
+      if (/\b(pizza|burger|sausage|hot dog|nugget|meatball|deli slice)\b/i.test(t)) return 'Prepared Foods';
+      if (/\b(mac.*cheese|pasta|noodle|ramen|udon|soba|vermicelli|pho|pad thai|yakisoba)\b/i.test(t)) return 'Noodles & Pasta';
+      if (/\b(rice|pulao|biryani|khichdi)\b/i.test(t)) return 'Rice';
+      if (/\b(dal|lentil|bean|chana|rajma|chole|chickpea|curry|masala|tikka|korma|vindaloo|paneer|palak|aloo|gobi|bhaji|sabzi)\b/i.test(t)) return 'Entrees';
+      if (/\b(tea|coffee|chai|matcha)\b/i.test(t)) return 'Tea & Coffee';
+      if (/\b(soup|broth|bouillon)\b/i.test(t)) return 'Soups';
+      if (/\b(flour|starch|baking|cornstarch|tapioca)\b/i.test(t)) return 'Baking';
+      if (/\b(spice|masala|turmeric|cumin|coriander|pepper|cinnamon|cardamom|seasoning)\b/i.test(t)) return 'Spices';
+      if (/\b(nut|almond|cashew|walnut|pistachio|peanut|seed|sunflower|pumpkin)\b/i.test(t)) return 'Nuts & Seeds';
+      if (/\b(dried fruit|fig|date|raisin|mango|apricot|cranberr|berry|fruit)\b/i.test(t)) return 'Dried Fruit';
+      if (/\b(seaweed|nori|kelp)\b/i.test(t)) return 'Seaweed';
+      if (/\b(powder|superfood|spirulina|wheatgrass|supplement|protein powder)\b/i.test(t)) return 'Superfoods';
+      if (/\b(coconut|jackfruit|vegetable|tomato|olive)\b/i.test(t)) return 'Pantry';
+      if (/\b(jam|jelly|preserve|honey|syrup|spread)\b/i.test(t)) return 'Spreads';
+      if (/\b(oil|vinegar|sesame oil|coconut oil)\b/i.test(t)) return 'Oils & Vinegars';
+      if (/\b(mix|instant|ready to cook)\b/i.test(t)) return 'Instant Mixes';
+
+      // Source-based fallbacks
+      if (src.includes('nugo')) return 'Bars';
+      if (src.includes('daiya')) return 'Dairy & Cheese';
+      if (src.includes('yellowbird')) return 'Sauces';
+      if (src.includes('yamamotoyama')) return 'Tea & Coffee';
+
+      return 'Other';
+    }
 
     // Load data from API
     async function loadData() {
@@ -673,18 +728,40 @@
         const response = await fetch('/api/products');
         allData = await response.json();
 
+        // Assign categories and featured flag to all products
+        for (const cat of ['featured', 'suitable', 'unsuitable', 'noIngredients']) {
+          (allData[cat] || []).forEach(p => {
+            p._category = inferCategory(p);
+            p._featured = isFeatured(p);
+          });
+        }
+
         // Populate source filter
         const sources = new Set();
         for (const cat of ['featured', 'suitable', 'unsuitable', 'noIngredients']) {
           (allData[cat] || []).forEach(p => { if (p.source) sources.add(p.source); });
         }
-        const select = document.getElementById('source-filter');
-        const currentValue = select.value;
-        select.innerHTML = '<option value="">All Sources</option>';
+        const sourceSelect = document.getElementById('source-filter');
+        const currentSourceValue = sourceSelect.value;
+        sourceSelect.innerHTML = '<option value="">All Sources</option>';
         Array.from(sources).sort().forEach(s => {
-          select.innerHTML += `<option value="${s}">${s}</option>`;
+          sourceSelect.innerHTML += `<option value="${s}">${s}</option>`;
         });
-        select.value = currentValue;
+        sourceSelect.value = currentSourceValue;
+
+        // Populate category filter
+        const categories = new Set();
+        for (const cat of ['featured', 'suitable', 'unsuitable', 'noIngredients']) {
+          (allData[cat] || []).forEach(p => { if (p._category) categories.add(p._category); });
+        }
+        const catSelect = document.getElementById('category-filter');
+        const currentCatValue = catSelect.value;
+        catSelect.innerHTML = '<option value="">All Categories</option>';
+        catSelect.innerHTML += '<option value="Featured">Featured</option>';
+        Array.from(categories).sort().forEach(c => {
+          catSelect.innerHTML += `<option value="${c}">${c}</option>`;
+        });
+        catSelect.value = currentCatValue;
 
         updateCounts();
         showTab(currentTab);
@@ -723,6 +800,14 @@
         currentProducts = currentProducts.filter(p => p.source === sourceFilter);
       }
 
+      // Apply category filter
+      const categoryFilter = document.getElementById('category-filter').value;
+      if (categoryFilter === 'Featured') {
+        currentProducts = currentProducts.filter(p => p._featured);
+      } else if (categoryFilter) {
+        currentProducts = currentProducts.filter(p => p._category === categoryFilter);
+      }
+
       // Apply search filter if any
       const query = document.getElementById('search').value.toLowerCase();
       if (query) {
@@ -750,10 +835,7 @@
         let badgeClass = 'badge-suitable';
         let badgeText = 'Vegetarian Friendly';
 
-        if (currentTab === 'featured') {
-          badgeClass = 'badge-featured';
-          badgeText = 'Featured';
-        } else if (currentTab === 'unsuitable') {
+        if (currentTab === 'unsuitable') {
           badgeClass = 'badge-unsuitable';
           const restricted = product.analysis?.restrictedFound || [];
           const nonVeg = product.analysis?.nonVegFound || [];
@@ -786,7 +868,9 @@
             <div class="product-title">${product.title || 'Unknown Product'}</div>
             <div class="product-price">${product.price || '-'}</div>
             <span class="badge ${badgeClass}">${badgeText}</span>
+            ${product._featured ? '<span class="badge badge-featured">Featured</span>' : ''}
             <span class="badge badge-source">${product.source || 'Unknown'}</span>
+            <span class="badge" style="background:#f0f0f0;color:#555">${product._category || 'Other'}</span>
             ${ocrBadge}
           </div>
         </div>
@@ -1064,6 +1148,11 @@
 
     // Source filter
     document.getElementById('source-filter').addEventListener('change', () => {
+      showTab(currentTab);
+    });
+
+    // Category filter
+    document.getElementById('category-filter').addEventListener('change', () => {
       showTab(currentTab);
     });
 

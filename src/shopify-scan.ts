@@ -1,6 +1,7 @@
 import * as fs from 'fs';
 import * as path from 'path';
 import axios from 'axios';
+import puppeteer, { Browser } from 'puppeteer';
 
 const DATA_DIR = path.join(__dirname, '..', 'data');
 
@@ -114,6 +115,75 @@ function extractIngredients(bodyHtml: string): string | undefined {
   return undefined;
 }
 
+// Shared Puppeteer browser instance (lazily initialized on first Cloudflare block)
+let browser: Browser | null = null;
+let usePuppeteer = false;
+
+async function getBrowser(): Promise<Browser> {
+  if (!browser) {
+    console.log('  [Launching Puppeteer to bypass Cloudflare...]');
+    browser = await puppeteer.launch({ headless: 'new' as any, args: ['--no-sandbox'] });
+  }
+  return browser;
+}
+
+async function fetchJsonWithPuppeteer(url: string): Promise<any> {
+  const b = await getBrowser();
+  const page = await b.newPage();
+  await page.setUserAgent('Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36');
+  try {
+    await page.goto(url, { waitUntil: 'networkidle2', timeout: 30000 });
+    // @ts-ignore - document exists in browser context
+    const text = await page.evaluate(() => document.body.innerText);
+    return JSON.parse(text);
+  } finally {
+    await page.close();
+  }
+}
+
+async function fetchHtmlWithPuppeteer(url: string): Promise<string> {
+  const b = await getBrowser();
+  const page = await b.newPage();
+  await page.setUserAgent('Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36');
+  try {
+    await page.goto(url, { waitUntil: 'networkidle2', timeout: 30000 });
+    return await page.content();
+  } finally {
+    await page.close();
+  }
+}
+
+const UA = { 'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36' };
+
+async function fetchJson(url: string): Promise<any> {
+  if (usePuppeteer) return fetchJsonWithPuppeteer(url);
+  try {
+    const response = await axios.get(url, { headers: UA, timeout: 15000 });
+    return response.data;
+  } catch (error: any) {
+    if (error.response?.status === 429 || error.response?.status === 403) {
+      console.log(`  [Cloudflare blocked, switching to Puppeteer]`);
+      usePuppeteer = true;
+      return fetchJsonWithPuppeteer(url);
+    }
+    throw error;
+  }
+}
+
+async function fetchHtml(url: string): Promise<string> {
+  if (usePuppeteer) return fetchHtmlWithPuppeteer(url);
+  try {
+    const response = await axios.get(url, { headers: UA, timeout: 15000 });
+    return response.data;
+  } catch (error: any) {
+    if (error.response?.status === 429 || error.response?.status === 403) {
+      usePuppeteer = true;
+      return fetchHtmlWithPuppeteer(url);
+    }
+    throw error;
+  }
+}
+
 async function fetchCollectionProducts(): Promise<any[]> {
   const allProducts: any[] = [];
   let page = 1;
@@ -123,12 +193,8 @@ async function fetchCollectionProducts(): Promise<any[]> {
     console.log(`Fetching page ${page}...`);
 
     try {
-      const response = await axios.get(url, {
-        headers: { 'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36' },
-        timeout: 15000,
-      });
-
-      const products = response.data.products;
+      const data = await fetchJson(url);
+      const products = data.products;
       if (!products || products.length === 0) break;
 
       allProducts.push(...products);
@@ -148,11 +214,8 @@ async function fetchCollectionProducts(): Promise<any[]> {
 async function fetchProductDetail(handle: string): Promise<any | null> {
   try {
     const url = `${BASE_URL}/products/${handle}.json`;
-    const response = await axios.get(url, {
-      headers: { 'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36' },
-      timeout: 15000,
-    });
-    return response.data.product;
+    const data = await fetchJson(url);
+    return data.product;
   } catch (error) {
     return null;
   }
@@ -162,11 +225,7 @@ async function fetchProductDetail(handle: string): Promise<any | null> {
 async function fetchProductPageHtml(handle: string): Promise<string | null> {
   try {
     const url = `${BASE_URL}/products/${handle}`;
-    const response = await axios.get(url, {
-      headers: { 'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36' },
-      timeout: 15000,
-    });
-    return response.data;
+    return await fetchHtml(url);
   } catch (error) {
     return null;
   }
@@ -180,9 +239,7 @@ function extractIngredientsFromPageHtml(html: string): string | undefined {
   const metafieldMatch = html.match(/<span[^>]*class="metafield-multi_line_text_field"[^>]*>([\s\S]*?)<\/span>/i);
   if (metafieldMatch && metafieldMatch[1]) {
     const text = metafieldMatch[1].replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim();
-    // Metafield text with commas or newline-separated items is likely an ingredient list
     if (text.length > 10) {
-      // Convert newline-separated ALL-CAPS lists to comma-separated
       const normalized = text.replace(/\n/g, ', ').replace(/,\s*,/g, ',').trim();
       if (normalized.includes(',')) {
         return normalized;
@@ -190,17 +247,52 @@ function extractIngredientsFromPageHtml(html: string): string | undefined {
     }
   }
 
-  // Also try: look for a section/div with "Ingredients" heading rendered outside body_html
-  const sectionPatterns = [
+  // Accordion-based ingredients (Daiya, etc.)
+  // Pattern: accordion item with "Ingredients" button, content in sibling div
+  const accordionMatch = html.match(
+    /id="accordion-product-ingredients[^"]*"[\s\S]*?<div[^>]*class="[^"]*accordion__content[^"]*"[^>]*>([\s\S]*?)<\/div>\s*<\/div>/i
+  );
+  if (accordionMatch && accordionMatch[1]) {
+    const text = accordionMatch[1].replace(/<[^>]+>/g, ' ').replace(/&amp;/g, '&').replace(/\s+/g, ' ').trim();
+    if (text.length > 10 && text.includes(',')) {
+      return text.replace(/^INGREDIENTS:\s*/i, '').replace(/\.\s*$/, '').trim();
+    }
+  }
+
+  // <details>/<summary> based ingredients (Annie Chun's, etc.)
+  const detailsMatch = html.match(
+    /<summary[^>]*>\s*Ingredients\s*<\/summary>\s*<div[^>]*>([\s\S]*?)<\/div>\s*<\/details>/i
+  );
+  if (detailsMatch && detailsMatch[1]) {
+    const text = detailsMatch[1].replace(/<[^>]+>/g, ' ').replace(/&amp;/g, '&').replace(/\s+/g, ' ').trim();
+    if (text.length > 10 && text.includes(',')) {
+      return text.replace(/^INGREDIENTS:\s*/i, '').replace(/\.\s*$/, '').trim();
+    }
+  }
+
+  // Metafield rich_text_field divs (common on newer Shopify themes)
+  const richTextMatch = html.match(
+    /Ingredients[\s\S]{0,300}<div[^>]*class="metafield-rich_text_field"[^>]*>([\s\S]*?)<\/div>/i
+  );
+  if (richTextMatch && richTextMatch[1]) {
+    const text = richTextMatch[1].replace(/<[^>]+>/g, ' ').replace(/&amp;/g, '&').replace(/\s+/g, ' ').trim();
+    if (text.length > 10 && text.includes(',')) {
+      return text.replace(/^INGREDIENTS:\s*/i, '').replace(/\.\s*$/, '').trim();
+    }
+  }
+
+  // Generic: any heading/label "Ingredients" followed by text content
+  const genericPatterns = [
+    /<(?:h[1-6]|strong|b|label|dt)[^>]*>\s*Ingredients?\s*<\/(?:h[1-6]|strong|b|label|dt)>\s*(?:<[^>]*>)*\s*([\s\S]*?)(?=<(?:h[1-6]|strong|b|label|dt|\/section|\/article))/i,
     /<div[^>]*class="[^"]*rte[^"]*"[^>]*>\s*<p>\s*<span[^>]*>([\s\S]*?)<\/span>/i,
   ];
 
-  for (const pattern of sectionPatterns) {
+  for (const pattern of genericPatterns) {
     const match = html.match(pattern);
     if (match && match[1]) {
-      const text = match[1].replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim();
+      const text = match[1].replace(/<[^>]+>/g, ' ').replace(/&amp;/g, '&').replace(/&nbsp;/g, ' ').replace(/\s+/g, ' ').trim();
       if (text.length > 10 && text.includes(',')) {
-        return text;
+        return text.replace(/^INGREDIENTS:\s*/i, '').replace(/\.\s*$/, '').trim();
       }
     }
   }
@@ -332,6 +424,11 @@ async function main() {
   const filepath = path.join(DATA_DIR, filename);
   fs.writeFileSync(filepath, JSON.stringify(results, null, 2));
   console.log(`\nResults saved to: ${filepath}`);
+
+  if (browser) await browser.close();
 }
 
-main().catch(console.error);
+main().catch(async (err) => {
+  console.error(err);
+  if (browser) await browser.close();
+});

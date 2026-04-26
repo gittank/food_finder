@@ -16,8 +16,17 @@ app.use((req, res, next) => {
   next();
 });
 
+// Extract a URL string from a value that may be a string, an ImageObject, or falsy
+function extractUrl(val: any): string | undefined {
+  if (!val) return undefined;
+  if (typeof val === 'string') return val;
+  if (typeof val === 'object' && val.url) return val.url;
+  return undefined;
+}
+
 // Normalize product data from different sources
 function normalizeProduct(product: any, source: string) {
+  const rawImage = product.imageUrl || (product.images && product.images[0]);
   return {
     id: product.id || product.productId || product.slug || 'unknown',
     title: product.title || 'Unknown Product',
@@ -25,7 +34,7 @@ function normalizeProduct(product: any, source: string) {
     price: product.price,
     ingredients: product.ingredients,
     productUrl: product.productUrl,
-    imageUrl: product.imageUrl || (product.images && product.images[0]),
+    imageUrl: extractUrl(rawImage),
     source: product.source || source,
     analysis: product.analysis,
   };
@@ -68,6 +77,28 @@ app.get('/api/products', (req, res) => {
       else if (file.startsWith('zerooge')) source = 'ZEROoge';
       else if (file.startsWith('noogeatz')) source = 'NoOgEatz';
       else if (file.startsWith('ogefreelife')) source = 'OGEFreeLife';
+      else if (file.startsWith('ishopindian')) source = 'iShopIndian';
+      else if (file.startsWith('edward')) source = 'Edward & Sons';
+      else if (file.startsWith('lotus')) source = 'Lotus Foods';
+      else if (file.startsWith('daiya')) source = 'Daiya';
+      else if (file.startsWith('miyoko')) source = 'Miyokos';
+      else if (file.startsWith('annie-chun') || file.startsWith('anniechun')) source = 'Annie Chuns';
+      else if (file.startsWith('tofurky')) source = 'Tofurky';
+      else if (file.startsWith('field-roast') || file.startsWith('fieldroast')) source = 'Field Roast';
+      else if (file.startsWith('instagram-')) source = 'Instagram';
+      else if (file.startsWith('enjoy-life') || file.startsWith('enjoylife')) source = 'Enjoy Life';
+      else if (file.startsWith('yamamotoyama')) source = 'Yamamotoyama';
+      else if (file.startsWith('goodnessme')) source = 'GoodnessMe';
+      else if (file.startsWith('terrasoul')) source = 'Terrasoul';
+      else if (file.startsWith('wild-planet') || file.startsWith('wildplanet')) source = 'Wild Planet';
+      else if (file.startsWith('nuttzo')) source = 'NuttZo';
+      else if (file.startsWith('lesserevil')) source = 'LesserEvil';
+      else if (file.startsWith('yellowbird')) source = 'Yellowbird';
+      else if (file.startsWith('aachi')) source = 'Aachi Foods';
+      else if (file.startsWith('priya') && !file.startsWith('priya-')) source = 'Priya Foods';
+      else if (file.startsWith('jabsons')) source = 'Jabsons';
+      else if (file.startsWith('thats-it') || file.startsWith('thatsit')) source = 'Thats It Fruit';
+      else if (file.startsWith('nugo')) source = 'NuGo';
 
       for (const category of Object.keys(allByCategory)) {
         if (data[category]) {

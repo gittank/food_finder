@@ -6,8 +6,8 @@ const DATA_DIR = path.join(__dirname, '..', 'data');
 const BASE_URL = 'https://www.ishopindian.com';
 const SOURCE_NAME = 'iShopIndian';
 
-// Premade entrees (heat-and-eat / ready-to-eat brand subcategories), sauces, and pickles/achars.
 // We scan leaf subcategories because the parent category pages don't aggregate products.
+// Pass --section <name> to scan only that section (e.g. --section snacks).
 const CATEGORIES: { path: string; section: string }[] = [
   // Premade entrees (ready-to-eat meals by brand)
   { path: '/Buy-Aachi-Instaa-Heat-And-Eat-Meals/', section: 'entrees' },
@@ -37,6 +37,32 @@ const CATEGORIES: { path: string; section: string }[] = [
   { path: '/Indian-Mixed-Pickles/', section: 'achars' },
   { path: '/Other-Indian-Pickles-Relishes/', section: 'achars' },
   { path: '/Organic-Pickles-Condiments-Jams/', section: 'achars' },
+  // Snacks (namkeen, chips, mixtures by brand)
+  { path: '/Buy-Ammas-Kitchen-Brand-Snacks/', section: 'snacks' },
+  { path: '/Abhiruchi-South-Indian-Snacks/', section: 'snacks' },
+  { path: '/Anand-Brand-Snacks-From-South-India/', section: 'snacks' },
+  { path: '/A2B-brand-snacks/', section: 'snacks' },
+  { path: '/Bikaji-Brand-Snacks/', section: 'snacks' },
+  { path: '/buy-bikano-brand-snacks/', section: 'snacks' },
+  { path: '/Cake-Rusk-Tea-Toasts-and-Khari-Puff-Pastry/', section: 'snacks' },
+  { path: '/chhedas-brand-snacks/', section: 'snacks' },
+  { path: '/Indian-Cookies-Biscuits-Wafers/', section: 'snacks' },
+  { path: '/Buy-Deep-Brand-Snacks-Online/', section: 'snacks' },
+  { path: '/Buy-Garvi-Gujarat-Snacks/', section: 'snacks' },
+  { path: '/Buy-Haldirams-Snacks-Online/', section: 'snacks' },
+  { path: '/Buy-Janakis-Brand-Snacks-Online/', section: 'snacks' },
+  { path: '/khakhara-indian-wheat-crisps/', section: 'snacks' },
+  { path: '/Mirch-Masala-Brand-Snacks/', section: 'snacks' },
+  { path: '/Buy-Nirav-Brand-Snacks/', section: 'snacks' },
+  { path: '/Indian-Snacks-Munchies/', section: 'snacks' },
+  { path: '/Buy-Raju-Brand-Snacks/', section: 'snacks' },
+  { path: '/Real-Bites-Brand/', section: 'snacks' },
+  { path: '/Roasted-Indian-Snacks/', section: 'snacks' },
+  { path: '/Sankethi-Adukale-Snacks-For-Sale-USA/', section: 'snacks' },
+  { path: '/Buy-Udupi-Deep-South-Indian-Snacks/', section: 'snacks' },
+  { path: '/Organic-Indian-Snacks/', section: 'snacks' },
+  { path: '/Buy-Papad-Lentil-Wafers-Pappadums/', section: 'snacks' },
+  { path: '/Buy-Fresh-Indian-Sweets-Desserts/', section: 'snacks' },
 ];
 
 const RESTRICTED_INGREDIENTS = {
@@ -177,6 +203,13 @@ function findIngredientsIn(text: string): string | undefined {
   return ingredients.length > 5 ? ingredients : undefined;
 }
 
+function findMadeWithIngredients(text: string): string | undefined {
+  const m = text.match(/\bmade\s+with\s+([\s\S]{10,300}?)(?:\.\s*(?:Contains|No|Serve|Best|Store|Keep|Refrigerate|How|Directions|Net)\b|\.?\s*$)/i);
+  if (!m) return undefined;
+  const ingredients = m[1].replace(/\s+/g, ' ').replace(/[,.\s]+$/, '').trim();
+  return ingredients.length > 5 ? ingredients : undefined;
+}
+
 function extractIngredients(html: string): string | undefined {
   // The visible product-description body has the full ingredient list.
   // The <meta name="description"> often truncates mid-list (e.g. Pav Bhaji's
@@ -184,6 +217,23 @@ function extractIngredients(html: string): string | undefined {
   // mark allium-containing items as suitable. So prefer body, fall back to meta.
   const candidates: string[] = [];
 
+  // 1. Check the dedicated Ingredients tab (X-Cart "ingredients-tab" div)
+  const ingredientsTab = html.match(/<div[^>]*class="ingredients-tab"[^>]*>([\s\S]*?)<\/div>/i)?.[1];
+  if (ingredientsTab) {
+    const cleaned = ingredientsTab
+      .replace(/<br\s*\/?>/gi, '\n')
+      .replace(/<\/p>/gi, '\n')
+      .replace(/<[^>]+>/g, ' ')
+      .replace(/\s+/g, ' ')
+      .trim();
+    const decoded = decodeHtmlEntities(cleaned);
+    // Skip if the tab just says "No Ingredients specified"
+    if (!/no\s+ingredients\s+specified/i.test(decoded) && decoded.length > 10) {
+      candidates.push('Ingredients: ' + decoded);
+    }
+  }
+
+  // 2. Check the product-description div
   const descBlock = html.match(/<div[^>]*class="[^"]*product-description[^"]*"[^>]*>([\s\S]*?)<\/div>/i)?.[1];
   if (descBlock) {
     const cleaned = descBlock
@@ -194,6 +244,7 @@ function extractIngredients(html: string): string | undefined {
     candidates.push(decodeHtmlEntities(cleaned));
   }
 
+  // 3. Check meta description
   const metaDesc = html.match(/<meta name="description" content="([^"]+)"/i)?.[1]
     || html.match(/<meta property="og:description" content="([^"]+)"/i)?.[1];
   if (metaDesc) candidates.push(decodeHtmlEntities(metaDesc));
@@ -204,6 +255,15 @@ function extractIngredients(html: string): string | undefined {
     const ing = findIngredientsIn(text);
     if (ing && (!best || ing.length > best.length)) best = ing;
   }
+
+  // Fallback: look for "made with ..." pattern in description
+  if (!best) {
+    for (const text of candidates) {
+      const ing = findMadeWithIngredients(text);
+      if (ing && (!best || ing.length > best.length)) best = ing;
+    }
+  }
+
   return best;
 }
 
@@ -235,17 +295,26 @@ function extractProductData(html: string, url: string, section: string) {
 }
 
 async function main() {
+  // Optional --section flag to scan only one section
+  const sectionArg = process.argv.indexOf('--section');
+  const sectionFilter = sectionArg !== -1 ? process.argv[sectionArg + 1] : undefined;
+
+  const categoriesToScan = sectionFilter
+    ? CATEGORIES.filter(c => c.section === sectionFilter)
+    : CATEGORIES;
+
+  const sections = [...new Set(categoriesToScan.map(c => c.section))].join(', ');
   console.log('\n========================================');
   console.log(`  ${SOURCE_NAME} Product Scanner (X-Cart)`);
   console.log(`  URL: ${BASE_URL}`);
-  console.log(`  Sections: entrees, sauces, achars`);
+  console.log(`  Sections: ${sections}`);
   console.log('========================================\n');
 
   // Phase 1: collect all product URLs across categories.
   const productEntries: { url: string; section: string }[] = [];
   const seenUrls = new Set<string>();
 
-  for (const cat of CATEGORIES) {
+  for (const cat of categoriesToScan) {
     console.log(`Category [${cat.section}] ${cat.path}`);
     const urls = await fetchCategoryProductUrls(cat.path);
     for (const u of urls) {
@@ -260,9 +329,7 @@ async function main() {
   console.log(`\nTotal unique products to scan: ${productEntries.length}\n`);
 
   // Phase 2: fetch each product and analyze.
-  const results = {
-    source: SOURCE_NAME,
-    scannedAt: new Date().toISOString(),
+  const newResults = {
     suitable: [] as any[],
     unsuitable: [] as any[],
     noIngredients: [] as any[],
@@ -284,15 +351,15 @@ async function main() {
         const analysis = analyzeIngredients(productData.ingredients, productData.title);
         productData.analysis = analysis;
         if (analysis.isVegetarian && !analysis.hasRestrictedIngredients) {
-          results.suitable.push(productData);
+          newResults.suitable.push(productData);
           console.log('-> SUITABLE');
         } else {
-          results.unsuitable.push(productData);
+          newResults.unsuitable.push(productData);
           const reasons = [...analysis.restrictedFound, ...analysis.nonVegFound];
           console.log(`-> ${reasons.join(', ')}`);
         }
       } else {
-        results.noIngredients.push(productData);
+        newResults.noIngredients.push(productData);
         console.log('-> No ingredients found');
       }
     } catch (err: any) {
@@ -303,22 +370,73 @@ async function main() {
   }
   console.log('-'.repeat(60));
 
-  console.log('\n========================================');
-  console.log('  SCAN COMPLETE');
-  console.log('========================================');
-  console.log(`Suitable: ${results.suitable.length}`);
-  console.log(`Unsuitable: ${results.unsuitable.length}`);
-  console.log(`No ingredients: ${results.noIngredients.length}`);
-
-  if (results.suitable.length > 0) {
-    console.log('\n--- Suitable Products ---');
-    for (const p of results.suitable) console.log(`  + [${p.section}] ${p.title}`);
-  }
-
+  // Phase 3: merge with existing data file (dedup by product id).
   const dateStr = new Date().toISOString().split('T')[0];
   const filename = `ishopindian-${dateStr}.json`;
   const filepath = path.join(DATA_DIR, filename);
-  fs.writeFileSync(filepath, JSON.stringify(results, null, 2));
+
+  let merged: any = {
+    source: SOURCE_NAME,
+    scannedAt: new Date().toISOString(),
+    suitable: [] as any[],
+    unsuitable: [] as any[],
+    noIngredients: [] as any[],
+  };
+
+  // Load existing file if present
+  if (fs.existsSync(filepath)) {
+    const existing = JSON.parse(fs.readFileSync(filepath, 'utf-8'));
+    merged.suitable = existing.suitable || [];
+    merged.unsuitable = existing.unsuitable || [];
+    merged.noIngredients = existing.noIngredients || [];
+  }
+
+  // Append new results
+  merged.suitable.push(...newResults.suitable);
+  merged.unsuitable.push(...newResults.unsuitable);
+  merged.noIngredients.push(...newResults.noIngredients);
+
+  // Deduplicate by product id across all categories
+  const dedup = (arr: any[]) => {
+    const seen = new Set<string>();
+    return arr.filter(p => {
+      const key = p.id || p.productUrl;
+      if (seen.has(key)) return false;
+      seen.add(key);
+      return true;
+    });
+  };
+  merged.suitable = dedup(merged.suitable);
+  merged.unsuitable = dedup(merged.unsuitable);
+  merged.noIngredients = dedup(merged.noIngredients);
+
+  // Also dedup across categories (a product should only appear in one)
+  const allIds = new Set<string>();
+  for (const cat of ['suitable', 'unsuitable', 'noIngredients']) {
+    merged[cat] = merged[cat].filter((p: any) => {
+      const key = p.id || p.productUrl;
+      if (allIds.has(key)) return false;
+      allIds.add(key);
+      return true;
+    });
+  }
+
+  merged.summary = {
+    suitable: merged.suitable.length,
+    unsuitable: merged.unsuitable.length,
+    noIngredients: merged.noIngredients.length,
+  };
+
+  fs.writeFileSync(filepath, JSON.stringify(merged, null, 2));
+
+  console.log('\n========================================');
+  console.log('  SCAN COMPLETE');
+  console.log('========================================');
+  console.log(`New scanned: ${newResults.suitable.length + newResults.unsuitable.length + newResults.noIngredients.length}`);
+  console.log(`After merge+dedup:`);
+  console.log(`  Suitable: ${merged.suitable.length}`);
+  console.log(`  Unsuitable: ${merged.unsuitable.length}`);
+  console.log(`  No ingredients: ${merged.noIngredients.length}`);
   console.log(`\nResults saved to: ${filepath}`);
 }
 
