@@ -20,6 +20,7 @@
     "veganessentials:scan": "ts-node src/veganessentials-scan.ts",
     "shopify:scan": "ts-node src/shopify-scan.ts",
     "woo:scan": "ts-node src/woo-scan.ts",
+    "ishopindian:scan": "ts-node src/ishopindian-scan.ts",
     "export": "ts-node src/export-data.ts"
   },
   "keywords": [
